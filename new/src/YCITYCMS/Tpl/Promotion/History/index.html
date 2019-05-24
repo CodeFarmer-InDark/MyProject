@@ -1,0 +1,75 @@
+<include file="Public:contentHeader" />
+<div class="body grey">
+    <div class="register pad fff bottom" style="min-height:500px;">
+        <div class="stitle">
+            <span class="top-line"></span>
+            <img src="__PUBLIC__/Images/promotion/title_bg.png" alt=""><span class="top-title">历史报名</span>
+        </div>
+        <div class="search-condition" style="width:97%;">
+            <form action="{:U('History/index')}" method="get" class="search-box" style="padding-left:30%;width:70%;">
+                <div class="submit1"><a href="{:U('History/index')}" class="signup-reset">重置</a></div>
+                <div class="submit1" style="margin-right:3px;"><input type="submit" class="submitcont" value="筛选"></div>
+
+                <select name="year" id="year" class="search-item" style="width:170px;height:27px;margin:0 10px 0 0px;">
+                    <option value="">请选择</option>
+                    <volist name="yearList" id="yl">
+                        <option value="{$yl.id}" {$yl.id|selected="$year"}>{$yl.name}</option>
+                    </volist>
+                </select>
+                <label>年份：</label>
+            </form>
+        </div>
+        <table class="historylist">
+            <thead>
+            <tr>
+                <th width="200">行程</th>
+                <th width="70">省份</th>
+                <th width="300">地点</th>
+                <th width="300">时间</th>
+                <th width="280">备注</th>
+            </tr>
+            </thead>
+            <present name="dataList">
+                <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <div class="fenye" style="margin-top:40px;height:50px;">
+                            <div class="page" style="padding-bottom:0px;">
+                                {$page}
+                            </div>
+                        </div> <!-- End .pagination -->
+                        <div class="clear"></div>
+                    </td>
+                </tr>
+                </tfoot>
+                <tbody>
+                <tr style="height:10px;"></tr>
+                <volist name="dataList" id="vo">
+                    <tr onclick="jump({$vo['aid']});" class="nr-tr">
+                        <td>{$vo.zxmc}</td>
+                        <td>{$vo.pname}</td>
+                        <td>{$vo.zxlb}</td>
+                        <td>{$vo.xc}</td>
+                        <td>{$vo.remark}</td>
+                    </tr>
+                </volist>
+                <else />
+                <tbody>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td colspan="5"><p class="no">暂无数据</p></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr><td colspan="5"></td></tr>
+            </present>
+            </tbody>
+        </table>
+</div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+    function jump(id){
+        window.location.href = "{:U('History/detail')}?id="+id;
+    }
+</script>

@@ -1,0 +1,27 @@
+﻿<taglib name="YC"/>
+<include file="Public:header" />
+<link href="./Public/Js/video-js/css/video-js.css" rel="stylesheet">
+<script src="./Public/Js/video-js/js/videojs-ie8.min.js"></script>
+<script src="./Public/Js/video-js/js/video.js"></script>
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>><a href="{:U('Video/index')}">视频列表</a>><a href="#">招生视频</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Video/index')}">视频列表</a> > <a href="#">招生视频</a></div>
+</div>
+        <div class="listmain">
+            <div class="cont_v">
+                <div class="vd-title">招生视频</div>
+                <div class="textbox">
+                    <div class="person">
+                        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" poster="Uploads/{$contentDetail.attach_file}" data-setup="{}">
+                            <source src='Uploads/{$contentDetail.videoUrl}' type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Public:footer" />
+</body>
+</html>

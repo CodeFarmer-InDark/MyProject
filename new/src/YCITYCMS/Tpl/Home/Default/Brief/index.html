@@ -1,0 +1,23 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Brief/index')}">走进航大</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Brief/index')}">走进航大</a></div> </div>
+</div>
+<div class="listmain">
+    <div class="cont_v">
+        <div class="title3" style="margin-bottom:30px;margin-top:-10px;">
+            <span>走进航大</span>
+        </div>
+        <if condition="$data['attach_file'] neq ''">
+            <iframe src='Uploads/{$data.attach_file}' class="pdf"></iframe>
+            <else/>
+            <div style="float:left;margin-left:10px;">暂无简介</div>
+        </if>
+    </div>
+</div>
+</div>
+
+<include file="Public:footer" />

@@ -1,0 +1,101 @@
+<div class="backclo f_l side hid"  >
+    <div class="muns">
+        <div id="id" class="ntcontent" style="overflow: hidden;">
+            <div>
+                <ul >
+                    <switch name="plist">
+                        <case value="招生类型">
+                            <li class="type-title">招生类型<img src="__PUBLIC__/Images/more_ico2.png" class="icon1"></li>
+                            <volist name="typelist" id="row" empty="暂无数据">
+                                <if condition="$row['id'] == $id">
+                                    <li class="type-selected" id="kuan">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}" onclick="showSelect()">{$row.title|msubstr=0,18}</a>
+                                        <present name="row.topNews"><span class="erji_ul" style="display:block;"><a href="{:U('List/detail/',array('id'=>$row['topId']))}" class="descrip">{$row.topNews|msubstr=0,18}</a></span></present>
+                                    </li>
+                                    <li class="type-selected" id="jiaokuan">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}" onclick="showSelect()">{$row.title|msubstr=0,36}</a>
+                                    </li>
+                                    <li class="type-selected" id="zhai">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}" onclick="showSelect()">{$row.title|msubstr=0,24}</a>
+                                    </li>
+                                    <li class="type-selected" id="zuizhai">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}" onclick="showSelect()">{$row.title|msubstr=0,16}</a>
+                                    </li>
+                                    <else/>
+                                    <li class="type" id="kuan">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}">{$row.title|msubstr=0,18}</a>
+                                        <present name="row.topNews"><span class="erji_ul"><a href="{:U('List/detail/',array('id'=>$row['topId']))}" class="descrip">{$row.topNews|msubstr=0,18}</a></span></present>
+                                    </li>
+                                    <li class="type" id="jiaokuan">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}">{$row.title|msubstr=0,36}</a>
+                                    </li>
+                                    <li class="type" id="zhai">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}">{$row.title|msubstr=0,24}</a>
+                                    </li>
+                                    <li class="type" id="zuizhai">
+                                        <a href="{:U('List/index/',array('id'=>$row['id']))}">{$row.title|msubstr=0,16}</a>
+                                    </li>
+                                </if>
+                            </volist>
+                        </case>
+                        <case value="学院介绍">
+                            <div class="dir-title">学院介绍</div>
+                            <if condition="$id eq 44">
+                                <li><a class="dirS" href="{:U('College/index/',array('id'=>44))}">院系设置</a></li>
+                                <li><a class="dir" href="{:U('College/major/',array('id'=>45))}">专业一览</a></li>
+                                <else/>
+                                <li><a class="dir" href="{:U('College/index/',array('id'=>44))}">院系设置</a></li>
+                                <li><a class="dirS" href="{:U('College/major/',array('id'=>45))}">专业一览</a></li>
+                            </if>
+                        </case>
+                        <default/>
+                            <div class="dir-title">报考指南</div>
+                            <volist name="museList" id="row" empty="暂无数据">
+                                <switch name="row.module">
+                                    <case value="List">
+                                        <if condition="$row['id'] == $id">
+                                            <li>
+                                                <a class="dirS" href="{:U('List/index/',array('id'=>$row['id']))}">{$row.title|msubstr=0,30}</a>
+                                            </li>
+                                            <else/>
+                                            <li>
+                                                <a class="dir" href="{:U('List/index/',array('id'=>$row['id']))}">{$row.title|msubstr=0,30}</a>
+                                            </li>
+                                        </if>
+                                    </case>
+                                    <default />
+                                        <if condition="$row['id'] == $id">
+                                            <li><a class="dirS" href="{:U('College/major/',array('id'=>$row['id']))}">{$row.title|msubstr=0,30}</a></li>
+                                        <else/>
+                                            <li><a class="dir" href="{:U('College/major/',array('id'=>$row['id']))}">{$row.title|msubstr=0,30}</a></li>
+                                        </if>
+                                </switch>
+                            </volist>
+                    </switch>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cate-left-l">
+        <a href="{:U('List/index/',array('id'=>40))}" class="cart-left-box2"><img src="__PUBLIC__/Images/sixbtn/zhangcheng_k_ico.png" class="ico1" /><span class="btnTitle1">招生章程</span></a>
+        <a href="{:U('Search/index/',array('id'=>37))}" class="cart-left-box1"><img src="__PUBLIC__/Images/sixbtn/plan_k_ico.png" class="ico2"><span class="btnTitle2">招生计划</span></a>
+        <a href="{:U('Search/apply/',array('id'=>38))}" class="cart-left-box3"><img src="__PUBLIC__/Images/sixbtn/register_k_ico.png" class="ico3"><span class="btnTitle2">网上报名</span></a>
+        <a href="{:U('Search/score/',array('id'=>42))}" class="cart-left-box4"><img src="__PUBLIC__/Images/sixbtn/score_k_ico.png" class="ico4"><span class="btnTitle2">历年分数</span></a>
+        <a href="{:U('Search/subject/',array('id'=>39))}" class="cart-left-box5"><img src="__PUBLIC__/Images/sixbtn/subject_k_ico.png" class="ico5"><span class="btnTitle4">选考科目</span></a>
+        <a href="{:U('Search/admission/',array('id'=>55))}" class="cart-left-box6" target="_blank"><img src="__PUBLIC__/Images/sixbtn/luqu_k_ico.png" class="ico6"><span class="btnTitle3">录取结果</span></a>
+    </div>
+    <if condition="$plist eq '报考指南'">
+        <div class="cart_detail">
+            <div class="cart_link">
+                <a href="{:U('List/index/',array('id'=>40))}" class="cart-box4">招生章程 </a>
+                <a href="{:U('Search/index/',array('id'=>37))}" class="cart-box1">招生计划 </a>
+                <a href="{:U('Search/apply/',array('id'=>38))}" class="cart-box2">网上报名 </a>
+                <a href="{:U('Search/score/',array('id'=>42))}" class="cart-box6" >历年分数 </a>
+                <a href="{:U('Search/subject/',array('id'=>39))}" class="cart-box3" >选考科目 </a>
+                <a href="{:U('Search/admission/',array('id'=>55))}" class="cart-box5" target="_blank">录取结果 </a>
+            </div>
+        </div>
+    </if>
+    <div style="height: 1px;width: auto;background: #FFFFFF ;clear: both" >
+    </div>
+</div>

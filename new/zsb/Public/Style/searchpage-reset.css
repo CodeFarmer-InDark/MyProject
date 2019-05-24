@@ -1,0 +1,8 @@
+/* 搜索模块页码 */
+a#pageUrl{text-decoration: none;  width:25px;  height: 25px;  line-height:25px;  text-align:center;  border: 1px solid #ccc;margin-bottom:10px;}
+a#pageUrl.selected{background: #2778af;color:#fff;border:none;padding:1px;}
+span.number{height:27px;line-height:27px;float:left;padding-right:5px;}
+
+
+
+

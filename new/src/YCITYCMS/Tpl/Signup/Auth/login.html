@@ -1,0 +1,73 @@
+<extend name="Common:base2" />
+<block name="container">
+    <div class="container logincon">
+        <div class="containerBox">
+            <p class="login-title">用户登录/User login</p>
+            <div class="input">
+                <img src="__PUBLIC__/Home/images/user-name.png">
+                <input class="input-text" type="number" name="phone" placeholder="请输入手机号">
+            </div>
+            <div class="input">
+                <img src="__PUBLIC__/Home/images/user-password.png">
+                <input class="input-text" type="password" name="password" placeholder="请输入密码">
+            </div>
+            <div style="margin: 30px auto;">
+                <a style="color:#fff; font-size: 15px;" href="{:U('Auth/register')}">注册账号</a>
+                <a style="color:#fff; font-size: 15px; float: right;" href="{:U('Auth/forgotpassword')}">忘记密码?</a>
+            </div>
+            <button type="button" class="input-submit" id="doLogin">登录</button>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <style>
+        .input{ height: 55px;margin: 40px auto 40px auto;}
+        #doLogin{height:50px;}
+        .mobile-top{display:none;}
+    </style>
+    <script src="__STATIC__/assets/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.use(['jquery','layer'], function(){
+            var $ = layui.$,//jquery引入重点
+                layer = layui.layer;
+
+            /*var islogin = "{$logined}";
+            if (islogin == 1){
+                $('#doLogin').css('background','#ccc');
+                $('#doLogin').css('cursor','default');
+                $('#doLogin').attr('disabled',true);
+                layer.msg('已登录',function () {
+                    //window.location.href = "{:U('Index/index')}";
+                });
+            }*/
+
+            $('#doLogin').click(function () {
+                var phone = $("input[name='phone']").val();
+                var password = $("input[name='password']").val();
+                if (phone == "") {
+                    layer.msg('请输入用户名');
+                    return false;
+                }
+                if (password == "") {
+                    layer.msg('请输入密码');
+                    return false;
+                }
+                $.ajax({
+                    type:"POST",
+                    url:"{:U('Auth/login')}",
+                    dataType: "json",
+                    data:{
+                        phone:phone,password:password
+                    },
+                    success:function(data){
+                        layer.msg(data.msg,function () {
+                            if (data.code == 1) {
+                                window.location.href = data.data.url;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</block>

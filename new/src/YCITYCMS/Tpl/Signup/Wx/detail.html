@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/wx-html.css">
+    <title>学生信息</title>
+</head>
+<body>
+    <div class="header">
+        <div style="height:140px;display: flex;align-items: center;flex-direction: row;">
+            <div class="logo-img">
+                <a href="{:U('Wx/index')}"><img style="width:620px;height:110px;" src="__PUBLIC__/Home/images/wx-logo1.png"></a>
+            </div>
+        </div>
+        <div class="biaoti">
+            <if condition="$info['isreport'] eq 1">
+                未到校
+            </if>
+            <if condition="$info['isreport'] eq 2">
+                实际到校
+            </if>
+            <if condition="$info['isreport'] eq 3">
+                放弃
+            </if>
+            <if condition="$info['isreport'] eq 4">
+                请假
+            </if>
+            <if condition="$info['isreport'] eq 5">
+                入伍
+            </if>
+            <if condition="$info['isreport'] eq 6">
+                休学
+            </if>
+        </div>
+
+
+    </div>
+    <div class="centers">
+        <div class="head-img">
+            <img src="{$info['path']}" style="width: 252px;">
+        </div>
+        <div class="user-info">
+            <table border="1">
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">姓名</td>
+                    <td style="text-align: left;padding-left: 20px;">{$info['xm']}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">生源地</td>
+                    <td style="text-align: left;padding-left: 20px;">{$info['pname']}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">性别</td>
+                    <td style="text-align: left;padding-left: 20px;">{$info['xbmc']}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">身份证号</td>
+                    <td style="text-align: left;padding-left: 20px;">{$info['sfzh']}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">学院</td>
+                    <td style="text-align: left;padding-left: 20px;">{$info['cname']}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">专业</td>
+                    <td style="text-align: left;padding-left: 20px;">{$info['zyname']}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">学号</td>
+                    <td style="text-align: left;padding-left: 20px;">{$info['xh']}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;padding-right: 20px;width:180px;">电话</td>
+                    <td style="text-align: left;padding-left: 20px;"><a href="tel:{$info['lxdh']}" style="text-decoration: none;color:forestgreen;">{$info['lxdh']}</a></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="remarks-text">
+            <textarea name="remarks" placeholder="&nbsp;&nbsp;备注信息" style="outline:none;resize: none;font-size:36px;"></textarea>
+        </div>
+        <select name="isreport" id="isreport" style="width:100%;display: block;height:62px;font-size:28px;">
+            <option value="1" {$info['isreport']|selected=1}>未到校</option>
+            <option value="2" {$info['isreport']|selected=2}>实际到校</option>
+            <option value="3" {$info['isreport']|selected=3}>放弃</option>
+            <option value="4" {$info['isreport']|selected=4}>请假</option>
+            <option value="5" {$info['isreport']|selected=5}>入伍</option>
+            <option value="6" {$info['isreport']|selected=6}>休学</option>
+        </select>
+        <div class="click-but"><button id="qrbd">确认提交</button></div>
+    </div>
+    <script src="__PUBLIC__/Home/js/layer_mobile/layer.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.js"></script>
+    <script type="text/javascript">
+            var kshmsg = "{$kshmsg}";
+            if (kshmsg != '') {
+                layer.open({
+                    content: kshmsg
+                    ,skin: 'msg'
+                    ,time: 2 //2秒后自动关闭
+                });
+                //两秒后跳转
+                setTimeout(function(){
+                    window.location.href = "{:U('Wx/datalist')}";
+                },2000);
+            }
+            $('#qrbd').click(function () {
+                var id = "{$info['id']}";
+                var isreport = $('#isreport').val();
+                var remarks = $('textarea[name="remarks"]').val();
+                if (id) {
+                    $.ajax({
+                        type:"POST",
+                        url:"{:U('Wx/updateReport')}",
+                        dataType: "json",
+                        data:{
+                            id:id,remarks:remarks,isreport:isreport
+                        },
+                        success:function(data){
+                            layer.open({
+                                content: data.msg
+                                ,skin: 'msg'
+                                ,time: 2 //2秒后自动关闭
+                            });
+                            setTimeout(function(){
+                                if (data.code == 1) {
+                                    window.location.href = "{:U('Wx/datalist')}";
+                                }
+                            },2000);
+                        }
+                    });
+                }
+
+            });
+    </script>
+</body>
+</html>

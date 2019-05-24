@@ -1,0 +1,63 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>><a href="{:U('College/index',array('id'=>44))}">{$moduleTitle}</a>><a href="{:U('College/major',array('id'=>45))}">专业一览</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页 </a>> <a href="{:U('College/index',array('id'=>44))}">{$moduleTitle}</a> > <a href="{:U('College/major',array('id'=>45))}">专业一览</a></div>
+</div>
+<div class="listmain">
+    <div class="cont_v">
+        <div class="vd-title" style="margin-bottom:20px;">专业一览</div>
+        <table  cellspacing="0" cellpadding="0">
+            <thead>
+            <tr class="attr">
+                <th width="16%">学院</th>
+                <th width="22%">专业名称</th>
+                <th width="5%">学制</th>
+                <th width="5%">科类</th>
+                <th width="5%">计划数</th>
+                <th width="5%">学费</th>
+                <th width="21%">报考要求</th>
+                <th width="21%">专业建设项目成果</th>
+            </tr>
+            </thead>
+            <tbody>
+            <present name="dataList">
+                <volist name="dataList" id="vo">
+                    <tr>
+                        <td class="collegeName">{$vo.college}</td>
+                        <td class="majorName">{$vo.zymc}<if condition="$vo['major'] neq ''">{$vo.major}</if></td>
+                        <td class="otherName">{$vo.length}</td>
+                        <td class="otherName">{$vo.type}</td>
+                        <td class="otherName">{$vo.target}</td>
+                        <td class="otherName">{$vo.fee}</td>
+                        <td class="achieveName">{$vo.demand}</td>
+                        <td class="achieveName">{$vo.achievement}</td>
+                    </tr>
+                </volist>
+                <else/>
+                <tr ><td colspan="8">暂无数据</td></tr>
+            </present>
+
+            </tbody>
+        </table>
+        <present name="dataList">
+            <div class="remark" style="margin-top:20px;">{$remark}</div>
+        </present>
+    </div>
+    <!--<include file="Public:typeleft" />-->
+    <div class="re-cart">
+        <div class="cartbox" style="margin:20px auto;">
+            <a href="{:U('List/index/',array('id'=>40))}" class="cart-left-box1">招生章程</a>
+            <a href="{:U('Search/index/',array('id'=>37))}" class="cart-left-box2">招生计划</a>
+            <a href="{:U('Search/apply/',array('id'=>38))}" class="cart-left-box3">网上报名</a>
+            <a href="{:U('Search/index/',array('id'=>42))}" class="cart-left-box4">历年分数</a>
+            <a href="{:U('Search/subject/',array('id'=>39))}" class="cart-left-box5">选考科目</a>
+            <a href="" class="cart-left-box6">录取查询</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<include file="Public:footer" />

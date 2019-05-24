@@ -1,0 +1,248 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<link href="./Public/Style/searchpage-reset.css" rel="stylesheet" type="text/css">
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Search/index',array('id'=>37))}">招生计划</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Search/index',array('id'=>37))}">招生计划</a></div> </div>
+</div>
+<div class="listmain">
+    <div class="search-condition">
+        <form action="{:U('Search/index',array('id'=>37))}" method="get" class="search-box">
+            <input type="hidden" name="m" class="moduleName" value="{$moduleName}">
+            <input type="hidden" name="a" class="actionName" value="{$actionName}">
+            <input type="hidden" name="id" class="id" value="{$id}">
+
+            <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 年份</label>
+            <select name="year" id="year" class="search-item" >
+                <option value="">选择年份</option>
+                <option value="{$year[0]}" {$year[0]|selected=$year_selected}>{$year[0]}</option>
+                <option value="{$year[1]}" {$year[1]|selected=$year_selected}>{$year[1]}</option>
+                <option value="{$year[2]}" {$year[2]|selected=$year_selected}>{$year[2]}</option>
+            </select>
+            <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 省份</label>
+            <select name="province" id="province" class="search-item tofull" >
+                <option value="">选择省份</option>
+                <volist name="province" id="p">
+                    <option value="{$p.id}" {$p.id|selected=$pname}>{$p.province}</option>
+                </volist>
+            </select>
+            <label class="mName">专业</label>
+            <select name="major" id="major" class="major-item towidth"></select>
+            <label class="last">科类</label>
+            <select name="type" id="type" class="search-item toleft"></select>
+            <div class="submit"><input type="submit" class="submitcont" value="查询"></div>
+        </form>
+    </div>
+    <div class="search">
+        <table  cellspacing="0" cellpadding="0" >
+            <thead>
+            <tr><th colspan="10" class="search-title">招生计划</th></tr>
+            <tr class="plan-attr">
+                <th>年份</th>
+                <th>省份</th>
+                <th>层次</th>
+                <th>计划性质</th>
+                <th>批次名称</th>
+                <th>计划类别</th>
+                <th>科类</th>
+                <th>专业名称</th>
+                <th>计划数</th>
+                <th>学费</th>
+            </tr>
+            </thead>
+            <present name="planList">
+                <tbody>
+                <volist name="planList" id="vo">
+                    <tr>
+                        <td class="yearName">{$vo.year}</td>
+                        <td class="yearName">{$vo.province}</td>
+                        <td><eq name="vo['ccmc']" value="1">本科<else/>高职（专科）</eq></td>
+                        <td class="yearName"><eq name="vo['jhxz']" value="1">定向<else/>非定向</eq></td>
+                        <td >{$vo.batch}</td>
+                        <td>{$vo.jhlbmc}</td>
+                        <td class="yearName">{$vo.klmc}</td>
+                        <td>
+                            {$vo.zymc}
+                            <if condition="$vo['zyfx'] neq ''">（{$vo.zyfx}）</if>
+                        </td>
+                        <td >{$vo.target}</td>
+                        <td>{$vo.fee}</td>
+                    </tr>
+                </volist>
+                </tbody>
+                <else />
+                <tbody>
+                <tr>
+                    <td colspan="10"><p class="no" >{$error}</p></td>
+                </tr>
+            </present>
+        </table>
+        <present name="planList">
+            <div class="fenye">
+                <div id="page" class="page"></div>
+            </div> <!-- End .pagination -->
+            <div class="remark">{$remark}</div>
+        </present>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    var kldm = "{$tname}";
+    var zydm = "{$mname}";
+    $(document).ready(function(){
+        //ajax跨域获取zs系统专业、科类
+        $('#type').empty();
+        $('#major').empty();
+        $("#type").append("<option value=''>选择科类</option>");
+        $("#major").append("<option value=''>选择专业</option>");
+        var year = $('#year').val();
+        var province = $('#province').val();
+        if (year){
+            $.ajax({
+                type: "GET",
+                url: "http://localhost/cauc_zs3/zs/Api/Inquire/getPlanParam",
+                dataType: "jsonp",
+                jsonp: "callback",
+                data:{
+                    'year':year,'province':province
+                },
+                success: function (data) {
+                    switch (data.msg) {
+                        case "1" :
+                            $.each(data.zyList, function (index, value) {
+                                if (value.zyfx != ''){
+                                    var dataZyID = value.zydm + '-' + value.zyfx;
+                                }else{
+                                    var dataZyID = value.zydm;
+                                }
+                                if (dataZyID == zydm) {
+                                    if (value.zyfx != ''){
+                                        $("#major").append("<option value='" + value.zydm + '-' + value.zyfx +"' selected>" + value.zymc + '（' + value.zyfx + '）' +"</option>");
+                                    }else{
+                                        $("#major").append("<option value='" + value.zydm +"' selected>" + value.zymc +"</option>");
+                                    }
+                                } else {
+                                    if (value.zyfx != ''){
+                                        $("#major").append("<option value='" + value.zydm + '-' + value.zyfx + "'>" + value.zymc + '（' + value.zyfx + '）' + "</option>");
+                                    }else{
+                                        $("#major").append("<option value='" + value.zydm + "'>" + value.zymc +"</option>");
+                                    }
+                                }
+                            });
+                            $.each(data.klList, function (index, value) {
+                                if (value.kldm == kldm) {
+                                    $("#type").append("<option value='" + value.kldm + "' selected>" + value.klmc + "</option>");
+                                } else {
+                                    $("#type").append("<option value='" + value.kldm + "'>" + value.klmc + "</option>");
+                                }
+                            });
+                            break;
+                    }
+                }
+            });
+        }
+    });
+
+    $('#year,#province').click(function(){
+        //ajax跨域获取zs系统专业、科类
+        $('#type').empty();
+        $('#major').empty();
+        $("#type").append("<option value=''>选择科类</option>");
+        $("#major").append("<option value=''>选择专业</option>");
+        var year = $('#year').val();
+        var province = $('#province').val();
+        if (year && province){
+            $.ajax({
+                type: "GET",
+                url: "http://localhost/cauc_zs3/zs/Api/Inquire/getPlanParam",
+                dataType: "jsonp",
+                jsonp: "callback",
+                data:{
+                    'year':year,'province':province
+                },
+                success: function (data) {
+                    switch (data.msg) {
+                        case "1" :
+                            $.each(data.zyList, function (index, value) {
+                                if (value.zyfx != ''){
+                                    var dataZyID = value.zydm + '-' + value.zyfx;
+                                }else{
+                                    var dataZyID = value.zydm;
+                                }
+                                if (dataZyID == zydm) {
+                                    if (value.zyfx != ''){
+                                        $("#major").append("<option value='" + value.zydm + '-' + value.zyfx +"' selected>" + value.zymc + '（' + value.zyfx + '）' +"</option>");
+                                    }else{
+                                        $("#major").append("<option value='" + value.zydm +"' selected>" + value.zymc +"</option>");
+                                    }
+                                } else {
+                                    if (value.zyfx != ''){
+                                        $("#major").append("<option value='" + value.zydm + '-' + value.zyfx + "'>" + value.zymc + '（' + value.zyfx + '）' + "</option>");
+                                    }else{
+                                        $("#major").append("<option value='" + value.zydm + "'>" + value.zymc +"</option>");
+                                    }
+                                }
+                            });
+                            $.each(data.klList, function (index, value) {
+                                if (value.kldm == kldm) {
+                                    $("#type").append("<option value='" + value.kldm + "' selected>" + value.klmc + "</option>");
+                                } else {
+                                    $("#type").append("<option value='" + value.kldm + "'>" + value.klmc + "</option>");
+                                }
+                            });
+                            break;
+                    }
+                }
+            });
+        }
+
+    });
+</script>
+<script type="text/javascript">
+    function GetQueryString(name) //获取url的page参数
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    var page = (GetQueryString('p') == null) ? 1 : GetQueryString('p');
+    var province = "{$pname}";
+    var year = "{$year_selected}";
+    var major = "{$mname}";
+    var type = "{$tname}";
+    var count = "{$count}";
+    getList(page);
+    function getList(page) {
+        var s = '<span class="number">' + count + ' 条记录' + '</span>';
+        //这里是加载省略号的flag
+        var isHiddenExist = 0;
+        var total = "{$total}";
+
+        for (var j = 1; j <= total; j++) {  //total是后台传过来的页数
+            // 输出分页链接
+            if (page == j) s += '<a href="javascript:void(0)" data="' + j + '" class="selected" id="pageUrl">' + j + '</a>';
+            else{
+                if(j < 4 || j < (page + 2) && j > (page - 2) || j > (total / 2 - 2 ) && j < (total / 2 + 2) || j > (total - 2)){
+                    var url = "{:U('Search/index')}&id=" + 37 + "&province=" + province + "&year=" + year + "&major=" + major + "&type=" + type + "&p=" + j;
+                    s += '<a href='+ url +' data="' + j + '" id="pageUrl" >' + j + '</a>';
+                    isHiddenExist = 0;
+                }else{
+                    if (isHiddenExist == 0) {
+                        s += "<span style='float:left;'>...</span>";
+                        isHiddenExist = 1;
+                    }
+                }
+            }
+//            else s += '<a href="javascript:void(0)" data="' + j + '" id="pageUrl">' + j + '</a>';
+        }
+        $("#page").html(s);
+    }
+    $("#page").on('click','a',function () {   //为a标签动态绑定事件
+        var page=$(this).attr("data");  //获取链接里的页码
+        getList(page);
+//        window.location.href = "{:U('Search/index')}&id=" + 37 + "&province=" + province + "&year=" + year + "&major=" + major + "&type=" + type + "&p=" + page;
+    });
+</script>
+<include file="Public:footer" />

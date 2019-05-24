@@ -1,0 +1,121 @@
+<include file="Public:contentHeader" />
+
+<div class="body grey">
+    <div class="register pad fff bottom" style="min-height:500px;">
+        <div class="stitle">
+            <span class="top-line"></span>
+            <img src="__PUBLIC__/Images/promotion/title_bg.png" alt=""><span class="top-title">地点列表</span>
+        </div>
+        <div class="search-condition">
+            <form action="{:U('Signup/index')}" method="get" class="search-box">
+                <div class="submit1"><a href="{:U('Signup/index')}" class="signup-reset">重置</a></div>
+                <div class="submit1" style="margin-right:3px;"><input type="submit" class="submitcont" value="筛选"></div>
+
+                <div class="checkbox_year">
+                    <input type="text" name="start" id="start" class="datetime" value="{$start}" autocomplete="off"> - <input type="text" name="end" id="end" class="datetime" value="{$end}" autocomplete="off">
+                </div>
+                <label>时间：</label>
+
+                <select name="province" id="province" class="search-item" style="width:170px;margin:0 20px 0 0px;">
+                    <option value="">请选择</option>
+                    <volist name="provinceList" id="p">
+                        <option value="{$p.id}" {$p.id|selected="$province"}>{$p.name}</option>
+                    </volist>
+                </select>
+                <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 省份：</label>
+            </form>
+        </div>
+        <form action="{:U('Signup/doCommand')}" method="post" >
+            <table class="bmlist">
+                <thead>
+                <tr>
+                    <th style="width:40px;text-align: left;"><input class="check-all" type="checkbox" id="chkall" name="chkall" onclick="checkAll(this,'id[]');"></th>
+                    <th width="128">行程</th>
+                    <th width="50">省份</th>
+                    <th width="200">地点</th>
+                    <th width="312">时间</th>
+                    <th width="250">备注</th>
+                    <th width="63">报名人数</th>
+                    <th width="63">审批人数</th>
+                </tr>
+                </thead>
+                <present name="dataList">
+                    <tfoot>
+                    <tr>
+                        <td colspan="8">
+                            <div class="fenye" style="margin-top:40px;height:50px;">
+                                <div class="page" style="padding-bottom:0px;">
+                                    {$pageBar}
+                                </div>
+                            </div> <!-- End .pagination -->
+                            <div class="clear"></div>
+                        </td>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr style="height:10px;"></tr>
+                    <volist name="dataList" id="vo">
+                        <tr>
+                            <td style="text-align: left;"><if condition="$vo['has'] neq 1"><input type="checkbox" name="id[]" value="{$vo.id}"></if></td>
+                            <td>{$vo.zxmc}</td>
+                            <td>{$vo.pname}</td>
+                            <td>{$vo.zxlb}</td>
+                            <td>{$vo.xc}</td>
+                            <td>{$vo.remark}</td>
+                            <td>{$vo.bmCount}</td>
+                            <td>{$vo.checkCount}</td>
+                        </tr>
+                    </volist>
+                    <else />
+                    <tbody>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="8"><p class="no">暂无数据</p></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td colspan="8"></td></tr>
+                </present>
+                </tbody>
+            </table>
+            <input type="submit" value="提交" class="submit">
+        </form>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />
+<link rel="stylesheet" href="__STATIC__/assets/layui/css/layui_icon.css">
+<script src="__STATIC__/assets/layui/layui.js"></script>
+<script type="text/javascript">
+    function checkAll(e, itemName)
+    {
+        var aa = document.getElementsByName(itemName);    //获取全选复选框
+        for (var i=0; i<aa.length; i++){
+            aa[i].checked = e.checked;    //改变所有复选框的状态为全选复选框的状态
+        }
+    }
+
+    $("input[type='checkbox']").click(function () {
+        //获取checkbox选中项
+        if ($(this).prop("checked") == true) {
+            $(this).parent().parent().css("background", "#f7fafc");
+        } else {
+            $(this).parent().parent().css("background", "");
+        }
+    });
+
+    layui.use(['jquery','laydate','form'], function(){
+        var $ = layui.$,//jquery引入重点
+                laydate = layui.laydate,
+                form = layui.form;
+
+        laydate.render({
+            elem: '#start', //指定元素
+            type: 'datetime'
+        });
+        laydate.render({
+            elem: '#end', //指定元素
+            type: 'datetime'
+        });
+    });
+</script>

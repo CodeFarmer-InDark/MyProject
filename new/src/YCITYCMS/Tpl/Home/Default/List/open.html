@@ -1,0 +1,43 @@
+﻿<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>><a href="{:U('List/open',array('id'=>34))}">{$moduleTitle}</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> > <a href="{:U('List/open',array('id'=>34))}">{$moduleTitle}</a></div>
+</div>
+<div class="listmain">
+    <div class="cont_v">
+        <div >
+            <div class="vd-title">信息公开</div>
+            <ul class="vd-ul">
+                <present name="dataContentList">
+                    <volist name="dataContentList" id="row" >
+                        <li>
+                            <if condition="$row['link_url'] neq ''">
+                                <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="kuan">{$row.title|msubstr=0,40}</a>
+                                <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="jiaokuan">{$row.title|msubstr=0,36}</a>
+                                <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="zhai">{$row.title|msubstr=0,28}</a>
+                                <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="zuizhai">{$row.title|msubstr=0,18}</a>
+                                <else/>
+                                <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="kuan">{$row.title|msubstr=0,40}</a>
+                                <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="jiaokuan">{$row.title|msubstr=0,36}</a>
+                                <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="zhai">{$row.title|msubstr=0,28}</a>
+                                <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="zuizhai">{$row.title|msubstr=0,18}</a>
+                            </if> <span class="f_r">【{$row.create_time|date="Y-m-d",###}】</span>
+                        </li>
+                    </volist>
+                    <else/>
+                    <div class="nullData">暂无数据</div>
+                </present>
+            </ul>
+        </div>
+        <div class="fenye">
+            <div class="page">
+                {$pageContentBar}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />

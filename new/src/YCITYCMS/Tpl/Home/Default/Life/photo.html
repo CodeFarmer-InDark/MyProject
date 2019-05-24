@@ -1,0 +1,78 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<!--[if lt IE 9]>
+<script src="assets/scripts/html5.min.js" type="text/javascript"></script>
+<script src="assets/scripts/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel='stylesheet' href='__PUBLIC__/assets/css/font-awesome.min.css?ver=4.4.2'/>
+<!--
+<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+-->
+<link rel="stylesheet" href="__PUBLIC__/assets/css/masterslider.main.css"/>
+<link rel="stylesheet" href="__PUBLIC__/assets/css/owl.carousel.css"/>
+<link rel="stylesheet" href="__PUBLIC__/assets/css/owl.theme.css"/>
+<link rel="stylesheet" href="__PUBLIC__/assets/css/colorbox.css"/>
+<link rel="stylesheet" href="__PUBLIC__/assets/css/style.css">
+<!--<link rel="stylesheet" href="__PUBLIC__/assets/css/custom.css">-->
+<!--<link rel="stylesheet" href="__PUBLIC__/assets/css/base.css">-->
+
+<!--<link rel="stylesheet" href="__PUBLIC__/assets/css/theme/blue.css">-->
+
+<script src="__PUBLIC__/assets/scripts/bootstrap.min.js"></script>
+<script src="__PUBLIC__/assets/scripts/jquery.lazyload.min.js"></script>
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Life/photo')}">校园生活</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Life/photo')}">校园生活</a></div> </div>
+</div>
+    <div class="listmain">
+            <div class="cont_v">
+                <div class="vd-title">校园生活</div>
+                <div class="row">
+                    <div class="col-md-12 mainpanel">
+                        <div class="maincontent project-listing">
+                            <div class="row">
+                                <volist name="photoList" id="row">
+                                    <div class="col-md-3">
+                                        <div class='project-item main-color-1-bg-hover project-item-204'>
+                                            <div class="item-thumbnail dark-div">
+                                                <a href="" >
+                                                    <if condition="$row['attach_thumb'] neq ''">
+                                                        <img class="lazy" data-original='__ROOT__/Uploads/{$row.attach_thumb}' src='__ROOT__/Uploads/{$row.attach_thumb}' width="260" height="165">
+                                                    <else/>
+                                                        <img src="__PUBLIC__/Images/nopic.png" alt="暂无图片" class="videopic"/>
+                                                    </if>
+                                                </a>
+                                                <div class="thumbnail-hoverlay main-color-1-bg"></div>
+                                                <div class="thumbnail-hoverlay-icon" style='margin-left: -32px'>
+                                                    <a href="__ROOT__/Uploads/{$row.attach_image}" class="colorbox-grid cboxElement" title="{$row.title}" data-content='.project-item-204'>
+                                                        <i class="fa  fa-search" style='font-size:48px'></i>
+                                                    </a>
+                                                </div>
+                                            </div><!--item-thumbnail-->
+                                            <div class="project-item-content text-center">
+                                                <div class="project-item-title">
+                                                    <div class="project-item-title-inner">
+                                                        <div class="item-title"><a href="javascript:void()" >{$row.title|msubstr=0,6}</a></div>
+                                                        <div class="project-item-tax small-text"></div>
+                                                    </div>
+                                                </div>
+                                            </div><!--item-content-->
+                                        </div>
+                                    </div>
+                                </volist>
+
+                            </div>
+                        </div>
+                    </div><!--/content-->
+                </div><!--/row-->
+            </div>
+    </div>
+
+<script src="__PUBLIC__/assets/scripts/masterslider.min.js"></script>
+<script src="__PUBLIC__/assets/scripts/owl.carousel.min.js"></script>
+<script src="__PUBLIC__/assets/scripts/jquery.colorbox-min.js"></script>
+<script src="__PUBLIC__/assets/scripts/main.js"></script>
+<include file="Public:footer" />

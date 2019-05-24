@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>中国民航大学|网上报名</title>
+    <link rel="stylesheet" href="__STATIC__/assets/layui/css/layui.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/base1.css">
+    <!--[if lte IE 9]>
+    <style type="text/css">
+        #ie6nomore,#ie6-tips,#ie6-dl,#ie6-tips p{float:left}
+        #ie6nomore{width:100%;height:66px;background-color:#2A2A2A;color:#CCC;font-size:12px;font-family:Verdana, Geneva, sans-serif}
+        #ie6nomore a{text-decoration:none;color:#A8C779; height:30px;}
+        #ie6-content{width:900px;margin:0 auto}
+        #ie6-tips{width:500px}
+        #ie6-tips p{text-align:left;height:28px}
+        #ie6{margin:8px 0 -8px}
+        #up{font-weight:700;width:500px}
+        #ie6-dl{width:400px;margin-top:18px}
+        #ie6-dl span{margin-left:30px}
+    </style>
+    <div id="ie6nomore">
+        <div id="ie6-content">
+            <div id="ie6-tips">
+                <p id="ie6">请注意：您正在使用 IE内核 浏览器</p>
+                <p id="up">如果你的使用的是双核浏览器，请切换到极速模式访问，否则为获取更好展示效果，建议升级至IE10或更换另一款浏览器，给您带来不便请见谅</p>
+                <p id="up"></p>
+            </div>
+            <div id="ie6-dl">
+                <span><a rel="nofollow" href='http://www.google.cn/' title='下载 Google Chrome' target='_blank'>谷歌</a></span>
+                <span><a rel="nofollow" href='http://www.uc.cn/ucbrowser/download/' title='下载 UC' target='_blank'>UC浏览器</a></span>
+                <span><a rel="nofollow" href='http://www.firefox.com' title='下载 Firefox' target='_blank'>火狐</a></span>
+            </div>
+        </div>
+    </div>
+    <![endif]-->
+    <style type="text/css">
+        .layui-header{
+            height: 256px;
+            background:url(__PUBLIC__/Home/images/banner.png);
+            -moz-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .layui-layout-body{
+            background:#f2f2f2;
+            overflow: auto;
+            font-family: inherit;
+        }
+        .layui-text{
+            color: #fff;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        .layui-footer{
+            width:100%;
+            /*position: absolute;*/
+            bottom:0;
+            left:0;
+            background:url(__PUBLIC__/Home/images/footer.png);
+            -moz-background-size:100% 100%;
+            background-size:100% 100%;
+            height:295px;
+        }
+        .footer-log{
+            height: 96px;
+            margin-top: 90px;
+            float: left;
+            margin-left: 26%;
+        }
+        .footer-web-info{
+            padding-top: 70px;
+            float: left;
+            margin-left: 175px;
+        }
+        .footer-web-info span{
+            display: -webkit-box;
+            line-height: 35px;
+            font-size: 15px;
+        }
+    </style>
+    </head>
+<body class="layui-layout-body">
+    <div class="layui-header mobile-header">
+        <div class="member-zzy">
+            <div class="jzb-a">
+                <a href="{:U('Index/index')}">
+                    <img src="__PUBLIC__/Home/images/user.png" class="layui-nav-img">
+                    <span class="layui-text">{:session('user_name')}</span>
+                </a>
+                <a id="xiugai" href="javascript:;">
+                    <img src="__PUBLIC__/Home/images/xiugaixinxi.png" class="layui-nav-img xiugai">
+                    <span class="layui-text xiugai">修改信息</span>
+                    <img src="__PUBLIC__/Home/images/duobianx.png" style="width: 15px;height: 15px;height: 12px;margin-bottom: 4px;" class="layui-nav-img xiugai">
+                </a>
+                <div id="xuanXiang">
+                    <a href="{:U('Index/modifyPhone')}">修改手机号</a>
+                    <a href="{:U('Index/modifyPassword')}">修改密码</a>
+                </div>
+                <a href="{:U('Auth/exitLogin')}">
+                    <img src="__PUBLIC__/Home/images/tuichu.png" style="height: 18px;" class="layui-nav-img">
+                    <span class="layui-text">退出登录</span>
+                </a>
+            </div>
+            <div class="jzb-b">
+                <img src="__PUBLIC__/Home/images/logo.png"/>
+            </div>
+            <div class="now-title">
+                <block name="now_title"></block>
+            </div>
+        </div>
+    </div>
+    <!-- 内容主体区域 -->
+    <div class="container">
+        <block name="dao-hang">
+            <div class="dao-hang">
+                <span class="layui-text"></span>
+                <span class="layui-text"></span>
+                <a class="layui-text" href="{:U('Index/index')}"> <<返回报名入口 </a>
+            </div>
+        </block>
+        <block name="main"><div style=""></div></block>
+    </div>
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        <div class="footer-log">
+            <img src="__PUBLIC__/Home/images/logo.png"/>
+        </div>
+        <div class="footer-web-info">
+            <span class="layui-text">工作邮箱：325847154@qq.com</span>
+            <span class="layui-text">联系电话：15547895472</span>
+            <span class="layui-text">版权所有：中国民航大学</span>
+            <span class="layui-text">技术支持：天津盛扬信远科技有限公司</span>
+        </div>
+    </div>
+    <script src="__STATIC__/assets/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.use(['jquery','layer'], function(){
+            var $ = layui.$,//jquery引入重点
+                layer = layui.layer;
+            $('.layui-text.xiugai').click(function () {
+                xiugai();
+            });
+            $('.layui-nav-img.xiugai').click(function () {
+                xiugai();
+            });
+            function xiugai() {
+                if($('#xuanXiang').is(":hidden")){
+                    $('#xuanXiang').show();
+                }else{
+                    $('#xuanXiang').hide();
+                }
+            }
+        });
+    </script>
+    <block name="script">
+    </block>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/wx-html.css">
+    <title>学生信息</title>
+</head>
+<body id="body">
+    <div class="header" style="border-bottom: 0;height: 140px;display: flex;align-items: center;flex-direction: row;">
+        <div class="logo-img">
+            <a href="{:U('Wx/index')}"><img style="width:620px;height:110px;" src="__PUBLIC__/Home/images/wx-logo1.png"></a>
+        </div>
+    </div>
+    <div>
+        <img src="__PUBLIC__/Home/images/xsxx_03.png" alt="">
+        <img src="__PUBLIC__/Home/images/shaixuan.png" alt="" style="margin:15px 10px 0 0;float:right;" id="tankuang">
+    </div>
+    <div style="width:100%;margin:10px auto 0 auto;" id="static1" >
+        <present name="dataList">
+            <table style="width:100%;" cellspacing="0" cellpadding="0">
+                <tr style="font-size:28px;font-weight:bold;">
+                    <td>学号</td>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>专业</td>
+                </tr>
+                <volist name="dataList" id="vo">
+                    <tr onclick="location.href='{:U('Wx/detail',array('sfzh'=>$vo['sfzh']))}';">
+                        <td>{$vo.xh}</td>
+                        <td>{$vo.xm}</td>
+                        <td><if condition="$vo['xbdm'] eq 1">男<else/>女</if></td>
+                        <td>{$vo.zymc}</td>
+                    </tr>
+                </volist>
+                <tr>
+                    <td colspan="4">
+                        <div class="pagination">
+                           {$count} 条记录 {$pageBar}
+                        </div> <!-- End .pagination -->
+                        <div class="clear"></div>
+                    </td>
+                </tr>
+            </table>
+            <else/>
+            <div style="font-size:28px;text-align:center;height:300px;line-height:300px;">暂无数据</div>
+        </present>
+    </div>
+    <div class="navibox" id="navibox">
+        <div id="re-menu-box">
+            <label>专业名称</label>
+            <if condition="($mh_user_roleid eq 1) or ($mh_user_roleid eq 5)">
+                <select name="zydm" id="zydm1" style="display:block;width:100%;height:80px;font-size:28px;">
+                    <option value="">全部</option>
+                    <volist name="zyList" id="zall">
+                        <option value="zy{$zall.zydm}" {$zydm|selected=$zall['zydm']}>{$zall.zymc}</option>
+                    </volist>
+                </select>
+                <else/>
+                <div class="zybox">
+                    <volist name="zyList" id="zl">
+                        <if condition="$zydm eq $zl['zydm']">
+                            <span data-id="{$zl.zydm}" class="box box2" id="zy{$zl.zydm}" onclick="selected1('zy{$zl['zydm']}');" data-title="zy"><if condition="$zl['zyfx'] neq ''">{$zl.zymc}（{$zl.zyfx}）<else/>{$zl.zymc}</if></span>
+                            <else/>
+                            <span data-id="{$zl.zydm}" class="box" id="zy{$zl.zydm}" onclick="selected1('zy{$zl['zydm']}');" data-title="zy"><if condition="$zl['zyfx'] neq ''">{$zl.zymc}（{$zl.zyfx}）<else/>{$zl.zymc}</if></span>
+                        </if>
+                    </volist>
+                </div>
+            </if>
+
+            <br>
+            <label>报到状态</label>
+            <div class="zybox">
+                <if condition="$isreport eq 2">
+                    <span data-id="2" class="box1 box2" id="status2" onclick="selected1('status2');" data-title="st">实际到校</span>
+                    <else/>
+                    <span data-id="2" class="box1" id="status2" onclick="selected1('status2');" data-title="st">实际到校</span>
+                </if>
+                <if condition="$isreport eq 1">
+                    <span data-id="1" class="box1 box2" id="status1" onclick="selected1('status1');" data-title="st">未到校</span>
+                    <else/>
+                    <span data-id="1" class="box1" id="status1" onclick="selected1('status1');" data-title="st">未到校</span>
+                </if>
+                <if condition="$isreport eq 3">
+                    <span data-id="3" class="box1 box2" id="status3" onclick="selected1('status3');" data-title="st">放弃</span>
+                    <else/>
+                    <span data-id="3" class="box1" id="status3" onclick="selected1('status3');" data-title="st">放弃</span>
+                </if>
+                <if condition="$isreport eq 4">
+                    <span data-id="4" class="box1 box2" id="status4" onclick="selected1('status4');" data-title="st">请假</span>
+                    <else/>
+                    <span data-id="4" class="box1" id="status4" onclick="selected1('status4');" data-title="st">请假</span>
+                </if>
+                <if condition="$isreport eq 5">
+                    <span data-id="5" class="box1 box2" id="status5" onclick="selected1('status5');" data-title="st">入伍</span>
+                    <else/>
+                    <span data-id="5" class="box1" id="status5" onclick="selected1('status5');" data-title="st">入伍</span>
+                </if>
+                <if condition="$isreport eq 6">
+                    <span data-id="6" class="box1 box2
+" id="status6" onclick="selected1('status6');" data-title="st">休学</span>
+                    <else/>
+                    <span data-id="6" class="box1" id="status6" onclick="selected1('status6');" data-title="st">休学</span>
+                </if>
+            </div>
+            <br>
+            <label>学号</label>
+            <input type="text" name="xh" id="xh" value="{$xh}">
+            <br>
+            <label>身份证号</label>
+            <input type="text" name="sfzh" id="sfzh" value="{$sfzh}">
+        </div>
+        <div id="reset">重置</div>
+        <div id="submit">确定</div>
+    </div>
+    <style>
+        #navibox{display: none;}
+        .navibox{position: absolute;z-index:1;top:0px;width:80%;height:100%;right:0%;background-color: #fff;display:none;margin-top:-10px;}
+        .navibox #re-menu-box{width:95%;margin:30px auto 0px auto;height:auto;font-size:28px;}
+        .navibox #re-menu-box label{font-size:1em;color: #ccc;}
+        .navibox #re-menu-box .zybox{width:100%;float:left;margin-bottom:30px;}
+        .navibox #re-menu-box .zybox span.box{width:48%;margin:10px 1.5% 0 0;height:150px;line-height:150px;float:left;text-align: center;border-radius: 3px;;background-color: #f4f4f4;}
+        .navibox #re-menu-box .zybox span.box1{width:31%;margin:10px 2% 0 0;height:120px;line-height:120px;float:left;text-align: center;border-radius:3px;background-color: #f4f4f4;}
+        .navibox #re-menu-box .zybox span.box2{background-color: #d5def3;color:#2f58c1;}
+        .navibox #re-menu-box input{display:block;width:95%;height:70px;margin-top:10px;padding-left:10px;font-size:28px;}
+        .navibox div#reset{width:50%;position: absolute;bottom: 0;left:0;text-align: center;height:150px;background-color: #f4f4f4;line-height:150px;font-size:28px;}
+        .navibox div#submit{width:50%;position: absolute;bottom: 0;right:0;text-align: center;height:150px;background-color: #2f58c1;line-height:150px;color:#fff;font-size:28px;}
+
+        table tr td{border:0.5px solid #ccc;height:100px;text-align: center;width:25%;font-size:28px;}
+        a{color: #57a000;  text-decoration: none;}
+        .pagination {
+            text-align: right;
+            padding: 80px 10px 100px 0;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+        .pagination a {
+            margin: 0px 5px 0 0;
+            padding: 8px 16px;
+        }
+        .pagination a.number {
+            border: 1px solid #ddd;
+        }
+        .pagination a.current {
+            background: #469400 url('../Public/Home/images/bg-button-green.gif') top left repeat-x !important;
+            border-color: #459300 !important;
+            color: #fff !important;
+        }
+        .pagination a.current:hover {
+            text-decoration: underline;
+        }
+        .fixed{position:fixed;height:100%;overflow-y:hidden;width:100%;}
+    </style>
+    <script src="__PUBLIC__/Home/js/layer_mobile/layer.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.js"></script>
+    <script type="text/javascript">
+            var kshmsg = "{$kshmsg}";
+            if (kshmsg != '') {
+                layer.open({
+                    content: kshmsg
+                    ,skin: 'msg'
+                    ,time: 2 //2秒后自动关闭
+                });
+                //两秒后跳转
+                setTimeout(function(){
+                    window.location.href = "{:U('Wx/datalist')}";
+                },2000);
+            }
+            $('#tankuang').click(function(){
+                if (navibox.style.display != 'block') {
+                    navibox.style.display = 'block';
+                    $('#body').css("background-color","#BEBEBE");
+                    $('#body').addClass('fixed');
+                    $('table tr').attr('onclick','');
+                    navibox.style.color = '#000';
+                    $('#body').bind("touchmove",function(e){
+                        e.preventDefault();
+                    });
+                } else {
+                    navibox.style.display = 'none';
+                    $('#body').removeClass('fixed');
+                    $('#body').unbind("touchmove");
+                }
+            });
+            $('.header ,#static1').click(function(){
+                if (navibox.style.display == 'block') {
+                    navibox.style.display = 'none';
+                    $('#body').css('background-color','');
+                    $('#body').css('color','#000');
+                    window.location.reload();
+                }
+            });
+            function selected1(key){
+                if(key.slice(0,2) == 'zy'){
+                    $("span[data-title='zy']").removeClass();
+                    $("span[data-title='zy']").addClass('box');
+                    $("span[data-title='zy']").attr('style','')
+                }
+                if(key.slice(0,2) == 'st'){
+                    $("span[data-title='st']").removeClass();
+                    $("span[data-title='st']").addClass('box1');
+                    $("span[data-title='st']").attr('style','')
+                }
+                $('#'+key).toggleClass('box2');
+            }
+
+            $('#reset').click(function() {
+                $("span[data-title='zy']").attr('class','box');
+                $("span[data-title='st']").attr('class','box1');
+                $('#xh').val('');
+                $('#sfzh').val('');
+            });
+            $('#submit').click(function() {
+                var roleid = "{$mh_user_roleid}";
+                if(roleid == 1 || roleid == 5){
+                    var zydm = $("#zydm1").val();
+                }else{
+                    var zydm = $("[class='box box2']").attr('id');
+                }
+                var isreport = $("[class='box1 box2']").attr('id');
+                var xh = $('#xh').val();
+                var sfzh = $('#sfzh').val();
+                var jump = '{:U("Wx/datalist")}';
+                document.write('<form action="'+jump+'" method="get" name="subform" id="subform">');
+                if(zydm){
+                    document.write("<input type='hidden' name='zydm' id='zydm' value='"+zydm+"'>");
+                }
+                if (isreport){
+                    document.write("<input type='hidden' name='isreport' id='isreport' value='"+isreport+"'>");
+                }
+                document.write("<input type='hidden' name='xh' id='xh' value='"+xh+"'>");
+                document.write("<input type='hidden' name='sfzh' id='sfzh' value='"+sfzh+"'>");
+                document.write('</form>');
+                document.getElementById('subform').submit();
+
+            });
+    </script>
+</body>
+</html>

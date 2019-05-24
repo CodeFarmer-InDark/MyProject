@@ -1,0 +1,129 @@
+<include file="Public:contentHeader" />
+<div class="body grey">
+    <div class="register pad fff bottom" style="min-height:400px;">
+        <div class="rtitle">
+            <span class="t1">行程详情</span>
+        </div>
+
+        <div class="infobox" style="margin:0px auto 0 auto;">
+            <form action="{:U('Person/doModify')}" method="post" id="form">
+                <table class="info-table">
+                    <present name="assign">
+                        <tr>
+                            <td colspan="4" class="box-title">报名信息</td>
+                        </tr>
+                    </present>
+                    <tr>
+                        <td class="t-label">年&nbsp;&nbsp;份：</td>
+                        <td>{$vo.year}</td>
+                        <td class="t-label">省&nbsp;&nbsp;份：</td>
+                        <td>{$vo.pname}</td>
+                    </tr>
+                    <tr>
+                        <td class="t-label">行程名称：</td>
+                        <td>{$vo.zxmc}</td>
+                        <td class="t-label">地&nbsp;&nbsp;点：</td>
+                        <td width="250">{$vo.zxlb}</td>
+                    </tr>
+                    <tr>
+                        <td class="t-label">行程时间：</td>
+                        <td>{$vo.xc}</td>
+                        <td class="t-label">报名时间：</td>
+                        <td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+                    </tr>
+                    <tr>
+                        <td class="t-label">行程备注：</td>
+                        <td colspan="2">{$vo.remark}</td>
+                    </tr>
+                </table>
+                <if condition="$vo['astatus'] eq 3">
+                    <button class="layui-btn" style="background-color:#ccc;margin:80px auto 70px auto;" disabled>取消分配</button>
+                    <elseif condition="$vo['astatus'] eq 2"/>
+                    <switch name="vo['back_status']">
+                        <case value="1">
+                            <button class="layui-btn" lay-submit lay-filter="formConfirm" style="background-color:#2f58c1;cursor:pointer;margin:80px auto 30px auto;">确认行程</button>
+                            <button class="layui-btn" lay-submit lay-filter="formCancel" style="cursor:pointer;background-color:#FF5722;margin:0px auto 70px auto;">取消行程</button>
+                        </case>
+                        <case value="2">
+                            <button class="layui-btn" style="background-color:#ccc;margin:80px auto 70px auto;" disabled>已确认行程</button>
+                        </case>
+                        <case value="3"><button class="layui-btn" style="background-color:#ccc;margin:80px auto 70px auto;" disabled>已取消行程</button></case>
+                    </switch>
+                </if>
+            </form>
+    </div>
+</div>
+</div>
+</div>
+<include file="Public:footer" />
+<script src="__STATIC__/assets/layui/layui.js"></script>
+<script type="text/javascript">
+    layui.use(['jquery','laydate','form'], function(){
+        var $ = layui.$,//jquery引入重点
+                laydate = layui.laydate,
+                form = layui.form;
+
+        /**
+         * 通用表单提交(AJAX方式)
+         */
+        form.on('submit(formConfirm)', function (data) {
+            var item = "{$item}";
+            $.ajax({
+                url: data.form.action,
+                type: data.form.method,
+                data: {
+                    id:item,type:1
+                },
+                success: function (info) {
+                    if (info.code === 1) {
+                        info.url = '__URL__'+'/index';
+                    }else if(info.code === 3){
+                        info.url = '__URL__'+'/index';
+                    }else{
+                        info.url = '__URL__'+'/detail/id/'+info.info;
+                    }
+                    setTimeout(function () {
+                        location.href = info.url;
+                    }, 1000);
+                    layer.msg(info.msg);
+                }
+            });
+            return false;
+        });
+
+        /**
+         * 通用表单提交(AJAX方式)
+         */
+        form.on('submit(formCancel)', function (data) {
+            var item = "{$item}";
+            layer.confirm('您确定要取消该行程吗？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                $.ajax({
+                    url: data.form.action,
+                    type: data.form.method,
+                    data: {
+                        id:item,type:2
+                    },
+                    success: function (info) {
+                        if (info.code === 1) {
+                            info.url = '__URL__'+'/index';
+                        }else if(info.code === 3){
+                            info.url = '__URL__'+'/index';
+                        }else{
+                            info.url = '__URL__'+'/detail/id/'+info.info;
+                        }
+                        setTimeout(function () {
+                            location.href = info.url;
+                        }, 1000);
+                        layer.msg(info.msg);
+                    }
+                });
+
+            }, function(){
+
+            });
+            return false;
+        });
+    });
+</script>

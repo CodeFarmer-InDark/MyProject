@@ -1,0 +1,214 @@
+<include file="Public:contentHeader" />
+<script src="__PUBLIC__/Js/promotion/test/lib/esl.js"></script>
+<script src="__PUBLIC__/Js/promotion/test/lib/config.js"></script>
+<script src="__PUBLIC__/Js/promotion/test/lib/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/promotion/test/lib/facePrint.js"></script>
+
+<style>
+    html, body, #main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+</style>
+<div class="body grey">
+    <div id="mainMap"></div>
+</div>
+</div>
+<include file="Public:footer" />
+<script>
+    var countList;
+    var allowList;
+    $.ajax({
+        type:"POST",
+        url:"{:U('SignSecond/showCount')}",
+        success:function(data){
+            var tempStr = eval('('+ data +')');
+            countList = tempStr.infoList;
+            allowList = tempStr.allowList;
+        }
+    });
+
+    require([
+        'echarts'
+    ], function (echarts) {
+        require(['map/js/china'], function () {
+            var chart = echarts.init(document.getElementById('mainMap'));
+
+            var itemStyle = {
+                normal:{
+                    borderColor: 'rgba(0, 0, 0, 0.2)'
+                },
+                emphasis:{
+                    shadowOffsetX: 0,
+                    shadowOffsetY: 0,
+                    shadowBlur: 20,
+                    borderWidth: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            };
+
+            chart.setOption({
+                tooltip: {
+                    show: true,
+                    trigger: 'item',
+                    showDelay: 0,
+                    transitionDuration: 0.2,
+                    formatter: function (params) {
+                        var value = (params.value + '').split('.');
+                        value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,');
+
+                        var pcount = 0;
+                        if (countList != ''){
+                            if (allowList != ''){
+                                if ($.inArray(value,allowList) != -1){
+                                    pcount = countList[value]['num'];
+                                }
+                            }
+                        }
+                        return params.name + '<br/>' + '计划数' + ' : ' + pcount;
+                    }
+                    //formatter: "Template formatter: <br/>{b}<br/>{a}:{c}<br/>{a1}:{c1}"
+                },
+                title : {
+                    text: '*请选择报名的省份',
+                    subtext: '点击图中对应省份即可',
+                    left: 'center'
+                },
+//                legend: {
+//                    orient: 'vertical',
+//                    left: 'left',
+//                    data:['iphone3','iphone4','iphone5']
+//                },
+//                visualMap: {
+//                    min: 0,
+//                    max: 1500,
+//                    left: 'left',
+//                    top: 'bottom',
+//                    text:['高','低'],           // 文本，默认为数值文本
+//                    calculable : true
+//                },
+                selectedMode: 'single',
+                series : [
+                    {
+                        name: 'province',
+                        type: 'map',
+                        map: 'china',
+                        itemStyle: itemStyle,
+                        showLegendSymbol: true,
+                        // zoom: 10,
+                        // center: [115.97, 29.71],
+                        roam: true,
+                        markPoint: {
+                            data: [{
+//                                coord: [115.97, 29.71]
+                                coord: [117.57,39.21]
+                            }]
+                        },
+                        label: {
+                            normal: {
+                                show: true,
+                                rotate: 40,
+                                formatter: '{b}',
+//                                formatter: '{b}：{value|{c}}',
+                                // position: 'inside',
+                                backgroundColor: '#fff',
+                                padding: [3, 5],
+                                borderRadius: 3,
+                                borderWidth: 1,
+                                borderColor: 'rgba(0,0,0,0.5)',
+                                color: '#777',
+                                rich: {
+                                    value: {
+                                        color: '#019D2D',
+                                        fontSize: 14,
+                                        // fontWeight: 'bold'
+                                        // textBorderWidth: 2,
+                                        // textBorderColor: '#000'
+                                    }
+                                }
+                            },
+                            emphasis: {
+                                show: true
+                            }
+                        },
+                        data:[
+                            {name: "北京",value: 11,<if condition="$pid eq 11">selected:true</if>},
+                            {name: '天津',value: 12,<if condition="$pid eq 12">selected:true</if>},
+                            {name: '上海',value: 31,<if condition="$pid eq 31">selected:true</if>},
+                            {name: '重庆',value: 50,<if condition="$pid eq 50">selected:true</if>},
+                            {name: '河北',value: 13,<if condition="$pid eq 13">selected:true</if>},
+                            {name: '河南',value: 41,<if condition="$pid eq 41">selected:true</if>},
+                            {name: '云南',value: 53,<if condition="$pid eq 53">selected:true</if>},
+                            {name: '辽宁',value: 21,<if condition="$pid eq 21">selected:true</if>},
+                            {name: '黑龙江',value: 23, <if condition="$pid eq 23">selected:true</if>},
+                            {name: '湖南',value: 43, <if condition="$pid eq 43">selected:true</if>},
+                            {name: '安徽',value: 34, <if condition="$pid eq 34">selected:true</if>},
+                            {name: '山东',value: 37, <if condition="$pid eq 37">selected:true</if>},
+                            {name: '新疆',value: 65, <if condition="$pid eq 65">selected:true</if>},
+                            {name: '江苏',value: 32, <if condition="$pid eq 32">selected:true</if>},
+                            {name: '浙江',value: 33, <if condition="$pid eq 33">selected:true</if>},
+                            {name: '江西',value: 36, <if condition="$pid eq 36">selected:true</if>},
+                            {name: '湖北',value: 42, <if condition="$pid eq 42">selected:true</if>},
+                            {name: '广西',value: 45, <if condition="$pid eq 45">selected:true</if>},
+                            {name: '甘肃',value: 62, <if condition="$pid eq 62">selected:true</if>},
+                            {name: '山西',value: 14, <if condition="$pid eq 14">selected:true</if>},
+                            {name: '内蒙古',value: 15, <if condition="$pid eq 15">selected:true</if>},
+                            {name: '陕西',value: 61, <if condition="$pid eq 61">selected:true</if>},
+                            {name: '吉林',value: 22, <if condition="$pid eq 22">selected:true</if>},
+                            {name: '福建',value: 35, <if condition="$pid eq 35">selected:true</if>},
+                            {name: '贵州',value: 52, <if condition="$pid eq 52">selected:true</if>},
+                            {name: '广东',value: 44, <if condition="$pid eq 44">selected:true</if>},
+                            {name: '青海',value: 63, <if condition="$pid eq 63">selected:true</if>},
+                            {name: '西藏',value:54, <if condition="$pid eq 54">selected:true</if>},
+                            {name: '四川',value:51, <if condition="$pid eq 51">selected:true</if>},
+                            {name: '宁夏',value: 64, <if condition="$pid eq 64">selected:true</if>},
+                            {name: '海南',value: 46, <if condition="$pid eq 46">selected:true</if>},
+                            {name: '台湾',value: 71, <if condition="$pid eq 71">selected:true</if>},
+                            {name: '香港',value: 81, <if condition="$pid eq 81">selected:true</if>},
+                            {name: '澳门',value: 82, <if condition="$pid eq 81">selected:true</if>}
+                        ]
+                    }
+                ]
+            });
+
+            chart.on('click', function (param) {
+                var province= param.value;
+                $.ajax({
+                    url:"{:U('SignSecond/getMap')}",
+                    type:"post",
+                    data:{'province':province},
+                    datatype:'json',
+                    success:function(data){
+                        var obj = eval("("+data+")");
+                        switch(obj.msg)
+                        {
+                            case 1:
+                                alert('省份代码不存在');break;
+                            case 2:
+                                var jumpUri = "{:U('SignSecond/index',array('province'=>'pid'))}";
+                                jumpUri1 =  jumpUri.replace("pid",obj.province); //将代替变量的字符串用真实变量替换掉
+                                window.location.href = jumpUri1;
+//                                document.write('<form action="'+jump+'" method="post" name="subform" id="subform">');
+//                                document.write("<input type='hidden' name='province' id='province' value='"+obj.province+"'>");
+//                                document.write('</form>');
+//                                document.getElementById('subform').submit();
+                                break;
+                            case 3:
+                                break;
+                            default:;
+                        }
+                    }
+                })
+            });
+            // setTimeout(function () {
+            //     chart.setOption({
+            //         series: [{
+            //             zoom: 5
+            //         }]
+            //     });
+            // }, 2000);
+        });
+    });
+
+</script>

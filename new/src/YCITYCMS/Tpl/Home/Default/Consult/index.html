@@ -1,0 +1,43 @@
+﻿<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Consult/index')}">热点咨询</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Consult/index')}">热点咨询</a></div> </div>
+</div>
+<div class="listmain f_left">
+    <div class="cont_qa">
+        <div >
+            <div class="vd-title">考生问答</div>
+            <ul class="qa-ul">
+                <volist name="dataContentList" id="row" empty="暂无数据">
+                    <li style="border:none;" class="queli">
+                        <p class="questionTitle">{$row.title}</p>
+                        <div class="questionBox ">
+                            <p class="ptitle clearfix ">
+                                <span class="qaTitle">{$row.title}</span>
+                                <span class="f_r">{$row.update_time|date="Y-m-d",###}</span>
+                            </p>
+                            <div class="content" style="overflow-x: auto;">{$row.content}</div>
+                        </div>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="fenye tobottom">
+            <div class="page ">
+                {$pageContentBar}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".questionTitle").click(function(){
+            $(this).next(".questionBox").toggle();
+        });
+    });
+</script>
+<include file="Public:footer" />

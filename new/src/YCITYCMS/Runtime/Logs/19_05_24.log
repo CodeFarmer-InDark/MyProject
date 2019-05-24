@@ -1,0 +1,169 @@
+[ 2019-05-24T14:19:00+08:00 ] 0.0.0.0 /rezsb/zsb/index.php/Signup
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 无法加载模块:Signup
+
+[ 2019-05-24T14:19:01+08:00 ] 0.0.0.0 /rezsb/zsb/index.php/Signup
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000504s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载模块:Signup
+
+[ 2019-05-24T14:19:01+08:00 ] 0.0.0.0 /rezsb/zsb/index.php/Signup
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000525s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000575s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+ERR: 无法加载模块:Signup
+
+[ 2019-05-24T14:19:02+08:00 ] 0.0.0.0 /rezsb/zsb/index.php/Signup
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000535s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载模块:Signup
+
+[ 2019-05-24T14:19:02+08:00 ] 0.0.0.0 /rezsb/zsb/index.php/Signup
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000507s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+ERR: 无法加载模块:Signup
+
+[ 2019-05-24T14:19:05+08:00 ] 0.0.0.0 /rezsb/zsb/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000484s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Template\ThinkTemplate.class.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012571s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' E:\myphp_www\PHPTutorial\WWW\rezsb\src\Core\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000549s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000473s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000389s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001968s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000526s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000568s ]
+
