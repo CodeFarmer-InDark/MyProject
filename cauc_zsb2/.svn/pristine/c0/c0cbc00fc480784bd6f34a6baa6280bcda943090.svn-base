@@ -1,0 +1,54 @@
+
+    <div class="backclo f_l side"  style="margin-bottom:30px;">
+        <div class="muns large" >
+            <div id="id1" class="ntcontent1" >
+                <div >
+                    <ul class="kuanping">
+                        <volist name="collegeList" id="row" empty="暂无数据">
+                            <if condition="$row['id'] == $id">
+                                <li class="college-selected">
+                                    <a href="{:U('College/detail/',array('id'=>$row['id']))}" class="col">{$row.title|msubstr=0,15}</a>
+                                     <span class="col_erji_ul">
+                                        <volist name="row.field" id="field">
+                                            <a class="major" href="{:U('College/detail/',array('id'=>$field['id']))}" >
+                                                {$field.title}
+                                            </a>
+                                        </volist>
+                                    </span>
+                                </li>
+                                <else/>
+                                <li class="college">
+                                    <a href="{:U('College/detail/',array('id'=>$row['id']))}" class="col">{$row.title|msubstr=0,15}</a>
+                                    <span class="col_erji_ul" >
+                                        <volist name="row.field" id="field">
+                                            <a class="major" href="{:U('College/detail/',array('id'=>$field['id']))}" >
+                                                {$field.title}
+                                            </a>
+                                        </volist>
+                                    </span>
+                                </li>
+                            </if>
+                        </volist>
+                    </ul>
+                    <ul class="xiaoping">
+                        <span class="atten"><p>选择学院</p></span>
+                        <volist name="collegeList" id="row" empty="暂无数据">
+                            <if condition="$row['id'] == $id">
+                                <li class="college-selected">
+                                    <a href="{:U('College/detail/',array('id'=>$row['id']))}" class="col">{$row.title|msubstr=0,15}</a>
+                                </li>
+                                <else/>
+                                <li class="college">
+                                    <a href="{:U('College/detail/',array('id'=>$row['id']))}" class="col">{$row.title|msubstr=0,15}</a>
+                                </li>
+                            </if>
+                        </volist>
+                        <li class="last"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="height: 1px;width: auto;background: #FFFFFF ;clear: both" >
+        </div>
+
+    </div>

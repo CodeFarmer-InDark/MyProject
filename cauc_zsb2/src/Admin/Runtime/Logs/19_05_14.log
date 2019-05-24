@@ -1,0 +1,71 @@
+[ 2019-05-14T08:30:01+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Score/www.baidu.com
+ERR: 非法操作:www.baidu.com
+
+[ 2019-05-14T08:30:22+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Score/www.baidu.com
+ERR: 非法操作:www.baidu.com
+
+[ 2019-05-14T09:00:37+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Score/www.baidu.com
+ERR: 非法操作:www.baidu.com
+
+[ 2019-05-14T09:00:58+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Score/www.baidu.com
+ERR: 非法操作:www.baidu.com
+
+[ 2019-05-14T09:13:21+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/job/cauc_zs3/lqgl/sun/admin.php/Admin/Score/index.html.html
+ERR: 无法加载模块:job
+
+[ 2019-05-14T09:22:09+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.018659s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.002696s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000517s ]
+NOTIC: [2] Illegal string offset 'sys_log' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Undefined index: id E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1557796929,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000643s ]
+
+[ 2019-05-14T09:26:09+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003401s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.002457s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000571s ]
+NOTIC: [2] Illegal string offset 'sys_log' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Undefined index: id E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1557797169,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000650s ]
+
+[ 2019-05-14T16:07:06+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+
+[ 2019-05-14T16:07:10+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.035492s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.017477s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000609s ]
+NOTIC: [2] Illegal string offset 'sys_log' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Undefined index: id E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1557821230,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000679s ]
+

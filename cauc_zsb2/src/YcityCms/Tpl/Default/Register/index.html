@@ -1,0 +1,354 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Search/apply',array('id'=>38))}">网上报名</a>><a href="{:U('Register/index',array('id'=>54))}">中欧学院招生选拔报名</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Search/apply',array('id'=>38))}">网上报名</a> > <a href="{:U('Register/index',array('id'=>54))}"> 中欧学院招生选拔报名</a></div> </div>
+</div>
+<div class="s-title"><p>中欧学院招生选拔报名</p></div>
+<div class="divline3"><div class="divback3"></div></div>
+<div class="listmain">
+    <div class="register">
+        <input type="hidden" name="m" class="moduleName" value="{$moduleName}">
+        <input type="hidden" name="a" class="actionName" value="{$actionName}">
+        <input type="hidden" name="id" class="id" value="{$id}">
+
+            <table class="register-table">
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 姓名</label>
+                        <input type="text" name="name" id="name" class="name">
+                    </td>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 性别</label>
+                        <select class="gender" name="gender" id="gender">
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 身份证号</label>
+                        <input type="text" name="id_no" id="id_no" class="id_no">
+                    </td>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 考生号</label>
+                        <input type="text" name="candidate_no" id="candidate_no" class="candidate_no">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 高考所在地</label>
+                        <select name="province" id="province" class="search-item" >
+                            <option value="">选择省份</option>
+                            <volist name="province" id="p">
+                                <if condition="$p.id eq $pid">
+                                    <option value="{$p.id}" selected>{$p.province}</option>
+                                    <else/>
+                                    <option value="{$p.id}">{$p.province}</option>
+                                </if>
+                            </volist>
+                        </select>
+                    </td>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 高考成绩</label>
+                        <input type="text" name="score" id="score" class="score">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 手机号</label>
+                        <input type="text" name="mobilephone" id="mobilephone" class="mobilephone">
+                    </td>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> QQ</label>
+                        <input type="text" name="qq" id="qq" class="qq">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" id="submit" class="submit" value="确认报名">
+                    </td>
+                </tr>
+                <tr class="msg">
+                    <td colspan="2">
+                        <div id="msg"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="re-register-box">
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 姓名</label>
+                        <input type="text" name="name" id="name1" class="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 性别</label>
+                        <select class="gender" name="gender" id="gender1">
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 身份证号</label>
+                        <input type="text" name="id_no" id="id_no1" class="id_no">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 考生号</label>
+                        <input type="text" name="candidate_no" id="candidate_no1" class="candidate_no">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 高考所在地</label>
+                        <select name="province" id="province1" class="search-item" >
+                            <option value="">选择省份</option>
+                            <volist name="province" id="p">
+                                <if condition="$p.id eq $pid">
+                                    <option value="{$p.id}" selected>{$p.province}</option>
+                                    <else/>
+                                    <option value="{$p.id}">{$p.province}</option>
+                                </if>
+                            </volist>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 高考成绩</label>
+                        <input type="text" name="score" id="score1" class="score">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 手机号</label>
+                        <input type="text" name="mobilephone" id="mobilephone1" class="mobilephone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> QQ</label>
+                        <input type="text" name="qq" id="qq1" class="qq">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="submit1" class="submit" value="确认报名">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+    </div>
+</div>
+</div>
+<script language="JavaScript">
+    $("#submit").click(function(){
+        var idcard = $('#id_no').val();
+        if (idcard != null){
+            if(idcard.length != 18 ){
+                alert("身份证号不合法，请检查后重新填写");
+                $("#id_no").focus();
+                exit();
+            }
+            var idcard_base = idcard.substr(0,17);
+            if (idcard_verify_number(idcard_base) != (idcard.substr(17,1)).toUpperCase()){
+                alert("身份证号不合法，请检查后重新填写");
+                $("#id_no").focus();
+                exit();
+            }
+        }
+        if (!$("#mobilephone").val().match(/^0?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$/)) {
+            alert('手机号码错误，请检查后重新填写。');
+            $("#mobilephone").focus();
+        }else if(!($("#score").val() != '' && $("#score").val() >= 0 && $("#score").val() <= 750)){
+            alert("高考成绩不在正确成绩范围，请检查后重新填写");
+            $("#score").focus();
+        }else{
+            doInsert();
+        }
+    });
+    $("#submit1").click(function(){
+        var idcard = $('#id_no1').val();
+        if (idcard != null){
+            if(idcard.length != 18 ){
+                alert("身份证号不合法，请检查后重新填写");
+                $("#id_no1").focus();
+                exit();
+            }
+            var idcard_base = idcard.substr(0,17);
+            if (idcard_verify_number(idcard_base) != (idcard.substr(17,1)).toUpperCase()){
+                alert("身份证号不合法，请检查后重新填写");
+                $("#id_no1").focus();
+                exit();
+            }
+        }
+        if (!$("#mobilephone1").val().match(/^0?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$/)) {
+            alert('手机号码错误，请检查后重新填写。');
+            $("#mobilephone1").focus();
+        }else if(!($("#score1").val() != '' && $("#score1").val() >= 0 && $("#score1").val() <= 750)){
+            alert("高考成绩不在正确成绩范围，请检查后重新填写");
+            $("#score1").focus();
+        }else{
+            doInsert1();
+        }
+    });
+   function doInsert(){
+       $.ajax({
+           type:"POST",
+           url:"{:U('Register/doInsert',array('id'=>54))}",
+           data:{
+               name:$('#name').val(),gender:$('#gender').val(),
+               id_no:$('#id_no').val(),candidate_no:$('#candidate_no').val(),
+               province:$('#province').val(),score:$('#score').val(),
+               mobilephone:$('#mobilephone').val(),qq:$('#qq').val()
+           },
+           beforeSend:function(){
+               $("#submit,#submit1").addClass("disable");
+               $("#submit,#submit1").attr("disable","disable");
+               $("#submit,#submit1").attr("value","正在提交...");
+           },
+           success:function(data){
+               switch(data)
+               {
+                   case 'isExist':
+                       $("#msg").html('<span style="color:#FF0000">已经报名，请勿重复报名。</span>');
+                       break;
+                   case 'emptyName':
+                       $("#msg").html('<span style="color:#FF0000">姓名必须填写</span>');
+                       break;
+                   case 'emptyIdno':
+                       $("#msg").html('<span style="color:#FF0000">身份证号必须填写</span>');
+                       break;
+                   case 'emptyCandidateno':
+                       $("#msg").html('<span style="color:#FF0000">考生号必须填写</span>');
+                       break;
+                   case 'emptyScore':
+                       $("#msg").html('<span style="color:#FF0000">高考成绩必须填写</span>');
+                       break;
+                   case 'emptyProvince':
+                       $("#msg").html('<span style="color:#FF0000">省份必须选择</span>');
+                       break;
+                   case 'emptyMobile':
+                       $("#msg").html('<span style="color:#FF0000">手机号必须填写</span>');
+                       break;
+                   case 'emptyQq':
+                       $("#msg").html('<span style="color:#FF0000">QQ号必须填写</span>');
+                       break;
+                   case 'Success':
+                       $("#msg").html('<span style="color:#FF0000">报名成功，请等待招生办联系。</span>');
+                       // if(jumpUri == ''){
+                       //     window.location.href = '{:U("Index/index")}';
+                       // }else{
+                       //     window.location.href = jumpUri;
+                       // }
+                       //window.location.href = '{:U("Index/index")}';
+                       window.setTimeout("window.location='{:U("Index/index")}'",3000); //延迟五秒跳转至首页
+                       return true;
+                       break;
+                   default:
+                       $("#msg").html('<span style="color:#FF0000">'+data+'</span>');
+                       alert ('未知错误，请联系管理员');
+               }
+               $("#submit,#submit1").attr("disable","");
+               $("#submit,#submit1").attr("value","确认提交");
+               return false;
+           }
+       });
+       return false;
+   }
+
+    function doInsert1(){
+        $.ajax({
+            type:"POST",
+            url:"{:U('Register/doInsert',array('id'=>54))}",
+            data:{
+                name:$('#name1').val(),gender:$('#gender1').val(),
+                id_no:$('#id_no1').val(),candidate_no:$('#candidate_no1').val(),
+                province:$('#province1').val(),score:$('#score1').val(),
+                mobilephone:$('#mobilephone1').val(),qq:$('#qq1').val()
+            },
+            beforeSend:function(){
+                $("#submit1").addClass("disable");
+                $("#submit1").attr("disable","disable");
+                $("#submit1").attr("value","正在提交...");
+            },
+            success:function(data){
+                switch(data)
+                {
+                    case 'isExist':
+                        alert('已经报名，请勿重复报名。');
+                        break;
+                    case 'emptyName':
+                        alert('姓名必须填写');
+                        break;
+                    case 'emptyIdno':
+                        alert('身份证号必须填写');
+                        break;
+                    case 'emptyCandidateno':
+                        alert('考生号必须填写');
+                        break;
+                    case 'emptyScore':
+                        alert('高考成绩必须填写');
+                        break;
+                    case 'emptyProvince':
+                        alert('省份必须填写');
+                        break;
+                    case 'emptyMobile':
+                        alert('手机号必须填写');
+                        break;
+                    case 'emptyQq':
+                        alert('QQ号必须填写');
+                        break;
+                    case 'Success':
+                        alert('报名成功，请等待招生办联系。')
+                        // if(jumpUri == ''){
+                        //     window.location.href = '{:U("Index/index")}';
+                        // }else{
+                        //     window.location.href = jumpUri;
+                        // }
+                        window.location.href = '{:U("Index/index")}';
+                        //window.setTimeout("window.location='{:U("Index/index")}'"); //延迟五秒跳转至首页
+                        return true;
+                        break;
+                    default:
+                        $("#msg1").html('<span style="color:#FF0000">'+data+'</span>');
+                        alert ('未知错误，请联系管理员');
+                }
+                $("#submit1").attr("disable","");
+                $("#submit1").attr("value","确认提交");
+                return false;
+            }
+        });
+        return false;
+    }
+
+    function idcard_verify_number(idcard_base){
+        if (idcard_base.length != 17){
+            alert("身份证号不合法，请检查后重新填写");
+            $("#id_no").focus();
+            exit();
+        }
+        var factor = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
+        var verify_number_list = ['1','0','X','9','8','7','6','5','4','3','2'];
+        var checksum = 0;
+        for(var i = 0; i < idcard_base.length; i++){
+            checksum += idcard_base.substr(i,1) * factor[i];
+        }
+        var mod = checksum % 11;
+        var verify_number = verify_number_list[mod];
+        return verify_number;
+    }
+
+</script>
+<include file="Public:footer" />

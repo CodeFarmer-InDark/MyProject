@@ -1,0 +1,33 @@
+[ 2018-06-13T08:45:57+08:00 ] ::1 /cauc_zs3/lqgl/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载控制器:Login
+
+[ 2018-06-13T08:46:00+08:00 ] ::1 /cauc_zs3/lqgl/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003397s ]
+ERR: 无法加载控制器:Login
+
+[ 2018-06-13T08:46:57+08:00 ] ::1 /cauc_zs3/lqgl/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+
+[ 2018-06-13T10:42:14+08:00 ] ::1 /cauc_zs3/lqgl/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2018-06-13T13:46:16+08:00 ] ::1 /cauc_zs3/lqgl/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+

@@ -1,0 +1,103 @@
+<tagLib name="html,cx" />
+<include file="Public:header" />
+<include file="Public:sider" />
+		<div id="main-content">
+        <!-- Main Content Section with everything -->
+			<noscript>
+            <!-- Show a notification if the user has disabled javascript -->
+                <div class="notification error png_bg">
+					<div>
+						您的浏览器不支持Javascript或者已经禁用了Javascript。请升级您的浏览器或者<a href="http://www.google.com/support/bin/answer.py?answer=23852" title="如何启用 JavaScript">启用</a>Javascript支持才能正确浏览页面.
+					</div>
+				</div>
+			</noscript>
+			<!-- Page Head -->
+			<div class="clear"></div>
+            <!-- End .clear -->
+			<div class="content-box"><!-- Start Content Box -->
+				<div class="content-box-content content-box-content-no-border">
+			<ul class="shortcut-buttons-set">
+				
+                <li><a class="shortcut-button" href="{:U('Link/insert')}"><span>
+					<img src="__PUBLIC__/Admin/Images/icons/add_48.png" alt="icon" /><br />
+					添加链接
+				</span></a></li>
+				
+			</ul><!-- End .shortcut-buttons-set -->
+            <div class="clear"></div><!-- End .clear -->
+			<div class="content-box"><!-- Start Content Box -->
+				<div class="content-box-header">
+					<h3>友情链接管理</h3>
+				</div> <!-- End .content-box-header -->
+				<div class="content-box-content">
+                	<form method="post" action="{:U('Link/doCommand')}" id="mainFrom">
+					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+						<div class="clear"></div><!-- End .clear -->
+                        <table>
+							
+							<thead>
+								<tr>
+								   <th><input class="check-all" type="checkbox" /></th>
+								   <th>ID</th>
+								   <th>名称</th>
+                                   <th></th>
+									<th>类别</th>
+								   <th>网址</th>
+								   <th>操作</th>
+								</tr>
+								
+							</thead>
+<present name="dataList">
+							<tfoot>
+								<tr>
+									<td colspan="8">
+										<div class="bulk-actions align-left">
+											<select name="operate" id="operate">
+                                            	<option value="update" selected="selected">更新</option>
+                                             	<option value="setStatus">显示</option>
+                                            	<option value="unSetStatus">隐藏</option>
+                                             	<option value="delete">删除</option>
+                                          	</select> 
+											<input class="button" type="submit" name="submit" value="提交操作">
+										</div>
+										
+										<div class="pagination">
+											{$pageBar}
+										</div> <!-- End .pagination -->
+										<div class="clear"></div>
+									</td>
+								</tr>
+							</tfoot>
+						 
+							<tbody>
+                            <volist name="dataList" id="vo">
+								<tr>
+									<td><input type="checkbox" name="id[]" id="id[]" value="{$vo.id}" /></td>
+									<td>{$vo.id}<input name="updateid[]" type="hidden" id="updateid[]" value="{$vo.id}" /></td>
+									<td><input class="text-input large-input" name="LinkText[]" id="LinkText[]" value="{$vo.LinkText}" style="{$vo.title_style}"></td>
+                                    <td>{$vo.status|statusIcon=1,$frontUrl,'Images/icons/cross_circle.png','隐藏'}{$vo.LinkStatus|statusIcon=1,$frontUrl,'Images/icons/accepted.png','显示'}{$vo.link_type|attachStatus='image',$frontUrl,'Images/icons/image.png','图片'}</td>
+									<td>{$vo.gtitle}</td>
+									<td><input class="text-input large-input" name="LinkURL[]" id="link_url[]" value="{$vo.LinkURL}" /></td>
+									<td>
+										<!-- Icons -->
+										<a href="{:U('Link/modify',array('id'=>$vo['id']))}" title="编辑"><img src="__PUBLIC__/Admin/Images/icons/pencil.png" alt="编辑" /></a>
+										<a href="{:U('Link/doCommand',array('operate'=>'delete','id'=>$vo['id']))}" title="删除"><img src="__PUBLIC__/Admin/Images/icons/cross.png" alt="删除" /></a>
+									</td>
+								</tr>
+							</volist>
+<else />
+							<tbody>
+                                <tr>
+                                	<td colspan="7"><p class="no">暂无数据</p></td>
+                                </tr>
+</present>
+							</tbody>
+							
+						</table>
+					</div> <!-- End #tab1 -->
+					</form>
+				</div> <!-- End .content-box-content -->
+			</div> <!-- End .content-box -->
+			<div class="clear"></div><!-- End .clear -->
+				</div>
+<include file="Public:footer" />

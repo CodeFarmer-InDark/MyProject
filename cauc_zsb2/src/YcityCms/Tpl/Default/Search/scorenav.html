@@ -1,0 +1,316 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Search/scorenav',array('id'=>42))}">历年分数</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Search/scorenav',array('id'=>42))}">历年分数</a></div> </div>
+</div>
+<!--按批次查询、按专业查询入口-->
+<style>
+    #entrance a {
+        width: 24%;
+        margin: 150px 0 0 15%;
+        background-color: #888;
+    }
+</style>
+<div class="cart">
+    <div class="cart_link" id="entrance">
+        <a href="{:U('Search/score1/',array('id'=>42))}" class="cart-box4" >按专业查询</a>
+        <a href="{:U('Search/score2/',array('id'=>42))}" class="cart-box4" >按批次查询 </a>
+    </div>
+</div>
+<div class="re-cart">
+    <div class="cartbox">
+        <a href="{:U('Search/score1/',array('id'=>42))}" class="cart-left-box4">按专业查询</a>
+        <a href="{:U('Search/score2/',array('id'=>42))}" class="cart-left-box4">按批次查询</a>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    // $(document).ready(function(){
+    //$('#major').empty();
+    // $("#major").append("<option value=''>选择专业</option>");
+    // $('#kldm').empty();
+    // $("#kldm").append("<option value=''>选择科类</option>");
+    // var year_selected = "{$year_selected1}";
+    // var zydm = "{$zydm}";
+    // var kldm = "{$kldm}";
+    // $.ajax({
+    //     url: "http://www.cauc.edu.cn/lqgl/Api/Inquire/getMajorByYear",
+    //     type: 'get',
+    //     dataType: 'jsonp',
+    //     jsonp: "callback",
+    //     data:{year:year_selected,province:$('#province').val()},
+    //     success: function (result) {
+    //         switch (result.msg) {
+    //             case '1':
+    //                 $.each(result.scoreList, function (index, value) {
+    //                     if (value.zydm == zydm) {
+    //                         $("#major").append("<option value='" + value.zydm +"' selected>" + value.zymc +"</option>");
+    //                     } else {
+    //                         $("#major").append("<option value='" + value.zydm + "'>" + value.zymc +"</option>");
+    //                     }
+    //                 });
+    //                 $.each(result.kldmList, function (index, value) {
+    //                     if (value.kldm == kldm) {
+    //                         $("#kldm").append("<option value='" + value.kldm +"' selected>" + value.klmc +"</option>");
+    //                     } else {
+    //                         $("#kldm").append("<option value='" + value.kldm + "'>" + value.klmc +"</option>");
+    //                     }
+    //                 });
+    //                 break;
+    //             default:;
+    //         }
+    //     }
+    // });
+    //     $('#province').change(function(){
+    //         $('#kldm').empty();
+    //         $("#kldm").append("<option value=''>选择科类</option>");
+    //         $.ajax({
+    //             url: "http://www.cauc.edu.cn/lqgl/Api/Inquire/getMajorByYear",
+    //             type: 'get',
+    //             dataType: 'jsonp',
+    //             jsonp: "callback",
+    //             data:{year:year_selected,province:$('#province').val()},
+    //             success: function (result) {
+    //                 switch (result.msg) {
+    //                     case '1':
+    //                         $.each(result.kldmList, function (index, value) {
+    //                             if (value.kldm == kldm) {
+    //                                 $("#kldm").append("<option value='" + value.kldm +"' selected>" + value.klmc +"</option>");
+    //                             } else {
+    //                                 $("#kldm").append("<option value='" + value.kldm + "'>" + value.klmc +"</option>");
+    //                             }
+    //                         });
+    //                         break;
+    //                     default:;
+    //                 }
+    //             }
+    //         });
+    //     });
+    //
+    //     //获取复选框选中值
+    //     function show(){
+    //         var strIds=new Array();
+    //         $("input[type=checkbox]").each(function (i,d){
+    //             if(d.checked) {
+    //                 strIds.push(d.value);
+    //             }
+    //         });
+    //         var ids=strIds.join(",");
+    //         return ids;
+    //     }
+    //
+    //     $('input:checkbox').click(function(){
+    //         $('#major').empty();
+    //         $("#major").append("<option value=''>选择专业</option>");
+    //         var ids = show();
+    //         $.ajax({
+    //             url: "http://www.cauc.edu.cn/lqgl/Api/Inquire/getMajorByYear",
+    //             type: 'get',
+    //             dataType: 'jsonp',
+    //             jsonp: "callback",
+    //             data:{year:ids},
+    //             success: function (result) {
+    //                 switch (result.msg) {
+    //                     case '1':
+    //                         $.each(result.scoreList, function (index, value) {
+    //                             if (value.zydm == zydm) {
+    //                                 $("#major").append("<option value='" + value.zydm +"' selected>" + value.zymc +"</option>");
+    //                             } else {
+    //                                 $("#major").append("<option value='" + value.zydm + "'>" + value.zymc +"</option>");
+    //                             }
+    //                         });
+    //                         break;
+    //                     default:;
+    //                 }
+    //             }
+    //         });
+    //     });
+    // });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //专业
+        // var year_selected = "{$year_selected1}";
+        var zydm = "{$zydm}";
+        // var kldm = "{$kldm}";
+        // console.log(year_selected);
+        $('.checkbox_year input').click(function () {
+            getMajor();
+        });
+        function getMajor() {
+            $('#major').empty();
+            $("#major").append("<option value=''>选择专业</option>");
+            var province = $('#province').val;
+            var years = [];
+            $('.checkbox_year input:checked').each(function (index,value) {
+                years.push($(this).val());
+            });
+            years = years.join(',');
+            $.ajax({
+                // url: "http://www.cauc.edu.cn/lqgl/Api/Inquire/getMajorByYear",
+                url: "http://www.squality.com/lqgl/index.php/Api/Inquire/getMajorByYear",
+                type: 'get',
+                dataType: 'jsonp',
+                jsonp: "callback",
+                data:{year:years,province:province},
+                success: function (result) {
+                    switch (result.msg) {
+                        case '1':
+                            $.each(result.scoreList, function (index, value) {
+                                if (value.zydm == zydm) {
+                                    $("#major").append("<option value='" + value.zydm +"' selected>" + value.zymc +"</option>");
+                                } else {
+                                    $("#major").append("<option value='" + value.zydm + "'>" + value.zymc +"</option>");
+                                }
+                            });
+                        // $.each(result.kldmList, function (index, value) {
+                        //     if (value.kldm == kldm) {
+                        //         $("#kldm").append("<option value='" + value.kldm +"' selected>" + value.klmc +"</option>");
+                        //     } else {
+                        //         $("#kldm").append("<option value='" + value.kldm + "'>" + value.klmc +"</option>");
+                        //     }
+                        // });
+                        // break;
+                        default:;
+                    }
+                }
+            });
+        }
+        //初始化专业
+        getMajor();
+
+        //图表
+        var pid = $('#province').val();
+        var year = "{$year_selected1}";
+        var majorid = "{$zydm}";
+//        var year_selected = "{$year_selected1}";
+        var kldm = "{$kldm}";
+        /* echarts图表 */
+        var MYCHART;
+        MYCHART = echarts.init(document.getElementById("charts"));
+        var option = {
+            noDataLoadingOption: {
+                text: '暂无数据',
+                effect: 'bubble',
+                effectOption: {
+                    effect: {
+                        n: 0
+                    }
+                }
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    dataView : {show: true, readOnly: true},
+                    magicType: {show: true, type: ['line', 'bar']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }
+            },
+            tooltip: {
+                show: true
+            },
+            legend: {
+                data: ['最高分','最低分','平均分']
+            },
+            xAxis: [
+                {
+                    type: "category",
+                    data:[],
+                    axisLabel: {
+                        interval: 0,
+                        formatter:function(value,index)
+                        {
+                            if (index % 2 != 0) {
+                                return '\n\n' + value;
+                            }
+                            else {
+                                return value;
+                            }
+                        }
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: "value",
+                    splitLine: {lineStyle: {type: 'dashed'}},
+                    axisLabel:{
+                        textStyle:{
+                            baseline:'middle',
+                            fontSize:10
+                        }
+                    },
+                    scale:true
+                }
+            ],
+            series: [
+                {
+                    "name": "最高分",
+                    "type": "bar",
+                    data:[]
+
+                },
+                {
+                    "name": "最低分",
+                    "type": "bar",
+                    data:[]
+
+                },
+                {
+                    "name": "平均分",
+                    "type": "bar",
+                    data:[]
+
+                }
+            ]
+        };
+        //没有选择专业的时候不画图
+        $('#charts').parent().css('display','none');
+        if (majorid) {
+            $('#charts').parent().css('display','block');
+            $.ajax({
+           // url: "http://www.cauc.edu.cn/lqgl/Api/Inquire/charts?province=" + pid + "&year=" + year + "&zydm=" + majorid + "&kldm=" + kldm,
+           url: "http://www.squality.com/lqgl/index.php/Api/Inquire/charts?province=" + pid + "&year=" + year + "&zydm=" + majorid + "&kldm=" + kldm,
+//                 url: "{:U('Search/charts')}&province=" + pid + "&year=" + year + "&zydm=" + majorid + "&kldm=" + kldm,
+                type: 'get',
+           dataType: 'jsonp',
+           jsonp: "callback",
+                success: function (result) {
+                    if (result.msg == 1) {
+                        var data = result.scoreList;
+                    }
+                    option.xAxis[0].data = data.year;
+                    option.series[0].data = data.topScore;
+                    option.series[1].data = data.lowScore;
+                    option.series[2].data = data.aveScore;
+                    MYCHART.setOption(option);
+                    // if (data.topScore) {
+                    //     option.yAxis[0].max = Math.max.apply(null, data.topScore);
+                    // }
+                    if (data.lowScore) {
+                        option.yAxis[0].min = (Math.min.apply(null, data.lowScore))*1 -10;
+                    }
+                    MYCHART.setOption(option);
+                    $('#charts').show();
+                    $('#icon-title').show();
+                    $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                    $("#msg").html('<span style="color:#FF0000"></span>');
+                },
+                error: function () {
+                    option.xAxis[0].data = [];
+                    option.series[0].data = [];
+                    option.series[1].data = [];
+                    option.series[2].data = [];
+
+                    MYCHART.setOption(option);
+                    $('.bottombox').hide();
+                }
+            });
+        }
+    });
+</script>
+<include file="Public:footer" />

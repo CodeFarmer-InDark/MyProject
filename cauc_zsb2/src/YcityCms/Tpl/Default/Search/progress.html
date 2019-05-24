@@ -1,0 +1,53 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<link href="./Public/Style/searchpage-reset.css" rel="stylesheet" type="text/css">
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Search/progress',array('id'=>56))}">录取进度</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Search/progress',array('id'=>56))}">录取进度</a></div> </div>
+</div>
+<div class="listmain">
+    <div class="search-condition3">
+        <span class="sm">说明：</span><div class="box finished">已完成</div> 表示录取已完成&nbsp;&nbsp;&nbsp; <div class="box unfinished">未完成</div> 表示录取尚未完成&nbsp;&nbsp;&nbsp; <div class="box other">--</div> 表示录取工作尚未开始或该省无招生类型
+    </div>
+    <div class="search">
+        <table  cellspacing="0" cellpadding="0">
+            <thead>
+            <tr><th colspan="11" class="search-title" style="letter-spacing: 2px">{$datayear}年中国民航大学高考招生录取进度</th></tr>
+            <tr class="plan-attr">
+                <th width="10%">省份</th>
+                <volist name="pcList" id="pl">
+                    <th width="9%">{$pl.pc}</th>
+                </volist>
+            </tr>
+            </thead>
+            <present name="dataList">
+                <tbody>
+                <volist name="dataList" id="vo">
+                    <tr>
+                       <volist name="vo" id="item">
+                           <switch name="item">
+                               <case value="1"><td style="background-color: #fcf8e3;">未完成</td></case>
+                               <case value="2"><td style="background-color: #dff0d8;color:green;">已完成</td></case>
+                               <case value="3"><td style="background-color: #f9f9f9;">--</td></case>
+                               <default/><td>{$item}</td>
+                           </switch>
+                       </volist>
+                    </tr>
+                </volist>
+                </tbody>
+                <else />
+                <tbody>
+                <tr>
+                    <td colspan="11"><p class="no">{$msg}</p></td>
+                </tr>
+            </present>
+        </table>
+        <present name="remark">
+            <div class="remark" style="margin-top:20px;">{$remark}</div>
+        </present>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />

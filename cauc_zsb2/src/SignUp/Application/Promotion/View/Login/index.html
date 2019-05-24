@@ -1,0 +1,71 @@
+<!-- taglib yc -->
+<include file="Public:header" />
+<link rel="stylesheet" href="__PUBLIC__/Style/promotion_login.css" type="text/css">
+<script type="text/javascript">
+    $(function(){
+        $("li.last-child").css('display','none');
+        $(".banner1").css('display','none');
+    });
+</script>
+<div class="body clearfix">
+    <div class="loginPage">
+        <form method="post" action="{:U('Login/doLogin')}" id="loginform">
+            <div class="login_title">用户登录/User login</div>
+            <p>
+                <input type="text" name="username" class="username" id="username" placeholder="请输入用户名">
+            </p>
+            <p>
+                <input type="password" name="password" class="password" id="password" placeholder="请输入密码">
+            </p>
+            <p>
+                <input type="submit" name="submit" class="submit" id="submit" value="登 录">
+            </p>
+            <div id="msg" style="margin-top:20px"></div>
+        </form>
+    </div>
+</div>
+</div>
+<script language="JavaScript">
+    $("#submit").click(function(){
+        $.ajax({
+            type:"POST",
+            url:"{:U('Login/doLogin')}",
+            data:{
+                username:$('#username').val(),password:$('#password').val()
+            },
+            beforeSend:function(){
+                $("#submit").addClass("disable");
+                $("#submit").attr("disable","disable");
+                $("#submit").attr("value","正在登录...");
+            },
+            success:function(data){
+                switch(data)
+                {
+                    case 'emptyInfo':
+                        $("#msg").html('<span style="color:#FF0000">用户名密码必须填写</span>');
+                        break;
+                    case 'falseAccess':
+                        $("#msg").html('<span style="color:#FF0000">当前用户被限制，请联系管理员</span>');
+                        break;
+                    case 'loginSuccess':
+                        $("#msg").html('<span style="color:#FF0000">登录成功</span>');
+                        window.location.href = '{:U("Index/index")}';
+                        return true;
+                        break;
+                    case 'false':
+                        $("#msg").html('<span style="color:#FF0000">用户信息不存在，登录失败</span>');
+                        break;
+                    default:
+                        $("#msg").html('<span style="color:#FF0000">'+data+'</span>');
+                        alert ('未知错误，请联系管理员');
+                }
+                $("#submit").attr("disable","");
+                $("#submit").attr("value","登  录");
+                return false;
+            }
+        });
+        return false;
+    });
+</script>
+</body>
+</html>

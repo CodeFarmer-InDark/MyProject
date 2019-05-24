@@ -1,0 +1,22 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>><a href="{:U('Page/detail',array('link_label'=>'telephone'))}">{$moduleTitle}</a>><a href="{:U('Page/detail',array('link_label'=>$link_label))}">{$contenttitle}</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> > <a href="{:U('Page/detail',array('link_label'=>'telephone'))}">{$moduleTitle}</a> > <a href="{:U('Page/detail',array('link_label'=>$link_label))}">{$contenttitle}</a></div>
+</div>
+    <div class="listmain">
+        <div class="cont">
+            <div class="title3" >
+                <span>{$contentDetail.title}</span>
+            </div>
+            <div class="content content3">
+                <div class="cttext">{$contentDetail.content}</div>
+            </div>
+        </div>
+        <include file="Public:sideleft" />
+    </div>
+</div>
+</div>
+<include file="Public:footer" />

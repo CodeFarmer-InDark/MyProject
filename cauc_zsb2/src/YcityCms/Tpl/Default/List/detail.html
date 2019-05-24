@@ -1,0 +1,90 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>>
+        <if condition="$moduleTitle eq '报考指南'"><a href="{:U('List/index',array('id'=>13))}">{$moduleTitle}</a>
+            <elseif condition="$moduleTitle eq '招生咨询'"/>
+            <a href="{:U('Page/detail',array('link_label'=>'telephone'))}">招生咨询</a>
+            <elseif condition="$moduleTitle eq '招生章程'"/>
+            <a href="{:U('List/index',array('id'=>40))}">招生章程</a>
+            <elseif condition="$moduleTitle eq '招生类型'"/>
+            <a href="{:U('List/index',array('id'=>19))}">招生类型</a>
+        </if>
+        <if condition="$contenttitle eq '招生快讯'">><a href="{:U('List/index',array('id'=>13))}">招生快讯</a>
+            <elseif condition="$contenttitle eq '激励政策'"/>><a href="{:U('List/index',array('id'=>15))}">激励政策</a>
+            <elseif condition="$contenttitle eq '各地现场咨询'"/>><a href="{:U('List/consult',array('id'=>32))}">各地现场咨询</a>
+            <elseif condition="$contenttitle eq '校园开放日'"/>><a href="{:U('List/consult',array('id'=>31))}">校园开放日</a>
+            <elseif condition="$contenttitle eq '国家统招'"/>><a href="{:U('List/index',array('id'=>19))}">国家统招</a>
+            <elseif condition="$contenttitle eq '中欧航空工程师'"/>><a href="{:U('List/index',array('id'=>20))}">中欧航空工程师</a>
+            <elseif condition="$contenttitle eq '民航招飞'"/>><a href="{:U('List/index',array('id'=>21))}">民航招飞</a>
+            <elseif condition="$contenttitle eq '空乘空保'"/>><a href="{:U('List/index',array('id'=>22))}">空乘空保</a>
+            <elseif condition="$contenttitle eq '高水平运动队'"/>><a href="{:U('List/index',array('id'=>23))}">高水平运动队</a>
+            <elseif condition="$contenttitle eq '港澳台侨'"/>><a href="{:U('List/index',array('id'=>24))}">港澳台侨</a>
+            <elseif condition="$contenttitle eq '少数民族'"/>><a href="{:U('List/index',array('id'=>25))}">少数民族</a>
+            <elseif condition="$contenttitle eq '国家贫困专项'"/>><a href="{:U('List/index',array('id'=>26))}">国家贫困专项</a>
+        </if>
+    </div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页 </a>>
+        <if condition="$moduleTitle eq '报考指南'"><a href="{:U('List/index',array('id'=>13))}">{$moduleTitle}</a>
+            <elseif condition="$moduleTitle eq '招生咨询'"/>
+            <a href="{:U('Page/detail',array('link_label'=>'telephone'))}">招生咨询</a>
+            <elseif condition="$moduleTitle eq '招生章程'"/>
+            <a href="{:U('List/index',array('id'=>40))}">招生章程</a>
+            <elseif condition="$moduleTitle eq '招生类型'"/>
+            <a href="{:U('List/index',array('id'=>19))}">招生类型</a>
+        </if>
+        <if condition="$contenttitle eq '招生快讯'">><a href="{:U('List/index',array('id'=>13))}">招生快讯</a>
+            <elseif condition="$contenttitle eq '激励政策'"/>> <a href="{:U('List/index',array('id'=>15))}">激励政策</a>
+            <elseif condition="$contenttitle eq '各地现场咨询'"/>><a href="{:U('List/consult',array('id'=>32))}">各地现场咨询</a>
+            <elseif condition="$contenttitle eq '校园开放日'"/>><a href="{:U('List/consult',array('id'=>31))}">校园开放日</a>
+            <elseif condition="$contenttitle eq '国家统招'"/>><a href="{:U('List/index',array('id'=>19))}"> 国家统招</a>
+            <elseif condition="$contenttitle eq '中欧航空工程师'"/>><a href="{:U('List/index',array('id'=>20))}"> 中欧航空工程师</a>
+            <elseif condition="$contenttitle eq '民航招飞'"/>><a href="{:U('List/index',array('id'=>21))}"> 民航招飞</a>
+            <elseif condition="$contenttitle eq '空乘空保'"/>><a href="{:U('List/index',array('id'=>22))}"> 空乘空保</a>
+            <elseif condition="$contenttitle eq '高水平运动队'"/>><a href="{:U('List/index',array('id'=>23))}"> 高水平运动队</a>
+            <elseif condition="$contenttitle eq '港澳台侨'"/>><a href="{:U('List/index',array('id'=>24))}"> 港澳台侨</a>
+            <elseif condition="$contenttitle eq '少数民族'"/>><a href="{:U('List/index',array('id'=>25))}"> 少数民族</a>
+            <elseif condition="$contenttitle eq '国家贫困专项'"/>><a href="{:U('List/index',array('id'=>26))}"> 国家贫困专项</a>
+        </if>
+    </div>
+</div>
+<div class="listmain">
+    <div class="cont" >
+        <div class="ctitle">
+            <div class="title4"></div>
+            <div class="pt">
+                <span>{$data.title}</span>
+            </div>
+            <div class="pt1">
+                <span>发布时间：</span><span>{$data.create_time|date="Y-m-d",###}</span><span>&nbsp; 查看次数：</span><span>{$data.view_count}</span>
+            </div>
+        </div>
+        <div class="content" style="overflow-x: auto;color:red;">
+            <div class="cttext">
+                {$data.content}
+                <if condition="$data['attach_file'] neq ''">
+                    <volist name="data.attach_file" id="files" key="key">
+                        <p class="attach">附件{$key}下载：
+                            <a href="__ROOT__/Uploads/{$files}" target="_blank"><span style="color:red">下载地址</span></a>
+                        </p>
+                    </volist>
+                </if>
+            </div>
+        </div>
+        <switch name="typeName">
+            <case value="中欧航空工程师"><a class="college_link" href="http://www.cauc.edu.cn/siae/" target="_blank">点击进入相关学院</a></case>
+            <case value="民航招飞"><a class="college_link" href="http://www.cauc.edu.cn/zfzx/" target="_blank">点击进入相关学院</a></case>
+            <case value="高水平运动队"><a class="college_link" href="http://www.cauc.edu.cn/gspydy/" target="_blank">点击进入相关学院</a></case>
+            <case value="空乘空保"><a class="college_link" href="http://www.cauc.edu.cn/cabin/" target="_blank">点击进入相关学院</a></case>
+        </switch>
+    </div>
+    <if condition="$plist eq '招生咨询'">
+        <include file="Public:sideleft" />
+        <else/>
+        <include file="Public:typeleft" />
+    </if>
+</div>
+</div>
+<include file="Public:footer" />

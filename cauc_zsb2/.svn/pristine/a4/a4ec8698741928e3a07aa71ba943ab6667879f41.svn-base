@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/wx-html.css">
+    <title>数据统计</title>
+</head>
+<body>
+    <div class="header" style="border-bottom: 0;height: 140px;display: flex;align-items: center;flex-direction: row;">
+        <div class="logo-img">
+            <a href="{:U('Wx/index')}"><img style="width:620px;height:110px;" src="__PUBLIC__/Home/images/wx-logo1.png"></a>
+        </div>
+    </div>
+    <img src="__PUBLIC__/Home/images/statis.png" alt="">
+    <div style="width:100%;margin:10px auto 0 auto;" id="static" >
+        <present name="dataList">
+            <table style="width:100%;" cellspacing="0" cellpadding="0">
+                <tr style="font-size:28px;font-weight:bold;">
+                    <td colspan="1"></td>
+                    <td colspan="4">报到人数</td>
+                    <td colspan="2">未报到人数</td>
+                    <td colspan="1"></td>
+                </tr>
+                <tr style="font-size:28px;font-weight:bold;">
+                    <td>专业名称</td>
+                    <td>实际到校</td>
+                    <td>入伍</td>
+                    <td>请假</td>
+                    <td>休学</td>
+                    <td>未到校</td>
+                    <td>放弃</td>
+                    <td>总计</td>
+                </tr>
+                <volist name="dataList" id="vo">
+                    <tr>
+                        <td>{$vo.name}</td>
+                        <td><present name="vo['num2']"><a href="{:U('Wx/datalist',array('zydm'=>$vo['zydm'],'isreport'=>$vo['isreport']))}" style="text-decoration: none;color:#000;">{$vo.num2}</a><else/>0</present></td>
+                        <td><present name="vo['num5']"><a href="{:U('Wx/datalist',array('zydm'=>$vo['zydm'],'isreport'=>$vo['isreport']))}" style="text-decoration: none;color:#000;">{$vo.num5}</a><else/>0</present></td>
+                        <td><present name="vo['num4']"><a href="{:U('Wx/datalist',array('zydm'=>$vo['zydm'],'isreport'=>$vo['isreport']))}" style="text-decoration: none;color:#000;">{$vo.num4}</a><else/>0</present></td>
+                        <td><present name="vo['num6']"><a href="{:U('Wx/datalist',array('zydm'=>$vo['zydm'],'isreport'=>$vo['isreport']))}" style="text-decoration: none;color:#000;">{$vo.num6}</a><else/>0</present></td>
+                        <td><present name="vo['num1']"><a href="{:U('Wx/datalist',array('zydm'=>$vo['zydm'],'isreport'=>$vo['isreport']))}" style="text-decoration: none;color:#000;">{$vo.num1}</a><else/>0</present></td>
+                        <td><present name="vo['num3']"><a href="{:U('Wx/datalist',array('zydm'=>$vo['zydm'],'isreport'=>$vo['isreport']))}" style="text-decoration: none;color:#000;">{$vo.num3}</a><else/>0</present></td>
+                        <td><present name="vo['total']"><a href="{:U('Wx/datalist',array('zydm'=>$vo['zydm'],'isreport'=>$vo['isreport']))}" style="text-decoration: none;color:#000;">{$vo.total}</a><else/>0</present></td>
+                    </tr>
+                </volist>
+                <tr>
+                    <td>总计</td>
+                    <td><a href="{:U('Wx/datalist',array('isreport'=>'status2'))}" style="text-decoration: none;color:#000;">{$num2_total}</a></td>
+                    <td><a href="{:U('Wx/datalist',array('isreport'=>'status5'))}" style="text-decoration: none;color:#000;">{$num5_total}</a></td>
+                    <td><a href="{:U('Wx/datalist',array('isreport'=>'status4'))}" style="text-decoration: none;color:#000;">{$num4_total}</a></td>
+                    <td><a href="{:U('Wx/datalist',array('isreport'=>'status6'))}" style="text-decoration: none;color:#000;">{$num6_total}</a></td>
+                    <td><a href="{:U('Wx/datalist',array('isreport'=>'status1'))}" style="text-decoration: none;color:#000;">{$num1_total}</a></td>
+                    <td><a href="{:U('Wx/datalist',array('isreport'=>'status3'))}" style="text-decoration: none;color:#000;">{$num3_total}</a></td>
+                    <td><a href="{:U('Wx/datalist')}" style="text-decoration: none;color:#000;">{$num_total}</a></td>
+                </tr>
+            </table>
+        </present>
+    </div>
+    <style>
+        table tr td{border:0.5px solid #ccc;height:100px;text-align: center;font-size:28px;}
+    </style>
+</body>
+</html>

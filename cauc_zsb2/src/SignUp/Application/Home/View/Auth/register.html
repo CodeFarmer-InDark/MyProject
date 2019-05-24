@@ -1,0 +1,267 @@
+<extend name="Common:base2" />
+<block name="container">
+    <div class="container registerBox">
+        <div class="containerBox">
+            <p class="login-title">用户注册/User registration</p>
+            <div class="input">
+                <img src="__PUBLIC__/Home/images/user-name.png" class="userImg">
+                <input class="input-text" type="text" name="user_name" placeholder="请输入姓名 (须与高考报名一致)">
+            </div>
+            <div class="input">
+                <img src="__PUBLIC__/Home/images/sfzh.png" class="idCardImg">
+                <input class="input-text" type="text" name="id_number" placeholder="请输入身份证号">
+            </div>
+            <div class="input">
+                <img src="__PUBLIC__/Home/images/user-password.png" class="userImg">
+                <input class="input-text" type="password" name="password" placeholder="请输入密码 (6-16位任意字符，请牢记)">
+            </div>
+            <div class="input">
+                <img src="__PUBLIC__/Home/images/user-password.png" class="userImg">
+                <input class="input-text" type="password" name="opassword" placeholder="请确认密码">
+            </div>
+            <div class="input-code">
+                <div class="input verifyCode">
+                    <input class="input-text" type="text" name="verify_code" placeholder="图形验证码">
+                </div>
+                <div class="input-sms-code">
+                    <img src="{:U('Home/Wx/verify')}" title="如果您无法识别验证码，请点图片更换" id="verifyImage">
+                </div>
+            </div>
+            <div class="input">
+                <img src="__PUBLIC__/Home/images/sjh.png" class="mobileImg">
+                <input class="input-text" type="number" name="phone" placeholder="手机号">
+            </div>
+            <small>此手机号将作为您的安全手机，用于登录系统、找回密码和接收短信通知。</small>
+            <div class="input-code smscode">
+                <div class="input verifyCode">
+                    <input class="input-text" type="text" name="sms_code" placeholder="短信验证码">
+                </div>
+                <div class="input-sms-code">
+                    <input type="button" class="input-submit" id="getCode" style="font-size: 16px;" value="获取验证码"/>
+                </div>
+            </div>
+
+                <a style="color:#fff; font-size: 15px;" class="register_title" href="{:U('Auth/login')}">已有账号去登陆</a>
+
+            <button type="button" id="doRegister" class="input-submit">注册</button>
+        </div>
+    </div>
+    <style>
+        small{color:#aeaeae;margin-left:15px;}
+        .mobile-top{display:none;}
+    </style>
+</block>
+<block name="script">
+    <script src="__STATIC__/assets/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.use(['jquery','layer'], function(){
+            var $ = layui.$,//jquery引入重点
+                layer = layui.layer;
+
+            $("#verifyImage").click(function(){
+                resetVerifyCode();
+            });
+            function resetVerifyCode()
+            {
+                $("#verifyImage").attr('src', "{:U('Home/Wx/verify',0,0,0)}/"+ Math.random());
+            }
+            $("input[name='user_name']").blur(function(){
+                var user_name = $("input[name='user_name']").val();
+                if (user_name == ''){
+                    layer.msg('姓名必填');
+                    $("input[name='user_name']").focus();
+                    $("input[name='user_name']").val('');
+                }else{
+                    if(user_name.indexOf("·") != -1){
+                        user_name = user_name.replace("·","");
+                    }
+                    var ret=true;
+                    for(var i=0;i<user_name.length;i++){
+                        ret=ret && (user_name.charCodeAt(i)>=10000);
+                    }
+                    if (ret == false){
+                        layer.msg('姓名必须为汉字');
+                        $("input[name='user_name']").focus();
+                        $("input[name='user_name']").val('');
+                        return false;
+                    }else{
+                        if(user_name.length < 2 || user_name.length > 10){
+                            layer.msg('姓名字数不得少于2个且不多于10个');
+                            $("input[name='user_name']").focus();
+                            $("input[name='user_name']").val('');
+                            return false;
+                        }
+                    }
+                }
+            });
+            $("input[name='opassword']").blur(function(){
+                var password = $("input[name='password']").val();
+                var opassword = $("input[name='opassword']").val();
+                if (password != opassword) {
+                    layer.msg('两次输入密码不一致');
+                    $("input[name='opassword']").focus();
+                    return false;
+                }
+            });
+            $('#getCode').click(function () {
+                var phone = $("input[name='phone']").val();
+                var sfzh = $("input[name='id_number']").val();
+                var verify_code = $("input[name='verify_code']").val();
+                if (!phone.match(/^0?1[0-9]{10}$/)) {
+                    layer.msg('手机号码错误，请检查后重新填写。');
+                    $("input[name='phone']").focus();
+                    return false;
+                }else if('' == sfzh) {
+                    layer.msg('请填写身份证号码');
+                    $("input[name='id_number']").focus();
+                    return false;
+                }else if('' == verify_code){
+                    layer.msg('请填写图形验证码');
+                    $("input[name='verify_code']").focus();
+                    return false;
+                }
+                settime($(this));
+                var obj = $('#getCode');
+                $.ajax({
+                    type:"POST",
+                    url:"{:U('Auth/sendSMS')}",
+                    dataType: "json",
+                    data:{
+                        phone:phone,type:"register",verify_code:verify_code,sfzh:sfzh
+                    },
+                    success:function(data){
+                        layer.msg(data.msg);
+                        if (data.code != 1){
+                            //settime($(this));
+                            resetVerifyCode();
+                            $("input[name='sms_code']").val("");
+                            $("input[name='verify_code']").val("");
+                        }
+                    },
+                    error:function(){
+                        layer.msg('网络错误');
+                    }
+                });
+            });
+            $('#doRegister').click(function () {
+                var user_name = $("input[name='user_name']").val();
+                var user_name1 = $("input[name='user_name']").val();
+                var id_number = $("input[name='id_number']").val();
+                var password = $("input[name='password']").val();
+                var opassword = $("input[name='opassword']").val();
+                var phone = $("input[name='phone']").val();
+                var sms_code = $("input[name='sms_code']").val();
+                var verify_code = $("input[name='verify_code']").val();
+                if (user_name == "") {
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('请填写姓名');
+                    return false;
+                }else{
+                    if(user_name.indexOf("·") != -1){
+                        user_name = user_name.replace("·","");
+                    }
+                    var ret=true;
+                    for(var i=0;i<user_name.length;i++){
+                        ret=ret && (user_name.charCodeAt(i)>=10000);
+                    }
+                    if (ret == false){
+                        layer.msg('姓名必须为汉字');
+                        $("input[name='user_name']").focus();
+                        $("input[name='user_name']").val('');
+                        return false;
+                    }else{
+                        if(user_name.length < 2 || user_name.length > 10){
+                            layer.msg('姓名字数不得少于2个且不多于10个');
+                            $("input[name='user_name']").focus();
+                            $("input[name='user_name']").val('');
+                            return false;
+                        }
+                    }
+                }
+                if (id_number == "") {
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('请填身份证号');
+                    return false;
+                }
+                if (verify_code == "") {
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('请填写图形验证码');
+                    return false;
+                }
+                if (phone == "") {
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('请填写手机号');
+                    return false;
+                }
+                if (password == "") {
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('请输入密码');
+                    return false;
+                }
+                if (password.length < 6 || password.length > 16){
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('密码必须为6-16位');
+                    return false;
+                }
+                if (password != opassword) {
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('两次输入密码不一致');
+                    return false;
+                }
+                if (sms_code == "") {
+                    resetVerifyCode();
+                    $("input[name='sms_code']").val("");
+                    $("input[name='verify_code']").val("");
+                    layer.msg('请填写短信验证码');
+                    return false;
+                }
+                $.ajax({
+                    type:"POST",
+                    url:"{:U('Auth/register')}",
+                    dataType: "json",
+                    data:{
+                        user_name:user_name1,id_number:id_number,phone:phone,password:password,opassword:opassword,sms_code:sms_code,verify_code:verify_code
+                    },
+                    success:function(data){
+                        layer.msg(data.msg,function () {
+                            if (data.code == 1) {
+                                window.location.href = data.data.url;
+                            }
+                        });
+                    }
+                });
+            });
+            var countdown=60;
+            function settime(obj) { //发送验证码倒计时
+                if (countdown == 0) {
+                    obj.attr('disabled',false);
+                    //obj.removeattr("disabled");、
+                    obj.css('cursor','pointer');
+                    obj.val("获取验证码");
+                    countdown = 60;
+                    return;
+                } else {
+                    obj.attr('disabled',true);
+                    obj.css('cursor','not-allowed');
+                    obj.val("重新发送(" + countdown + ")");
+                    countdown--;
+                }
+                setTimeout(function() {settime(obj) },1000);//每秒递归，60秒，59秒，58秒...
+            }
+        });
+    </script>
+</block>

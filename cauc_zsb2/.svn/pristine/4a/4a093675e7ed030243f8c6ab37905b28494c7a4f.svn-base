@@ -1,0 +1,59 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>><a href="{:U('College/index',array('id'=>44))}">{$moduleTitle}</a>><a href="{:U('College/index',array('id'=>44))}">院系设置</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页 </a>> <a href="{:U('College/index',array('id'=>44))}">{$moduleTitle}</a> > <a href="{:U('College/index',array('id'=>44))}">院系设置</a></div>
+</div>
+<div class="listmain">
+    <div class="font">
+        {$detailtitle}
+    </div>
+    <div class="cont" >
+        <div class="title0" >
+        </div>
+        <div class="ctitle">
+            <div class="pt">
+                <span>{$contentDetail.title}</span>
+            </div>
+            <div class="pt1">
+                <span>学院网址：</span><a href="{$contentDetail.web_url}" target="_blank" style="color:#a2a1a1;">{$contentDetail.web_url}</a><br/>
+                <span>咨询电话：</span><span>{$contentDetail.phone}</span>
+            </div>
+        </div>
+        <div class="content1" style="overflow-x: auto;">{$contentDetail.content}</div>
+        <!-- 学院介绍 -->
+        <present name="defaultMajor">
+            <div class="defaultMajor_l">
+                <ul>
+                    <li class="colName"><img src="__PUBLIC__/Images/college_ico.png" >{$collegeName}</li>
+                    <volist name="defaultMajor" id="vo" >
+                        <li class="college_d">
+                            <a class="majorbox_d" href="{:U('College/detail/',array('id'=>$vo['id']))}" title="{$vo.title}">
+                                {$vo.title}
+                            </a>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </present>
+    </div>
+    <include file="Public:collegeleft" />
+   <present name="defaultMajor">
+       <div class="defaultMajor">
+           <ul>
+               <li class="colName"><img src="__PUBLIC__/Images/college_ico.png" >{$collegeName}</li>
+               <volist name="defaultMajor" id="vo" >
+                   <li class="college_d">
+                       <a class="majorbox_d" href="{:U('College/detail/',array('id'=>$vo['id']))}" >
+                           {$vo.title}
+                       </a>
+                   </li>
+               </volist>
+           </ul>
+       </div>
+   </present>
+</div>
+</div>
+<include file="Public:footer" />

@@ -1,0 +1,138 @@
+<tagLib name="html,cx" />
+<include file="Public:header" />
+<include file="Public:sider" />
+<script type="text/javascript">
+	function del(){
+		if (confirm("确定要清空全部省份分数线吗？")){
+			window.location.href = '{:U("Line/delete")}';
+		}
+	}
+</script>
+		<div id="main-content">
+        <!-- Main Content Section with everything -->
+			<noscript>
+            <!-- Show a notification if the user has disabled javascript -->
+                <div class="notification error png_bg">
+					<div>
+						您的浏览器不支持Javascript或者已经禁用了Javascript。请升级您的浏览器或者<a href="http://www.google.com/support/bin/answer.py?answer=23852" title="如何启用 JavaScript">启用</a>Javascript支持才能正确浏览页面.
+					</div>
+				</div>
+			</noscript>
+			<!-- Page Head -->
+			<div class="clear"></div>
+			<!-- End .clear -->
+			<div class="content-box closed-box"><!-- Start Content Box -->
+				<div class="content-box-header">
+					<h3>分数线检索</h3>
+				</div> <!-- End .content-box-header -->
+				<div class="content-box-content">
+					<form method="get" action="__URL__">
+						<div class="tab-content default-tab"> <!-- This is the target div. id must match the href of this div's tab -->
+							<fieldset class="column-left">
+								<p>
+									<label class="left">省份</label>
+									<select name="province" id="province">
+										<option value="">选择省份</option>
+										<volist name="province" id="p">
+											<option value="{$p.id}">{$p.province}</option>
+										</volist>
+									</select>&nbsp;
+									<input class="button" type="submit" id="submit" name="submit" value="搜索" /> <a href="__URL__" >默认</a>
+								</p>
+								<script type="text/javascript">
+									/*
+									 设定选择值
+									 */
+									$("#province").val('{$Think.get.province}');
+								</script>
+							</fieldset>
+							<div class="clear"></div><!-- End .clear -->
+						</div> <!-- End #tab1 -->
+					</form>
+				</div> <!-- End .content-box-content -->
+			</div> <!-- End .content-box -->
+			<ul class="shortcut-buttons-set">
+
+				<li><a class="shortcut-button" href="{:U("Line/insert")}"><span>
+					<img src="__PUBLIC__/Admin/Images/icons/add_48.png" alt="icon" /><br />
+					新增省份
+				</span></a></li>
+				<li><a class="shortcut-button" href="javascript:del()" ><span>
+					<img src="__PUBLIC__/Admin/Images/icons/cross_48.png" alt="icon" /><br />
+					清空分数线
+				</span></a></li>
+
+			</ul><!-- End .shortcut-buttons-set -->
+			<!-- Page Head -->
+			<div class="clear"></div>
+            <!-- End .clear -->
+			<div class="content-box"><!-- Start Content Box -->
+				<div class="content-box-header">
+					<h3>各省份分数线管理</h3>
+					<div class="clear"></div>
+				</div> <!-- End .content-box-header -->
+				<div class="content-box-content">
+					<div class="tab-content default-tab"> <!-- This is the target div. id must match the href of this div's tab -->
+						<form method="post" action="{:U("Line/doCommand")}" id="mainForm" enctype="multipart/form-data">
+						<table>
+							<thead>
+							<tr>
+								<th><input class="check-all" type="checkbox" id="chkall" name="chkall" value="{$vo.id}"></th>
+								<th>ID</th>
+								<th>省份</th>
+								<th>分数线</th>
+								<th></th>
+								<th>操作</th>
+							</tr>
+							</thead>
+							<present name="dataList">
+								<tfoot>
+								<tr>
+									<td colspan="9">
+										<div class="bulk-actions align-left">
+											<select name="operate" id="operate" onchange="style_show(this)">
+												<option value="update" selected="selected">更新</option>
+											</select>
+
+											<input class="button" type="submit" name="submit" value="提交操作">
+										</div>
+
+										<div class="pagination">
+											{$pageBar}
+										</div> <!-- End .pagination -->
+										<div class="clear"></div>
+									</td>
+								</tr>
+								</tfoot>
+								<tbody>
+								<volist name="dataList" id="vo">
+									<tr>
+										<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+										<td>{$vo.id}<input name="updateId[]" type="hidden" id="updateId[]" value="{$vo.id}" /></td>
+										<td>{$vo.pName}</td>
+										<td><input class="text-input large-input" name="scoreline[]" id="scoreline[]" value="{$vo.scoreline}"></td>
+										<td></td>
+										<!--<td><if condition="$vo.checkinfo_status eq 1">未核对<elseif condition="$vo.checkinfo_status eq 2" />正常<else/>报错</if></td>-->
+										<td>
+											<!-- Icons -->
+											<a href="{:U("Line/modify",array('id'=>$vo['id']))}" title="编辑"><img src="__PUBLIC__/Admin/Images/icons/pencil.png" alt="编辑" /></a>
+											<!-- a href="{:U("User/doCommand",array('operate'=>'delete','id'=>$vo['id']))}" title="删除"><img src="__PUBLIC__/Admin/Images/icons/cross.png" alt="删除" /></a -->
+										</td>
+									</tr>
+								</volist>
+								<else />
+								<tbody>
+								<tr>
+									<td colspan="5"><p class="no">暂无数据</p></td>
+								</tr>
+							</present>
+
+							</tbody>
+
+						</table>
+						</form>
+					</div> <!-- End #tab1 -->
+				</div> <!-- End .content-box-content -->
+			</div> <!-- End .content-box -->
+			<div class="clear"></div>
+<include file="Public:footer" />

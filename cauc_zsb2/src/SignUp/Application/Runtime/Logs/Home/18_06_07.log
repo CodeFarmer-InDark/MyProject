@@ -1,0 +1,19 @@
+[ 2018-06-07T10:03:03+08:00 ] ::1 /cauc_zs3/zs/Auth/getWebInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0041s ]
+
+[ 2018-06-07T14:41:51+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2018-06-07T15:45:49+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+

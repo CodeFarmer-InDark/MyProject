@@ -1,0 +1,145 @@
+<extend name="Common:base1" />
+<block name="now_title">中欧选拔报名</block>
+<block name="dao-hang">
+    <div class="dao-hang">
+        <span class="layui-text"></span>
+        <span class="layui-text">个人信息</span>
+        <a class="layui-text" href="{:U('Index/index')}"> <<返回报名入口 </a>
+    </div>
+</block>
+<block name="main">
+    <div style="display: inline-flex;width: 100%;" class="zo-box">
+        <if condition="$info['provinceid'] eq 44">
+            <img class="user-photo" src="__KSZP__/{$info['year']}/{$info['provinceid']}/{$url}{$info['ksh']}.jpg">
+            <else/>
+            <img class="user-photo" src="__KSZP__/{$info['year']}/{$info['provinceid']}/{$info['ksh']}.jpg">
+        </if>
+        <div class="user-info zo">
+            <div>姓名：{$info['xm']}</div>
+            <div>高考成绩：{:ceil($info['tdcj'])}</div>
+            <div>性别：{$info['xbmc']}</div>
+            <div>高考所在地：{$info['name']}</div>
+            <div>身份证号：{$info['sfzh']}</div>
+            <div >手机号：{$info['phone']}</div>
+            <div >考生号：{$info['ksh']}</div>
+            <if condition="($bm eq false) and ($data['bm_time_status'] eq 1)">
+                <div>QQ号：<input style="width: 200px;height: 40px;" type="number" id="qq"/></div>
+                <else/>
+                <div>QQ号：{$bm['qq']}</div>
+            </if>
+        </div>
+
+        <div class="zzy-mobile-title">个人信息</div>
+        <div class="zzy-mobile">
+            <div class="thisDiv">
+                <span class="about-title">姓名：</span>
+                <span class="about-content">{$info['xm']}</span>
+            </div>
+            <div class="thisDiv">
+                <span class="about-title">性别：</span>
+                <span class="about-content">{$info['xbmc']}</span>
+            </div>
+            <div class="thisDiv">
+                <span class="about-title">考生号：</span>
+                <span class="about-content">{$info['ksh']}</span>
+            </div>
+            <div class="thisDiv">
+                <span class="about-title">身份证号：</span>
+                <span class="about-content">{$info['sfzh']}</span>
+            </div>
+            <div class="thisDiv">
+                <span class="about-title">生源地：</span>
+                <span class="about-content">{$info['name']}</span>
+            </div>
+            <div class="thisDiv">
+                <span class="about-title">高考成绩：</span>
+                <span class="about-content">{:ceil($info['tdcj'])}</span>
+            </div>
+            <div class="thisDiv">
+                <span class="about-title">手机号：</span>
+                <span class="about-content">{$info['phone']}</span>
+            </div>
+            <if condition="($bm eq false) and ($data['bm_time_status'] eq 1)">
+                <div class="thisDiv">
+                    <span class="about-title">QQ号：</span>
+                    <span class="about-content"><input style="width: 200px;height: 40px;padding-left:10px;" type="number" id="qq1" placeholder="请输入QQ号"/></span>
+                </div>
+                <else/>
+                <div class="thisDiv">
+                    <span class="about-title">QQ号：</span>
+                    <span class="about-content">{$bm['qq']}</span>
+                </div>
+            </if>
+        </div>
+    </div>
+    <if condition="$data['bm_time_status'] eq 1">
+        <if condition="$bm eq false">
+            <div style="height: 172px;" class="zo-submit">
+                <div id="college">
+                </div>
+                <a class="zzy-a-button" id="zotj" href="javascript:;">提交申请 </a>
+            </div>
+            <else/>
+            <div class="zzy-xzbmb" style="display: flex;align-items: center;justify-content: center;font-size: 28px;color: red;">
+                已报名
+            </div>
+        </if>
+        <else/>
+        <div class="zzy-xzbmb" style="display: flex;align-items: center;justify-content: center;font-size: 28px;color: red;">
+            报名已经结束,截止时间：{$data['end_time']?(date('Y-m-d',$data['end_time'])):''}
+        </div>
+    </if>
+    <!--<if condition="($bm eq false) and ($data['bm_time_status'] eq 1)">-->
+        <!--<div style="height: 172px;">-->
+            <!--<div id="college">-->
+            <!--</div>-->
+            <!--<a class="zzy-a-button" id="zotj" href="javascript:;">提交申请 </a>-->
+        <!--</div>-->
+        <!--<else/>-->
+        <!--<div class="zzy-xzbmb" style="display: flex;align-items: center;justify-content: center;font-size: 28px;color: red;">-->
+            <!--报名已经结束,截止时间：{$data['end_time']?(date('Y-m-d',$data['end_time'])):''}-->
+        <!--</div>-->
+    <!--</if>-->
+</block>
+<block name="script">
+    <if condition="$bm_info eq false">
+        <script type="text/javascript">
+            layui.use(['jquery','layer'], function(){
+                var $ = layui.$,//jquery引入重点
+                    layer = layui.layer;
+                $('#zotj').click(function () {
+                    var qq;
+                    var qq1 = $('#qq').val();
+                    var qq2 = $('#qq1').val();
+                    if (qq1 == '' && qq2 == ''){
+                        layer.msg('请填写QQ号');
+                        return false;
+                    }else if(qq1 == '' && qq2 != ''){
+                        qq = qq2;
+                    }else if(qq1 != '' && qq2 == ''){
+                        qq = qq1;
+                    }else{
+                        layer.msg('请填写QQ号');
+                        return false;
+                    }
+                    $.ajax({
+                        type:"POST",
+                        url:"{:U('Index/SubSignUp')}",
+                        dataType: "json",
+                        data:{
+                            qq:qq,type:2
+                        },
+                        success:function(data){
+                            layer.msg(data.msg,function () {
+                                if (data.code == 1) {
+                                    window.location.reload();
+                                }
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+    </if>
+
+</block>

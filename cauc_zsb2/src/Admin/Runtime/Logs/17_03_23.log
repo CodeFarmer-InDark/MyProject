@@ -1,0 +1,178 @@
+[ 2017-03-23T16:34:57+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490258097,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:37:20+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490258240,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000000s ]
+
+[ 2017-03-23T16:38:01+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-23T16:38:17+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: prower D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 97 行.
+
+[ 2017-03-23T16:39:47+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490258387,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-23T16:41:33+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-23T16:41:52+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-23T16:41:59+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490258519,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-23T16:42:45+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/login/jumpUri/L3NoZW5qaWNodS9hZG1pbi5waHAvSW5kZXgvaW5kZXguaHRtbA.html
+ERR: 无法加载模块:Public
+
+[ 2017-03-23T16:44:13+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490258653,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-23T17:29:52+08:00 ] 0.0.0.0 /shenjichu/admin.php/User
+ERR: 无法加载模块:User
+
+[ 2017-03-23T17:32:47+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'dingfan' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490261567,`login_count`=login_count+1 WHERE ( `id` = 26 ) [ RunTime:0.000000s ]
+
+[ 2017-03-23T17:44:16+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2017-03-23T17:44:21+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.003001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490262261,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-23T17:48:07+08:00 ] 0.0.0.0 /shenjichu/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\shenjichu\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\shenjichu\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 116 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\shenjichu\Admin\Lib\Action\PublicAction.class.php 第 117 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\shenjichu\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490262487,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+

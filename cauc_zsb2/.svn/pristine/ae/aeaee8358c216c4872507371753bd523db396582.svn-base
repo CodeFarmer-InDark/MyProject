@@ -1,0 +1,77 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<script type="text/javascript">
+    $(document).ready(function(){
+        //ajax跨域获取zs系统score
+        $('#batch').empty();
+        $('#type').empty();
+        $('#major').empty();
+        $('#zhuanke_g tbody').html('');
+        $.ajax({
+            type: "GET",
+            url: "http://localhost/cauc_zs/zs/index.php/Api?m=Inquire&a=getMark",
+            dataType: "jsonp",
+            jsonp: "callback",
+            success: function (data) {
+                switch (data.msg) {
+                    case "1":
+                        $.each(data.info, function (i, n) {
+                            var $tr = $("<tr>"+
+                                    "<td>"+n.year+"</td>"+
+                                    "<td>"+n.year+"</td>"+
+                                    "<td>"+n.year+"</td>"+
+                                    "<td>"+n.year+"</td>"+
+                                    "<td>"+n.year+"</td>"
+                                    +"</tr>");
+                            if(n.pc == 8){
+                                var $table = $("#zhuanke_g tbody");
+                                $table.append($tr);
+                            }
+
+                        });
+                        break;
+                    case "2" :
+                        break;
+                }
+            },
+//            error: function (jqXHR) {
+//                alert("错误码：" + jqXHR.status + ",请联系管理员");
+//            }
+        });
+    });
+</script>
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Search/score',array('id'=>42))}">历年分数</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Search/score',array('id'=>42))}">历年分数</a></div> </div>
+</div>
+<div class="listmain">
+    <div class="search">
+        为方便您第一时间了解我校在各省的录取分数情况，特将相关数据发布，若数据有误，请以省招办最终公布或录取结束后经我校整理并发布于“录取分数”栏目的数据为准。
+        一、2017年普通类专业（非定向）录取最低分
+        说明：“空白”代表该省区该类别录取工作尚未完成
+        “——”代表该省区没有此类别
+        （一）非高考改革省份
+        <table  cellspacing="0" cellpadding="0" id="putong_f">
+            <thead>
+            <tr><th colspan="8" class="search-title">历年分数</th></tr>
+            <tr class="plan-attr">
+                <th>年份</th>
+                <th>省份</th>
+                <th>批次名称</th>
+                <th>专业名称</th>
+                <th>科类</th>
+                <th>最高分</th>
+                <th>最低分</th>
+                <th>平均分</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+<include file="Public:footer" />

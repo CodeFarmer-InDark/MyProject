@@ -1,0 +1,168 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>><if condition="$moduleTitle eq '报考指南'"><a href="{:U('List/index',array('id'=>13))}">{$moduleTitle}</a><elseif condition="$moduleTitle eq '招生类型'"/>
+        <a href="{:U('List/index',array('id'=>19))}">招生类型</a><elseif condition="$moduleTitle eq '招生章程'"/><a href="{:U('List/index',array('id'=>40))}">招生章程</a></if><present name="contenttitle">><a href="{:U('List/index',array('id'=>$id))}">{$contenttitle}</a></present>
+    </div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> > <if condition="$moduleTitle eq '报考指南'"><a href="{:U('List/index',array('id'=>13))}">{$moduleTitle}</a> <elseif condition="$moduleTitle eq '招生类型'"/>
+        <a href="{:U('List/index',array('id'=>19))}">招生类型 </a><elseif condition="$moduleTitle eq '招生章程'"/><a href="{:U('List/index',array('id'=>40))}">招生章程</a></if><present name="contenttitle"> > <a href="{:U('List/index',array('id'=>$id))}">{$contenttitle}</a></present>
+    </div>
+</div>
+<div class="listmain">
+    <if condition="$plist eq '招生章程'">
+        <div class="font">{$moduleTitle}</div>
+    </if>
+    <div class="cont">
+        <div >
+            <switch name="plist">
+                <case value="招生类型">
+                    <ul class="zs-ul">
+                        <present name="dataContentList">
+                            <volist name="dataContentList" id="row" >
+                                <li>
+                                    <if condition="$row['link_url'] neq ''">
+                                        <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="kuan">{$row.title|msubstr=0,39}</a>
+                                        <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="jiaokuan">{$row.title|msubstr=0,22}</a>
+                                        <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="zhai">{$row.title|msubstr=0,34}</a>
+                                        <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="zuizhai">{$row.title|msubstr=0,18}</a>
+                                        <else/>
+                                        <a class="zs-a" href="{:U('List/detail/',array('id'=>$row['id']))}" id="kuan">{$row.title|msubstr=0,39}</a>
+                                        <a class="zs-a" href="{:U('List/detail/',array('id'=>$row['id']))}" id="jiaokuan">{$row.title|msubstr=0,22}</a>
+                                        <a class="zs-a" href="{:U('List/detail/',array('id'=>$row['id']))}" id="zhai">{$row.title|msubstr=0,34}</a>
+                                        <a class="zs-a" href="{:U('List/detail/',array('id'=>$row['id']))}" id="zuizhai">{$row.title|msubstr=0,18}</a>
+                                    </if> <span class="f_r">【{$row.create_time|date="Y-m-d",###}】</span>
+                                </li>
+                            </volist>
+                            <else/>
+                            <div class="nullData">暂无数据</div>
+                        </present>
+                    </ul>
+                </case>
+                <case value="报考指南">
+                    <if condition="$contenttitle eq '激励政策'">
+                        <ul class="zs-ul">
+                            <present name="dataContentList">
+                                <volist name="dataContentList" id="row">
+                                    <li>
+                                        <if condition="$row['link_url'] neq ''">
+                                            <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a">{$row.title|msubstr=0,17}</a>
+                                            <else/>
+                                            <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" >{$row.title|msubstr=0,17}</a>
+                                        </if> <span class="f_r">【{$row.create_time|date="Y-m-d",###}】</span>
+                                    </li>
+                                </volist>
+                                <else/>
+                                <div class="nullData">暂无数据</div>
+                            </present>
+                        </ul>
+                        <else/>
+                        <ul class="dir-ul">
+                            <volist name="dataContentList" id="row" empty="暂无数据">
+                                <li class="direct">
+                                    <div class="date">
+                                        <div class="year"><span>{$row.create_time|date="Y",###}</span></div>
+                                        <div class="day"><span>{$row.create_time|date="m.d",###}</span></div>
+                                    </div>
+                                    <if condition="$row['link_url'] neq ''">
+                                        <a class="direct-box" href="{$row.link_url}">
+                                            <div class="topic" id="kuan">{$row.title|msubstr=0,36}</div>
+                                            <div class="topic" id="jiaokuan">{$row.title|msubstr=0,72}</div>
+                                            <div class="detail" id="kuan">{$row.description|msubstr=0,70}</div>
+                                            <div class="detail" id="jiaokuan">{$row.description|msubstr=0,34}</div>
+                                        </a>
+                                        <else/>
+                                        <a class="direct-box" href="{:U('List/detail/',array('id'=>$row['id']))}">
+                                            <div class="topic" id="kuan">
+                                                {$row.title|msubstr=0,34}
+                                            </div>
+                                            <div class="topic" id="jiaokuan">
+                                                {$row.title|msubstr=0,70}
+                                            </div>
+                                            <div class="detail" id="kuan">{$row.description|msubstr=0,70}</div>
+                                            <div class="detail" id="jiaokuan">{$row.description|msubstr=0,34}</div>
+                                        </a>
+                                    </if>
+                                </li>
+                            </volist>
+                        </ul>
+                        <ul class="re-dir-ul">
+                            <volist name="dataContentList" id="row" empty="暂无数据">
+                                <li class="direct">
+                                    <div class="date">
+                                        <div class="year"><span>{$row.create_time|date="Y",###}</span></div>
+                                        <div class="day"><span>{$row.create_time|date="m.d",###}</span></div>
+                                    </div>
+                                    <if condition="$row['link_url'] neq ''">
+                                        <a href="{$row.link_url}" class="direct-box">
+                                            <span class="topic" id="zhai">{$row.title|msubstr=0,10}</span>
+                                            <span class="topic" id="zuizhai">{$row.title|msubstr=0,10}</span>
+                                        </a>
+                                        <else/>
+                                        <a class="direct-box" href="{:U('List/detail/',array('id'=>$row['id']))}">
+                                            <span class="topic" id="zhai">
+                                                {$row.title|msubstr=0,38}
+                                            </span>
+                                            <span class="topic" id="zuizhai">
+                                                {$row.title|msubstr=0,22}
+                                            </span>
+                                        </a>
+                                    </if>
+                                </li>
+                            </volist>
+                        </ul>
+                    </if>
+                </case>
+                <default/> <!--招生章程-->
+                <ul class="zs-ul">
+                    <present name="dataContentList">
+                        <volist name="dataContentList" id="row" >
+                            <li>
+                                <if condition="$row['link_url'] neq ''">
+                                    <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="kuan">{$row.title|msubstr=0,39}</a>
+                                    <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="jiaokuan">{$row.title|msubstr=0,22}</a>
+                                    <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="zhai">{$row.title|msubstr=0,34}</a>
+                                    <a href="{$row.link_url}" style="{$row.title_style}" target="_blank" class="zs-a" id="zuizhai">{$row.title|msubstr=0,18}</a>
+                                    <else/>
+                                    <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="kuan">{$row.title|msubstr=0,39}</a>
+                                    <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="jiaokuan">{$row.title|msubstr=0,22}</a>
+                                    <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="zhai">{$row.title|msubstr=0,34}</a>
+                                    <a class="zs-a" href="{:U('List/detail/',array('id'=>$row[id]))}" id="zuizhai">{$row.title|msubstr=0,18}</a>
+                                </if> <span class="f_r">【{$row.create_time|date="Y-m-d",###}】</span>
+                            </li>
+                        </volist>
+                        <else/>
+                        <div class="nullData">暂无数据</div>
+                    </present>
+                </ul>
+            </switch>
+        </div>
+        <div class="fenye">
+            <div class="page">
+                {$pageBar}
+            </div>
+        </div>
+        <switch name="typeName">
+            <case value="中欧航空工程师"><a class="college_link" href="http://www.cauc.edu.cn/siae/" target="_blank">点击进入相关学院</a></case>
+            <case value="民航招飞"><a class="college_link" href="http://www.cauc.edu.cn/zfzx/" target="_blank">点击进入相关学院</a></case>
+            <case value="高水平运动队"><a class="college_link" href="http://www.cauc.edu.cn/gspydy/" target="_blank">点击进入相关学院</a></case>
+            <case value="空乘空保"><a class="college_link" href="http://www.cauc.edu.cn/cabin/" target="_blank">点击进入相关学院</a></case>
+        </switch>
+    </div>
+    <include file="Public:typeleft" />
+    <if condition="($plist eq '报考指南') OR ($plist eq '招生章程')">
+        <div class="re-cart ">
+            <div class="cartbox toful" style="margin:20px auto;">
+                <a href="{:U('List/index/',array('id'=>40))}" class="cart-left-box1">招生章程</a>
+                <a href="{:U('Search/index/',array('id'=>37))}" class="cart-left-box2">招生计划</a>
+                <a href="{:U('Search/apply/',array('id'=>38))}" class="cart-left-box3">网上报名</a>
+                <a href="{:U('Search/score/',array('id'=>42))}" class="cart-left-box4">历年分数</a>
+                <a href="{:U('Search/subject/',array('id'=>39))}" class="cart-left-box5">选考科目</a>
+                <a href="" class="cart-left-box6">录取查询</a>
+            </div>
+        </div>
+    </if>
+</div>
+</div>
+<include file="Public:footer" />

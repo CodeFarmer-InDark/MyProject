@@ -1,0 +1,42 @@
+<include file="Public:contentHeader" />
+<div class="body grey">
+    <div class="register pad fff bottom" style="min-height:400px;">
+        <div class="stitle">
+            <span class="top-line"></span>
+            <img src="__PUBLIC__/Images/promotion/title_bg.png" alt=""><span class="top-title">报名详情</span>
+        </div>
+        <div class="infobox" style="margin:0px auto 0 auto;">
+            <table class="info-table">
+                <present name="assign">
+                    <tr>
+                        <td colspan="4" class="box-title">报名信息</td>
+                    </tr>
+                </present>
+                <tr>
+                    <td class="t-label">年&nbsp;&nbsp;份：</td>
+                    <td>{$vo.year}</td>
+                    <td class="t-label">省&nbsp;&nbsp;份：</td>
+                    <td>{$vo.pname}</td>
+                </tr>
+                <tr>
+                    <td class="t-label">名&nbsp;&nbsp;称：</td>
+                    <td>{$vo.zxmc}</td>
+                    <td class="t-label">地&nbsp;&nbsp;点：</td>
+                    <td width="250">{$vo.zxlb}</td>
+                </tr>
+                <tr>
+                    <td class="t-label">时&nbsp;&nbsp;间：</td>
+                    <td>{$vo.xc}</td>
+                    <td class="t-label">报名时间：</td>
+                    <td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+                </tr>
+                <tr>
+                    <td class="t-label">备&nbsp;&nbsp;注：</td>
+                    <td colspan="2">{$vo.remark}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />

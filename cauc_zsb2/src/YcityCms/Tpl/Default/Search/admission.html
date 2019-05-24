@@ -1,0 +1,227 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<link href="./Public/Style/searchpage-reset.css" rel="stylesheet" type="text/css">
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Search/admission',array('id'=>55))}">录取结果</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Search/admission',array('id'=>55))}">录取结果</a></div> </div>
+</div>
+<div class="listmain">
+    <div class="side1 f_l">
+        <div class="admission_title">录取结果查询</div>
+        <div class="search-condition2 condition3">
+            <form action="{:U('Search/admission',array('id'=>55))}" method="post" class="search-box" onsubmit="return toVaild()">
+                <input type="hidden" name="m" class="moduleName" value="{$moduleName}">
+                <input type="hidden" name="a" class="actionName" value="{$actionName}">
+                <input type="hidden" name="id" class="id" value="{$id}">
+
+                <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 考生号</label>
+                <input type="text" name="ksh" id="ksh" class="search-input"  placeholder=" 14位国家统一考生编号" value="{$ksh}" autocomplete="off"/>
+                <div style="padding:0 0 10px 10px;font-size:12px;float:left;">广东考生编号为十位</div>
+                <label> <span style="color:red;margin:3px 5px 0 0; float:left;">*</span> 身份证号</label>
+                <input type="text" name="sfzh" id="sfzh" class="search-input"  placeholder=" 18位二代身份证号码" value="{$sfzh}" autocomplete="off"/>
+                <div class="resultnotice" style="float:left;"><span style="color: red;">*</span>为必填项</div>
+                <div class="submit"><input type="submit" class="submitcont submitcont1" id="submit12" value="查询"></div>
+            </form>
+        </div>
+        <div class="search remarkbox">
+            <table  cellspacing="0" cellpadding="0" >
+                <thead>
+                <tr><th colspan="10" class="search-title search-title2">查询说明</th></tr>
+                </thead>
+                <present name="remark">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="remark" style="width:90%;margin:20px auto 30px auto;">{$remark}</div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <else/>
+                    <tbody>
+                    <tr>
+                        <td colspan="10"><p class="no" id="errorbox">暂无说明</p></td>
+                    </tr>
+                </present>
+            </table>
+        </div>
+    </div>
+
+    <div class="cont showtotalpage">
+        <present name="showResult">
+        <div class="search">
+            <div class="search resultbox">
+                    <table  cellspacing="0" cellpadding="0" class="resulttable">
+                        <thead>
+                        <tr class="search-title1"><th colspan="10" class="search-title">录取结果</th></tr>
+                        </thead>
+                        <present name="dataList">
+                            <tbody>
+                            <tr class="lqtitle">
+                                <td colspan="5" style="color: red;border-right:0;" >
+                                    恭喜您已被中国民航大学录取
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" style="border-left:1px solid #ccc;">
+                                    <present name="isimg">
+                                        {$isimg}
+                                        <else/>
+                                        <img src="{$dataList.path}" alt="{$vo.xm}" class="faceimg">
+                                    </present>
+                                </td>
+                                <td class="result-label">姓名</td>
+                                <td>{$dataList.xm}</td>
+                                <td class="result-label">考生号</td>
+                                <td>{$dataList.ksh}</td>
+                            </tr>
+                            <tr>
+                                <td class="result-label">性别</td>
+                                <td>{$dataList.xb}</td>
+                                <td class="result-label" style="border-left:1px solid #ccc;">身份证号</td>
+                                <td>{$dataList.sfzh}</td>
+                            </tr>
+                            <tr>
+                                <td class="result-label">生源地</td>
+                                <td>{$dataList.province}</td>
+                                <td class="result-label">录取专业</td>
+                                <td>{$dataList.lqzy}</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #ccc;">
+                                <td class="result-label" style="border-left:1px solid #ccc;">通知书面单号</td>
+                                <td colspan="4"><if condition="$dataList['mdh'] neq ''">{$dataList.mdh}<else/>暂未分配</if></td>
+                            </tr>
+                            </tbody>
+                            <else />
+                            <tbody>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid #ccc;"><p class="no" id="errorbox">{$error}</p></td>
+                            </tr>
+                        </present>
+                    </table>
+                    <div class="resultremark">
+                        备注：
+                        <present name="dataList">
+                            <present name="remarksuccess">
+                                {$remarksuccess}
+                                <else/>暂无备注
+                            </present>
+                            <else />
+                            <present name="remarkfalse">
+                                {$remarkfalse}
+                                <else/>暂无备注
+                            </present>
+                        </present>
+                    </div>
+                </div>
+            <else/>
+            <table  cellspacing="0" cellpadding="0" class="progressbox" style="border: 0;">
+                    <thead>
+                    <tr><th colspan="7" class="search-title" style="letter-spacing: 2px">{$datayear}年中国民航大学高考招生录取进度</th></tr>
+                    </thead>
+                    <tr class="progress-info">
+                        <td colspan="2" style="border-left:0;border-right: 0">
+                            <span class="sm">说明：</span><div class="box finished">已完成</div> 表示录取已完成
+                        </td>
+                        <td colspan="2" style="border-right:0;">
+                            <div class="box unfinished">录取中</div> 表示录取正在进行
+                        </td>
+                        <td colspan="3" style="border-right:0;">
+                            <div class="box other">--</div> 表示录取工作尚未开始或该省无招生类型
+                        </td>
+                    </tr>
+                    <present name="dataList">
+                        <tr class="plan-attr">
+                            <th width="15%">省份</th>
+                            <volist name="pcList" id="pl">
+                                <th width="14%" style="border-right:1px solid #ccc;">{$pl.pc}</th>
+                            </volist>
+                        </tr>
+                        <tbody>
+                        <volist name="dataList" id="vo">
+                            <tr>
+                                <volist name="vo" id="item">
+                                    <switch name="item">
+                                        <case value="1"><td style="background-color: #fff5d2;border-bottom:1px solid #ccc;">录取中</td></case>
+                                        <case value="2"><td style="background-color: #dff0d8;color:green;border-bottom:1px solid #ccc;">已完成</td></case>
+                                        <case value="3"><td style="background-color: #e9e9e9;border-bottom:1px solid #ccc;">--</td></case>
+                                        <case value="5"><td style="background-color: #fff5d2;border-bottom:1px solid #ccc;">录取中</td></case>
+                                        <default/><td style="border-left:1px solid #ccc;border-bottom:1px solid #ccc;">{$item}</td>
+                                    </switch>
+                                </volist>
+                            </tr>
+                        </volist>
+                        </tbody>
+                        <else />
+                        <tbody>
+                        <tr>
+                            <td colspan="11"><p class="no">{$error}</p></td>
+                        </tr>
+                        </tbody>
+                    </present>
+                </table>
+            <present name="remarkProgress">
+                {$remarkProgress}
+            </present>
+        </div>
+        </present>
+    </div>
+</div>
+</div>
+<script type="text/javascript" >
+      function toVaild() {
+          var ksh = $("#ksh").val();
+          var sfzh = $("#sfzh").val();
+          if (ksh == '') {
+              alert('考生号必填');
+              $('#ksh').focus();
+              return false;
+          }
+
+          if (ksh.length != 14 && ksh.length != 10){
+              $('#ksh').focus();
+              alert('考生号必须为14位国家统一考生编号，广东省为10位');
+              return false;
+          }
+          if (sfzh == ''){
+              $('#sfzh').focus();
+              alert('身份证号必填');
+              return false;
+          }
+          if(!idcard_check(sfzh)){
+              $('#sfzh').focus();
+              alert("身份证号码必须为18位有效二代身份证号码");
+              return false;
+          }
+      }
+
+      // 计算身份证校验码，根据国家标准GB 11643-1999
+      function idcard_verify_number(idcard_base){
+          if(idcard_base.length != 17){
+              return false;
+          }
+          var factor = new Array(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);
+          var verify_number_list = new Array('1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2');
+          var checksum = 0;
+          for (var i = 0; i < idcard_base.length; i++) {
+              checksum += idcard_base.substr(i, 1) * factor[i];
+          }
+          var mod = checksum % 11;
+          var verify_number = verify_number_list[mod];
+          return verify_number;
+      }
+
+      // 18位身份证校验码有效性检查
+      function idcard_check(idcard){
+          if (idcard.length != 18){ return false; }
+          var idcard_base = idcard.substr(0, 17);
+          if ( idcard_verify_number(idcard_base) != (idcard.substr(17, 1)).toUpperCase()){
+              return false;
+          }else{
+              return true;
+          }
+      }
+
+</script>
+<include file="Public:footer" />

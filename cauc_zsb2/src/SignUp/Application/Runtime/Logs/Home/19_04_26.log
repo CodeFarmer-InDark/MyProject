@@ -1,0 +1,977 @@
+[ 2019-04-26T10:00:53+08:00 ] ::1 /job/cauc_zs3/lqgl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0083s ]
+
+[ 2019-04-26T10:00:53+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2019-04-26T10:01:00+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0087s ]
+
+[ 2019-04-26T10:01:02+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\4dd481411bcd7aedd0a5047db319a2f5.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2019-04-26T10:01:02+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Home/Wx/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+NOTIC: [8] Undefined index: appid D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 14 行.
+NOTIC: [8] Undefined index: appsecret D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001890s ]
+
+[ 2019-04-26T10:01:48+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\4dd481411bcd7aedd0a5047db319a2f5.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2019-04-26T10:01:48+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Home/Wx/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+NOTIC: [8] Undefined index: appid D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 14 行.
+NOTIC: [8] Undefined index: appsecret D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2019-04-26T10:01:49+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\4dd481411bcd7aedd0a5047db319a2f5.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2019-04-26T10:01:49+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Home/Wx/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002888s ]
+NOTIC: [8] Undefined index: appid D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 14 行.
+NOTIC: [8] Undefined index: appsecret D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001675s ]
+
+[ 2019-04-26T10:02:14+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/sendSMS.html
+INFO: [2019-04-26 10:02:14][18920820654]短信接口状态码：0，信息发送成功。
+[ 2019-04-26T10:02:14+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/sendSMS.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `ycity_activation` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_activation` WHERE `idCard` = '622123199607090654' AND `time` BETWEEN '1556244074' AND '1556244134' LIMIT 1   [ RunTime:0.0353s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_activation` WHERE `idCard` = '622123199607090654' AND `time` BETWEEN '1556208000' AND '1556244134' LIMIT 1   [ RunTime:0.0171s ]
+SQL: INSERT INTO `ycity_activation` (`mobile`,`time`,`idCard`,`activation`) VALUES ('18920820654','1556244194','622123199607090654','544053') [ RunTime:0.0244s ]
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\GlobalController.class.php 第 175 行.
+NOTIC: [8] Trying to get property 'error' of non-object D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\GlobalController.class.php 第 203 行.
+
+[ 2019-04-26T10:02:32+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `ycity_activation` [ RunTime:0.0065s ]
+SQL: SELECT `time`,`activation` FROM `ycity_activation` WHERE `mobile` = '18920820654' AND `status` = 0 ORDER BY id DESC LIMIT 1   [ RunTime:0.0042s ]
+SQL: UPDATE `ycity_activation` SET `status`='1' WHERE `mobile` = '18920820654' AND `status` = 0 AND `activation` = '544053' [ RunTime:0.0649s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id_number` = '622123199607090654'  [ RunTime:0.0297s ]
+SQL: INSERT INTO `ycity_member` (`user_name`,`phone`,`password`,`id_number`,`create_time`) VALUES ('让人','18920820654','949d32e698f6e2b8633f9d658dfad842','622123199607090654','1556244152') [ RunTime:0.0263s ]
+
+[ 2019-04-26T10:02:35+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2019-04-26T10:02:43+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0296s ]
+
+[ 2019-04-26T10:02:46+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0050s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0194s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0067s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2019-04-26T10:02:49+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0061s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0064s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2019-04-26T10:02:50+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0052s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0115s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2019-04-26T10:02:51+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0054s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0054s ]
+SQL: SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1   [ RunTime:0.0035s ]
+
+[ 2019-04-26T10:02:52+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0068s ]
+SQL: SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1   [ RunTime:0.0037s ]
+
+[ 2019-04-26T10:02:52+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0054s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0066s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2019-04-26T10:02:52+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0072s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0063s ]
+SQL: SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1   [ RunTime:0.0035s ]
+
+[ 2019-04-26T10:02:53+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/highLevelAthletes.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ycity_gspydybm` WHERE `mid` = 1822 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybkxm` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`xmmc`,`create_time`,`update_time` FROM `ycity_gspydybkxm` WHERE `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0050s ]
+SQL: SELECT `registration_switch` FROM `ycity_bm_options` WHERE ( bm_type = 5 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ycity_province` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`name` FROM `ycity_province` WHERE ( id != 0 )  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 133 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 142 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 151 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 160 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2019-04-26T14:08:18+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/exitLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0219s ]
+NOTIC: [2] unlink(../src/Application/Runtime/Temp/d41d8cd98f00b204e9800998ecf8427e.php): No such file or directory D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Core\Library\Think\Cache\Driver\File.class.php 第 157 行.
+
+[ 2019-04-26T14:08:18+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2019-04-26T14:08:26+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\4dd481411bcd7aedd0a5047db319a2f5.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2019-04-26T14:08:26+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Home/Wx/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+NOTIC: [8] Undefined index: appid D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 14 行.
+NOTIC: [8] Undefined index: appsecret D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2019-04-26T14:08:30+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2019-04-26T14:08:31+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/forgotpassword.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0063s ]
+NOTIC: [8] Undefined index: auth D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\AuthController.class.php 第 170 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\0eb224e4fd9c90d2199fbce8a20dc54a.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\0eb224e4fd9c90d2199fbce8a20dc54a.php 第 56 行.
+NOTIC: [8] Undefined variable: sfzh D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\0eb224e4fd9c90d2199fbce8a20dc54a.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002356s ]
+
+[ 2019-04-26T14:08:31+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Home/Wx/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+NOTIC: [8] Undefined index: appid D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 14 行.
+NOTIC: [8] Undefined index: appsecret D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2019-04-26T14:08:42+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0034s ]
+
+[ 2019-04-26T14:08:46+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0128s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0072s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2019-04-26T14:08:55+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0117s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0358s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0055s ]
+SQL: SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1   [ RunTime:0.0035s ]
+
+[ 2019-04-26T14:08:57+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002165s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0069s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0067s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2019-04-26T14:09:00+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/highLevelAthletes.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ycity_gspydybm` WHERE `mid` = 1822 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybkxm` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`xmmc`,`create_time`,`update_time` FROM `ycity_gspydybkxm` WHERE `status` = 1  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0052s ]
+SQL: SELECT `registration_switch` FROM `ycity_bm_options` WHERE ( bm_type = 5 ) LIMIT 1   [ RunTime:0.0181s ]
+SQL: SHOW COLUMNS FROM `ycity_province` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`name` FROM `ycity_province` WHERE ( id != 0 )  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000470s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 133 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 142 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 151 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 160 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002996s ]
+
+[ 2019-04-26T14:09:56+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/exitLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+NOTIC: [2] unlink(../src/Application/Runtime/Temp/d41d8cd98f00b204e9800998ecf8427e.php): No such file or directory D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Core\Library\Think\Cache\Driver\File.class.php 第 157 行.
+
+[ 2019-04-26T14:09:56+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2019-04-26T14:10:06+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\4dd481411bcd7aedd0a5047db319a2f5.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2019-04-26T14:10:06+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Home/Wx/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+NOTIC: [8] Undefined index: appid D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 14 行.
+NOTIC: [8] Undefined index: appsecret D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\WxController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001516s ]
+
+[ 2019-04-26T14:10:26+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2019-04-26T14:10:31+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0035s ]
+
+[ 2019-04-26T14:10:34+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002588s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0055s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0068s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2019-04-26T14:10:37+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0060s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0055s ]
+SQL: SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1   [ RunTime:0.0036s ]
+
+[ 2019-04-26T14:10:38+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0069s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0058s ]
+SQL: SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1   [ RunTime:0.0045s ]
+
+[ 2019-04-26T14:10:38+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 1822 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0049s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0067s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 1822  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\72871c5f9c2bfb0d9b106c4089a52231.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2019-04-26T14:10:39+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/highLevelAthletes.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `ycity_gspydybm` WHERE `mid` = 1822 LIMIT 1   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `ycity_gspydybkxm` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`xmmc`,`create_time`,`update_time` FROM `ycity_gspydybkxm` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0045s ]
+SQL: SELECT `registration_switch` FROM `ycity_bm_options` WHERE ( bm_type = 5 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ycity_province` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name` FROM `ycity_province` WHERE ( id != 0 )  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 133 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 142 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 151 行.
+NOTIC: [8] Undefined variable: bmxx D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\70ab12bf8a869530e7e0b22cc09bb2f5.php 第 160 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2019-04-26T18:12:59+08:00 ] ::1 /job/cauc_zs3/lqgl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0056s ]
+
+[ 2019-04-26T18:12:59+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2019-04-26T18:13:07+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0195s ]
+
+[ 2019-04-26T18:13:15+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0033s ]
+
+[ 2019-04-26T18:13:19+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0034s ]
+
+[ 2019-04-26T18:42:43+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0058s ]
+
+[ 2019-04-26T18:42:43+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: moduleName D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined D:\STware\Hard\phpTool\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2019-04-26T18:42:50+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0036s ]
+

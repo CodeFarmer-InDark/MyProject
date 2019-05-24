@@ -1,0 +1,24 @@
+<!-- Wrapper for the radial gradient background -->
+		<div id="sidebar">
+        	<div id="sidebar-wrapper">
+                <!-- Sidebar with logo and menu -->
+                <h1 id="sidebar-title"><a href="#">Simpla Admin</a></h1>
+                <!-- Logo (221px wide) -->
+                <a href="#"><img id="logo" src="__PUBLIC__/Admin/Images/logo.png" alt="logo" /></a>
+                <!-- Sidebar Profile links -->
+                <div id="profile-links">你好，<a href="{:U('User/modify',array('id'=>$adminId, 'jumpUri'=>'run' ))}">{$username}</a><br /><br /><a href="{$frontUrl}" target="_blank" title="浏览网站">浏览网站</a> | <a href="{:U('Public/logout')}" title="退出系统">退出系统</a></div>
+                <ul id="main-nav">  <!-- Accordion Menu -->
+                    <li>
+                        <a href='{:U("Index/index")}' class='nav-top-item no-submenu <if condition="$moduleName eq Index ">current</if>'><!-- Add the class "no-submenu" to menu items with no sub menu -->系统首页</a>       
+                    </li>
+                    <li>
+                        <a href='{:U("Line/index")}' class='nav-top-item no-submenu <if condition="$moduleName eq Line">current</if>'>各省分数线管理</a>
+                    </li>
+                    <li>
+                        <a href='{:U("Register/index")}' class='nav-top-item no-submenu <if condition="$moduleName eq Register">current</if>'>中欧学院报名信息管理</a>
+                    </li>
+                </ul>
+                <!-- End #main-nav -->
+            </div>
+        </div>
+        <!-- End #sidebar -->

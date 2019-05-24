@@ -1,0 +1,43 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a>><a href="{:U('College/index',array('id'=>44))}">{$moduleTitle}</a>><a href="{:U('College/index',array('id'=>44))}">院系设置</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页 </a>> <a href="{:U('College/index',array('id'=>44))}">{$moduleTitle}</a> > <a href="{:U('College/index',array('id'=>44))}">院系设置</a></div>
+</div>
+<div class="listmain">
+    <div class="cont">
+        <div class="title" >
+                <div >
+                    <ul class="collegeList">
+                        <present name="collegeList">
+                            <volist name="collegeList" id="vo" >
+                                <li class="college">
+                                    <div class="c-l">
+
+                                        <a class="collegebox" href="{:U('College/detail/',array('id'=>$vo['id']))}" >
+                                            <span class="cName"><img src="__PUBLIC__/Images/college_ico.png" >{$vo.title|msubstr=0,40}</span>
+                                        </a>
+                                    </div>
+                                    <div class="c-r">
+                                        <volist name="vo.field" id="field">
+                                            <a class="majorbox" href="{:U('College/detail/',array('id'=>$field['id']))}" >
+                                                {$field.title}<if condition="empty($field['zyfx']) neq true">({$field.zyfx})</if>
+                                            </a>
+                                        </volist>
+                                    </div>
+                                </li>
+                            </volist>
+                            <else/>
+                            <div class="nullData">暂无数据</div>
+                        </present>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <include file="Public:typeleft" />
+</div>
+</div>
+
+<include file="Public:footer" />

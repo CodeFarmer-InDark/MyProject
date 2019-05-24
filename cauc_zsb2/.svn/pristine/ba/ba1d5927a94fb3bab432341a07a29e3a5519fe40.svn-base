@@ -1,0 +1,11 @@
+			<div id="footer" style="margin:20px 0!important;">
+				<small> <!-- Remove this notice or replace it with whatever you want -->
+						&#169; Copyright <?php echo(date("Y"));?> <a href="http://www.qeeyang.com" target="_blank">Qeeyang Technology Co.,Ltd.</a> | Powered by <a href="http://www.y-city.net.cn" target="_blank">Y-city</a>
+				</small>
+			</div>
+            <!-- End #footer -->
+		</div>
+        <!-- End #main-content -->
+	</div>
+</body>
+</html>

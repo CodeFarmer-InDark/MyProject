@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <!--加载meta IE兼容文件-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><present name="contenttitle">{$contenttitle}-</present><present name="moduleTitle">{$moduleTitle}-</present>{$sysConfig.site_name}-{$sysConfig.seo_title}-Powered by Y-city</title>
+    <meta name="keywords" content="{$contentDetail.keyword|default=$sysConfig['seo_keyword']}" />
+    <meta name="description" content="{$contentDetail.description|default=$sysConfig['seo_description']}" />
+    <link href="./Public/Style/style.css" rel="stylesheet" type="text/css">
+    <link href="./Public/Style/style-responsive.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Public/Style/flexslider3.css" type="text/css">
+    <script src="./Public/Js/echarts.js"></script>
+    <link rel="stylesheet" href="./Public/assets/css/bootstrap.min.css">
+    <script src="./Public/Js/respond.min.js"></script>
+    <script src="./Public/assets/scripts/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        function menuFix() {
+            var sfEls = document.getElementById("nav").getElementsByTagName("li");
+            for (var i=0; i<sfEls.length; i++) {
+                sfEls[i].onmouseover=function() {
+                    this.className+=(this.className.length>0? " ": "") + "sfhover";
+                }
+                sfEls[i].onMouseDown=function() {
+                    this.className+=(this.className.length>0? " ": "") + "sfhover";
+                }
+                sfEls[i].onMouseUp=function() {
+                    this.className+=(this.className.length>0? " ": "") + "sfhover";
+                }
+                sfEls[i].onmouseout=function() {
+                    this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+                }
+            }
+        }
+        window.onload=menuFix;
+    </script>
+
+    <script type="text/javascript">
+        function moreshow() {
+            if (navibox.style.display != 'block') {
+                navibox.style.display = 'block';
+            } else {
+                navibox.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            var navOffset=$("#nav").offset().top;
+            $(window).scroll(function(){
+                var scrollPos=$(window).scrollTop();
+                if(scrollPos >=navOffset){
+                    $("#nav").addClass("fixed");
+                    $("#navi").addClass("full");
+                    $("#nav-angle").hide();
+                }else{
+                    $("#nav").removeClass("fixed");
+                    $("#navi").removeClass("full");
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="wrap" >
+    <div class="body" >
+        <div class="header">
+            <div class="top"><div class="colorbox"></div></div>
+            <div class="topbox">
+                <div class="headerlogo"><div class="logo"></div></div>
+                <div class="headericon"><div class="logo_icon"></div></div>
+                <ul>
+                    <li></li>
+                </ul>
+                <div id="navi">
+                    <ul id="nav">
+                        <li id="top" > <img src="./Public/Images/nav-angle1.png" alt="" id="nav-angle"></li>
+                        <li id="home"><a href="__ROOT__/" >&nbsp; 首 页</a></li>
+                        <li id="colorfff">|</li>
+                        <li><a href="{:U('Brief/index/')}">走进航大</a></li>
+                        <li id="colorfff">|</li>
+                        <li><a href="{:U('List/index/',array('id'=>'13'))}">报考指南</a>
+                        </li> <li id="colorfff">|</li>
+                        <li><a href="{:U('College/index/',array('id'=>'44'))}">学院介绍</a>
+                        </li> <li id="colorfff">|</li>
+                        <li><a href="{:U('List/index/',array('id'=>'19'))}" >招生类型</a>
+                        </li> <li id="colorfff">|</li>
+                        <li><a href="{:U('Page/detail',array('link_label'=>'telephone'))}" >招生咨询</a>
+                        </li> <li id="colorfff">|</li>
+                        <li><a href="{:U('List/open/',array('id'=>'34'))}" >信息公开</a></li> <li id="colorfff">|</li>
+                        <li><a href="{:U('Contact/index/')}" >联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navimenu">
+                <div class="menubox">
+                    <a id="menu" href="#" onclick="moreshow()"></a>
+                </div>
+            </div>
+            <div class="navibox" id="navibox">
+                <div id="re-menu-box">
+                    <a href="__ROOT__/" id="re_menu">首&nbsp;&nbsp;页</a>
+                    <a href="{:U('Brief/index/')}" id="re_menu">走进航大</a>
+                    <a href="{:U('List/index/',array('id'=>'13'))}" id="re_menu">报考指南</a>
+                    <a href="{:U('College/index/',array('id'=>'44'))}" id="re_menu">学院介绍</a>
+                    <a href="{:U('List/index/',array('id'=>'19'))}"  id="re_menu">招生类型</a>
+                    <a href="{:U('Page/detail',array('link_label'=>'telephone'))}" id="re_menu" >招生咨询</a>
+                    <a href="{:U('List/open/',array('id'=>'34'))}"  id="re_menu">信息公开</a>
+                    <a href="{:U('Contact/index/')}"  id="re_menu1">联系我们</a>
+                    <div class="re-search-top-box">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="banner-img">
+            <switch name="plist">
+                <case value="录取结果"><img src="./Public/Images/banner/register-banner.jpg"/></case>
+                <case value="招生计划"><img src="./Public/Images/banner/plan-banner.jpg"/></case>
+                <case value="历年分数"><img src="./Public/Images/banner/score-banner.jpg"/></case>
+                <case value="网上报名"><img src="./Public/Images/banner/register-banner.jpg"/></case>
+                <case value="中欧学院招生选拔报名"><img src="./Public/Images/banner/register-banner.jpg"/></case>
+                <case value="选考科目"><img src="./Public/Images/banner/subject-banner.jpg"/></case>
+                <case value="招生类型"><img src="./Public/Images/banner/type-banner.jpg"/></case>
+                <case value="报考指南"><img src="./Public/Images/banner/college-banner.jpg"/></case>
+                <case value="招生章程"><img src="./Public/Images/banner/regular-banner.jpg"/></case>
+                <case value="走进航大"><img src="./Public/Images/banner/brief-banner.jpg"/></case>
+                <case value="信息公开"><img src="./Public/Images/banner/open-banner.jpg"/></case>
+                <case value="学院介绍"><img src="./Public/Images/banner/college1-banner.jpg"/></case>
+                <case value="联系我们"><img src="./Public/Images/banner/contact-banner.jpg"/></case>
+                <case value="招生咨询"><img src="./Public/Images/banner/consult-banner.jpg"/></case>
+                <case value="招生视频"><img src="./Public/Images/banner/video-banner.jpg"/></case>
+                <case value="美丽校园"><img src="./Public/Images/banner/page-banner.jpg"/></case>
+                <case value="搜索结果"><img src="./Public/Images/banner/jieguo-banner.jpg"/></case>
+                <case value="热点资讯"><img src="./Public/Images/banner/hot-banner.jpg"/></case>
+                <case value="录取进度"><img src="./Public/Images/banner/open-banner.jpg"/></case>
+                <case value="新生大数据统计"><img src="./Public/Images/banner/open-banner.jpg"/></case>
+            </switch>
+        </div>

@@ -1,0 +1,1128 @@
+[ 2018-06-06T10:33:21+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-06-06T11:11:16+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-06-06T11:14:06+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2018-06-06T11:14:07+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-06-06T11:30:38+08:00 ] ::1 /cauc_zs3/zs/SignSecond/index/pid/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 无法加载控制器:SignSecond
+
+[ 2018-06-06T11:30:48+08:00 ] ::1 /cauc_zs3/zs/SignSecond/index/pid/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+ERR: 无法加载控制器:SignSecond
+
+[ 2018-06-06T11:30:52+08:00 ] ::1 /cauc_zs3/zs/SignSecond/index/pid/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+ERR: 无法加载控制器:SignSecond
+
+[ 2018-06-06T11:43:03+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/esl.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:03+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:03+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002435s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:03+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/facePrint.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:04+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/esl.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001746s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:04+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:04+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:04+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/facePrint.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:05+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002195s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:05+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:43:05+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/test/facePrint.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:45:57+08:00 ] ::1 /cauc_zs3/zs/Public/Js/echarts.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:46:24+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:46:48+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:47:59+08:00 ] ::1 /cauc_zs3/zs/Public/echarts.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:48:18+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:48:40+08:00 ] ::1 /cauc_zs3/zs/Public/Js/map/js/china.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:48:40+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003717s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:48:50+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:48:58+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:49:34+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:49:47+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:49:54+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:50:05+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:50:09+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:50:22+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:50:33+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:50:55+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:51:06+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:51:06+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:51:25+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:52:04+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:52:06+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:53:11+08:00 ] ::1 /cauc_zs3/zs/dist/echarts.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005606s ]
+ERR: 无法加载控制器:Dist
+
+[ 2018-06-06T11:53:24+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T11:53:33+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T12:01:22+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T15:00:11+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+
+[ 2018-06-06T15:00:17+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+
+[ 2018-06-06T15:05:18+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2018-06-06T15:05:19+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-06-06T15:05:25+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2018-06-06T15:05:32+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+
+[ 2018-06-06T15:05:38+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+
+[ 2018-06-06T15:05:39+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+
+[ 2018-06-06T15:05:44+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+
+[ 2018-06-06T15:05:49+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-06-06T15:08:08+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+
+[ 2018-06-06T15:10:20+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+
+[ 2018-06-06T15:11:46+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-06-06T15:17:31+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-06-06T15:17:31+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-06-06T15:17:35+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-06-06T15:31:57+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-06-06T15:35:03+08:00 ] 10.0.1.24 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2018-06-06T15:35:20+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2018-06-06T15:35:23+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2018-06-06T15:35:41+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000200s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003159s ]
+
+[ 2018-06-06T15:39:23+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-06-06T15:40:50+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-06-06T15:41:18+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-06-06T15:51:07+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+
+[ 2018-06-06T15:51:07+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+
+[ 2018-06-06T15:54:01+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+
+[ 2018-06-06T15:54:42+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Js/Jquery/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T15:54:42+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-06-06T15:54:42+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-06-06T15:54:44+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-06-06T15:55:05+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2018-06-06T15:55:44+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-06-06T15:56:04+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+
+[ 2018-06-06T15:56:06+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-06-06T15:56:12+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2018-06-06T15:56:18+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2018-06-06T15:56:47+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2018-06-06T15:56:52+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2018-06-06T15:56:59+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-06-06T15:57:02+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2018-06-06T15:57:08+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2018-06-06T15:57:10+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-06-06T15:57:10+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-06-06T15:57:11+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-06-06T15:57:12+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-06-06T15:57:12+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-06-06T15:57:12+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-06-06T15:57:12+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2018-06-06T15:57:12+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-06-06T15:57:34+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+
+[ 2018-06-06T15:57:37+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-06-06T15:59:46+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2018-06-06T15:59:47+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-06-06T15:59:51+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+
+[ 2018-06-06T16:00:28+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-06-06T16:00:51+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2018-06-06T16:04:19+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-06-06T16:04:20+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-06-06T16:04:21+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+
+[ 2018-06-06T16:04:22+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+
+[ 2018-06-06T16:04:47+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2018-06-06T16:04:51+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2018-06-06T16:04:54+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2018-06-06T16:04:54+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-06-06T16:05:43+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-06-06T16:06:33+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2018-06-06T16:09:08+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+
+[ 2018-06-06T16:11:30+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:11:42+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:11:52+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:12:01+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:12:30+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:12:32+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:13:06+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000948s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:13:30+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:14:49+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000325s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:15:10+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:15:23+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:15:31+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:15:41+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:15:55+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001774s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:15:55+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:16:10+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:16:30+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:16:30+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:16:57+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:17:30+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002635s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:19:19+08:00 ] ::1 /cauc_zs3/zs/dist/echarts.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+ERR: 无法加载控制器:Dist
+
+[ 2018-06-06T16:19:36+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:19:58+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002480s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:20:15+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:20:27+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:20:28+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:22:11+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:22:42+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:22:47+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:24:23+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:28:27+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:30:44+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:30:51+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:35:15+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:36:17+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:36:39+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:38:07+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:38:10+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:40:17+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:40:20+08:00 ] ::1 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:40:28+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Js/promotion/dist/echarts.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-06-06T16:41:30+08:00 ] 10.0.1.10 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2018-06-06T16:41:43+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-06-06T16:49:49+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-06-06T16:52:01+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001433s ]
+
+[ 2018-06-06T16:52:03+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+
+[ 2018-06-06T17:10:11+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-06-06T17:10:14+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+

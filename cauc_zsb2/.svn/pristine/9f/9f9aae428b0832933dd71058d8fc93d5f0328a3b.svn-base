@@ -1,0 +1,1310 @@
+[ 2019-05-16T08:37:30+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `ycity_member` WHERE `phone` = '18920820654' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2019-05-16T08:37:34+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0475s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0155s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2019-05-16T08:37:35+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0286s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:37+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:37+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0013s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:37+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:38+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:38+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0030s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:39+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0025s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0036s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2019-05-16T08:37:41+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:37:41+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0035s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:42:40+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0025s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0036s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2019-05-16T08:42:41+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0030s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0072s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001535s ]
+
+[ 2019-05-16T08:42:43+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:43:30+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0028s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0042s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2019-05-16T08:43:30+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:43:31+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0030s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0045s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2019-05-16T08:43:31+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0060s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:43:33+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0035s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:31+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0035s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0041s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2019-05-16T08:44:32+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0045s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:33+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0014s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:34+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006325s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0046s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:35+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0044s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:35+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:35+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0032s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0013s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0032s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0017s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0034s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0037s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:36+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:37+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0030s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:37+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:37+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:38+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0662s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:38+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:39+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:39+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:44:39+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0089s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:46:19+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: moduleName E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\5b1e7084dfef9983c1b4c717c4c85b21.php 第 52 行.
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\5b1e7084dfef9983c1b4c717c4c85b21.php 第 69 行.
+NOTIC: [8] Undefined variable: logined E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\5b1e7084dfef9983c1b4c717c4c85b21.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2019-05-16T08:49:28+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0025s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0039s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2019-05-16T08:49:29+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:49:30+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0036s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:49:31+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:49:32+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0026s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0035s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2019-05-16T08:49:32+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:50:39+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0025s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0037s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2019-05-16T08:50:39+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+
+[ 2019-05-16T08:50:42+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+
+[ 2019-05-16T08:50:43+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0026s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0037s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2019-05-16T08:50:47+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004330s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+
+[ 2019-05-16T08:50:48+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+
+[ 2019-05-16T08:50:50+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0090s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0041s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2019-05-16T08:51:24+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0024s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0038s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2019-05-16T08:51:25+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006324s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+
+[ 2019-05-16T08:51:29+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0027s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0041s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2019-05-16T08:51:38+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0025s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0037s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2019-05-16T08:51:38+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+
+[ 2019-05-16T08:51:41+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+
+[ 2019-05-16T08:51:41+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0027s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0036s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2019-05-16T08:51:42+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/getInto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+
+[ 2019-05-16T08:51:47+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_bm_options` [ RunTime:0.0028s ]
+SQL: SELECT `bm_type`,`registration_switch` FROM `ycity_bm_options` WHERE `bm_type` IN (1,2,3,5)  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 3 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined offset: 2 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `ycity_gspydybm` [ RunTime:0.0036s ]
+SQL: SELECT `id` FROM `ycity_gspydybm` WHERE `mid` = 7  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Runtime\Cache\Home\de8ddffa5daa7f39c43d324acbab6590.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2019-05-16T08:54:24+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Local/ceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0033s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_tdd_final2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_t_tdd_final2019`
+
+[ 2019-05-16T08:57:02+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Local/ceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0051s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_cj2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_cj2019`
+ERR: 1146:Table 'cauc_zsb_online.ycity_cj2019' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ycity_cj2019`
+
+[ 2019-05-16T08:58:01+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Local/ceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0029s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0024s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_xbdm' doesn't exist
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+ERR: 1146:Table 'cauc_zsb_online.ycity_xbdm' doesn't exist
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+
+[ 2019-05-16T08:59:24+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Local/ceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0024s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_jhk' doesn't exist
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+ERR: 1146:Table 'cauc_zsb_online.ycity_t_jhk' doesn't exist
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+
+[ 2019-05-16T09:00:09+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Local/ceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0027s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0027s ]
+ERR: 1146:Table 'cauc_zsb_online.ycity_zy' doesn't exist
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+ERR: 1146:Table 'cauc_zsb_online.ycity_zy' doesn't exist
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+
+[ 2019-05-16T09:00:39+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Local/ceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0025s ]
+ERR: 1054:Unknown column 'ycity_province.name' in 'field list'
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+ERR: 1054:Unknown column 'ycity_province.name' in 'field list'
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+
+[ 2019-05-16T09:15:27+08:00 ] ::1 /job/cauc_zsb2/zsb/signup.php/Local/ceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::_sendSMS() should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\SignUp\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0034s ]
+SQL: SELECT `id_number`,`create_time`,`phone` FROM `ycity_member` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ycity_t_tdd_final2019` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `ycity_cj2019` [ RunTime:0.0026s ]
+ERR: 1054:Unknown column 'ycity_province.name' in 'field list'
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+ERR: 1054:Unknown column 'ycity_province.name' in 'field list'
+ [ SQL语句 ] : SELECT ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.pc,ycity_t_tdd_final2019.lqzy,ycity_t_tdd_final2019.kldm,ycity_t_tdd_final2019.xkkm,ycity_t_tdd_final2019.xm,ycity_t_tdd_final2019.tdcj,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.year,ycity_xbdm.xbmc,ycity_xbdm.xbdm,ycity_t_tdd_final2019.sfzh,ycity_t_tdd_final2019.ksh,ycity_t_tdd_final2019.cj,ycity_t_tdd_final2019.provinceid,ycity_province.name,ycity_t_tdd_final2019.lxsj,ycity_t_tdd_final2019.lxdh,ycity_t_tdd_final2019.tddw,ycity_t_tdd_final2019.zymc_b,ycity_t_tdd_final2019.zymc_c,ycity_t_tdd_final2019.zymc_d,ycity_t_tdd_final2019.zymc_e,ycity_t_tdd_final2019.zymc_f,ycity_t_tdd_final2019.zymc_g,ycity_zy.zymc,ycity_zy.zyfx,ycity_zy.college FROM `ycity_t_tdd_final2019` LEFT JOIN ycity_xbdm ON ycity_t_tdd_final2019.xbdm = ycity_xbdm.xbdm LEFT JOIN ycity_province ON ycity_t_tdd_final2019.provinceid = ycity_province.id LEFT JOIN ycity_t_jhk ON ycity_t_tdd_final2019.lqzy = ycity_t_jhk.zydh LEFT JOIN ycity_zy ON ycity_t_jhk.zydm = ycity_zy.zydm  WHERE `sfzh` = '622123199607090654' ORDER BY ycity_t_tdd_final2019.id desc LIMIT 1  
+

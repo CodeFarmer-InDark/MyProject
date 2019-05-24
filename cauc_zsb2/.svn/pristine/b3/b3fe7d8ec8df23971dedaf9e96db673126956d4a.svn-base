@@ -1,0 +1,2 @@
+<extend name="Common:base1" />
+<block name="dao-hang"><span class="layui-text">adsad</span></block>

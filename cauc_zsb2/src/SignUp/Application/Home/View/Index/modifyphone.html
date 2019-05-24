@@ -1,0 +1,145 @@
+<extend name="Common:base2" />
+<block name="container">
+    <div class="layui-header">
+        <div class="jzb-a">
+            <a href="{:U('Index/index')}">
+                <img src="__PUBLIC__/Home/images/user.png" class="layui-nav-img">
+                <span class="layui-text">{:session('user_name')}</span>
+            </a>
+            <a id="xiugai" href="javascript:;">
+                <img src="__PUBLIC__/Home/images/xiugaixinxi.png" class="layui-nav-img">
+                <span class="layui-text">修改信息</span>
+                <img src="__PUBLIC__/Home/images/duobianx.png" style="width: 15px;height: 15px;height: 12px;margin-bottom: 4px;" class="layui-nav-img">
+            </a>
+            <div id="xuanXiang">
+                <a href="{:U('Index/modifyPhone')}">修改手机号</a>
+                <a href="{:U('Index/modifyPassword')}">修改密码</a>
+            </div>
+            <a href="{:U('Auth/exitLogin')}">
+                <img src="__PUBLIC__/Home/images/tuichu.png" style="height: 18px;" class="layui-nav-img">
+                <span class="layui-text">退出登录</span>
+            </a>
+        </div>
+    </div>
+    <div class="container modifyphone" style="width: 540px;height: 437px!important;margin-top: 200px;">
+        <div id="touMingCen" style="margin:auto;width: 77%;">
+            <p style="font-size: 26px;color: #fff;text-align: center; margin:35px 35px 15px 35px;">修改手机号</p>
+            <div class="input">
+                <input class="input-text" type="number" name="phone" placeholder="请输入新的手机号">
+            </div>
+            <div class="input-code">
+                <div class="input" style="width: 200px;margin: 0;float: left;">
+                    <input class="input-text" type="text" name="verify_code" placeholder="图形验证码">
+                </div>
+                <div class="input-sms-code">
+                    <img src="{:U('Home/Wx/verify')}" title="如果您无法识别验证码，请点图片更换" id="verifyImage" style="width: 178px;border-radius: 15px;">
+                </div>
+            </div>
+            <div class="input-code">
+                <div class="input" style="width: 200px;margin: 0;float: left;">
+                    <input class="input-text" type="text" name="sms_code" placeholder="请填写验证码">
+                </div>
+                <div class="input-sms-code">
+                    <input type="button" class="input-submit" id="getCode" style="font-size: 16px;" value="获取验证码"/>
+                </div>
+            </div>
+            <button type="button" style="margin: 30px auto;" id="confirmation" class="input-submit">确认修改</button>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__STATIC__/assets/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.use(['jquery','layer'], function(){
+            var $ = layui.$,//jquery引入重点
+                layer = layui.layer;
+            $("#verifyImage").click(function(){
+                resetVerifyCode();
+            });
+            function resetVerifyCode()
+            {
+                $("#verifyImage").attr('src', "{:U('Home/Wx/verify',0,0,0)}/"+ Math.random());
+            }
+            $('#xiugai').click(function () {
+                if($('#xuanXiang').is(":hidden")){
+                    $('#xuanXiang').show();
+                }else{
+                    $('#xuanXiang').hide();
+                }
+            });
+            $('#getCode').click(function () {
+                var sfzh = "{$sfzh}";
+                var phone = $("input[name='phone']").val();
+                var verify_code = $("input[name='verify_code']").val();
+                if (!phone.match(/^0?1[0-9]{10}$/)) {
+                    layer.msg('手机号码错误，请检查后重新填写。');
+                    $("input[name='phone']").focus();
+                    return false;
+                }else if('' == verify_code){
+                    layer.msg('请填写图形验证码');
+                    $("input[name='verify_code']").focus();
+                    return false;
+                }
+                settime($(this));
+                $.ajax({
+                    type:"POST",
+                    url:"{:U('Auth/sendSMS')}",
+                    dataType: "json",
+                    data:{
+                        phone:phone,type:"modifyPhone",sfzh:sfzh,verify_code:verify_code
+                    },
+                    success:function(data){
+                        layer.msg(data.msg);
+                    }
+                });
+            });
+            $('#confirmation').click(function () {
+                var phone = $("input[name='phone']").val();
+                var sms_code = $("input[name='sms_code']").val();
+                var verify_code = $("input[name='verify_code']").val();
+                if (!phone.match(/^0?1[0-9]{10}$/)) {
+                    layer.msg('手机号码错误，请检查后重新填写。');
+                    return false;
+                }else if('' == verify_code){
+                    layer.msg('请填写图形验证码');
+                    return false;
+                }else if (sms_code == "") {
+                    layer.msg('请填写验证码');
+                    return false;
+                }
+                $.ajax({
+                    type:"POST",
+                    url:"{:U('Index/modifyPhone')}",
+                    dataType: "json",
+                    data:{
+                       phone:phone,sms_code:sms_code,redirect_uri:"{$redirect_uri}"
+                    },
+                    success:function(data){
+                        layer.msg(data.msg,function () {
+                            if (data.code == 1) {
+                                window.location.href = data.data.url;
+                            }
+                        });
+                    }
+                });
+            });
+            var countdown=60;
+            function settime(obj) { //发送验证码倒计时
+                if (countdown == 0) {
+                    obj.attr('disabled',false);
+                    obj.css('cursor','');
+                    //obj.removeattr("disabled");
+                    obj.val("获取验证码");
+                    countdown = 60;
+                    return;
+                } else {
+                    obj.attr('disabled',true);
+                    obj.css('cursor','not-allowed');
+                    obj.val("重新发送(" + countdown + ")");
+                    countdown--;
+                }
+                setTimeout(function() {settime(obj)},1000)
+            }
+        });
+    </script>
+</block>

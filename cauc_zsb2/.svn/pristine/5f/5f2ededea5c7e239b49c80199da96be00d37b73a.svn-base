@@ -1,0 +1,224 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<script src="__PUBLIC__/Js/flexslider/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/flexslider/jquery.mmenu.min.all.js"></script>
+<script src="__PUBLIC__/Js/flexslider/jquery.flexslider.js"></script>
+<script src="__PUBLIC__/Js/flexslider/o-script.js"></script>
+<script src="__PUBLIC__/Js/jquery.scroll.js" type="text/javascript"></script>
+<!-- 图片播放功能 -->
+<div class="bannerPane">
+    <section class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <volist name="advlist" id="row" empty="暂无数据">
+                    <li>
+                        <a class="banner-img" href="{$row.link_url}" target="_blank">
+                            <img src="__ROOT__/Uploads/{$row.attach_file}"/>
+                        </a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </section>
+</div>
+<div class="newsbox">
+    <div class="news">
+        <div class="title" ><span>招生快讯</span><a href="{:U('List/index/',array('id'=>'13'))}" class="more2">more+</a></div>
+        <ul>
+            <volist name="flashList" id="row" empty="暂无数据">
+                <li>
+                    <div class="date">
+                        <div class="year"><span>{$row.create_time|date="Y",###}</span></div>
+                        <div class="day"><span>{$row.create_time|date="m.d",###}</span></div>
+                    </div>
+                    <if condition="$row['link_url'] neq ''">
+                        <a href="{$row.link_url}" target="_blank">
+                            <div class="topic" id="kuan">{$row.title|msubstr=0,30}</div>
+                            <div class="topic" id="jiaokuan">{$row.title|msubstr=0,66}</div>
+                            <div class="detail" id="kuan">{$row.description|msubstr=0,90}</div>
+                            <div class="detail" id="jiaokuan">{$row.description|msubstr=0,30}</div>
+                        </a>
+                        <else/>
+                        <a href="{:U('List/detail/',array('id'=>$row['id']))}">
+                            <div class="topic" id="kuan">
+                                {$row.title|msubstr=0,34}
+                            </div>
+                            <div class="topic" id="jiaokuan">
+                                {$row.title|msubstr=0,70}
+                            </div>
+                            <div class="detail" id="kuan">{$row.description|msubstr=0,100}</div>
+                            <div class="detail" id="jiaokuan">{$row.description|msubstr=0,36}</div>
+                        </a>
+                    </if>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+<div class="newsbox1">
+    <div class="news">
+        <div class="title" ><span>招生快讯</span><a href="{:U('List/index/',array('id'=>'13'))}" class="more2">more+</a></div>
+        <ul>
+            <volist name="flashList1" id="row" empty="暂无数据">
+                <li>
+                    <div class="date">
+                        <div class="year"><span>{$row.create_time|date="Y",###}</span></div>
+                        <div class="day"><span>{$row.create_time|date="m.d",###}</span></div>
+                    </div>
+                    <if condition="$row['link_url'] neq ''">
+                        <a href="{$row.link_url}" target="_blank">
+                            <span class="topic" id="zhai">{$row.title|msubstr=0,72}</span>
+                            <span class="topic" id="zuizhai">{$row.title|msubstr=0,24}</span>
+                        </a>
+                        <else/>
+                        <a href="{:U('List/detail/',array('id'=>$row['id']))}">
+                            <span class="topic" id="zhai">
+                                {$row.title|msubstr=0,42}
+                            </span>
+                            <span class="topic" id="zuizhai">
+                                {$row.title|msubstr=0,24}
+                            </span>
+                        </a>
+                    </if>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+<div class="cart">
+    <div class="cart_link">
+        <a href="{:U('List/index/',array('id'=>40))}" class="cart-box1">招生章程 </a>
+        <a href="{:U('Search/index/',array('id'=>37))}" class="cart-box2">招生计划 </a>
+        <a href="{:U('Search/apply/',array('id'=>38))}" class="cart-box3">网上报名 </a>
+        <a href="{:U('Search/scorenav/',array('id'=>42))}" class="cart-box4" >历年分数 </a>
+        <a href="{:U('Search/subject/',array('id'=>39))}" class="cart-box5" >选考科目 </a>
+        <a href="{:U('Search/admission/',array('id'=>55))}" class="cart-box6">录取结果 </a>
+    </div>
+</div>
+<div class="re-cart">
+    <div class="cartbox">
+        <a href="{:U('List/index/',array('id'=>40))}" class="cart-left-box1">招生章程</a>
+        <a href="{:U('Search/index/',array('id'=>37))}" class="cart-left-box2">招生计划</a>
+        <a href="{:U('Search/apply/',array('id'=>38))}" class="cart-left-box3">网上报名</a>
+        <a href="{:U('Search/scorenav/',array('id'=>42))}" class="cart-left-box4">历年分数</a>
+        <a href="{:U('Search/subject/',array('id'=>39))}" class="cart-left-box5">选考科目</a>
+        <a href="{:U('Search/admission/',array('id'=>55))}" class="cart-left-box6">录取结果</a>
+    </div>
+</div>
+<div class="indexmain">
+    <div class="stutype">
+        <div class="title" ><span>招生类型</span></div>
+        <ul>
+            <li><a href="{:U('List/index/',array('id'=>19))}">国家统招</a></li>
+            <li><a href="{:U('List/index/',array('id'=>20))}">中外合作办学中欧航空工程师</a></li>
+            <li><a href="{:U('List/index/',array('id'=>21))}">民航招飞</a></li>
+            <li><a href="{:U('List/index/',array('id'=>22))}">空乘空保招生</a></li>
+            <li><a href="{:U('List/index/',array('id'=>23))}">高水平运动队</a></li>
+            <li><a href="{:U('List/index/',array('id'=>24))}">港澳侨台</a></li>
+            <li><a href="{:U('List/index/',array('id'=>25))}">少数民族</a></li>
+            <li class="last"><a href="{:U('List/index/',array('id'=>26))}">国家贫困专项</a></li>
+        </ul>
+    </div>
+    <div class="stuvideo">
+        <div class="title" ><span>招生视频</span><a href="{:U('Video/index')}" class="more1">more+</a></div>
+        <div class="video-box">
+            <div class="vcontent">
+                <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" poster="Uploads/{$video.attach_file}" data-setup="{}">
+                    <source src='Uploads/{$video.videoUrl}' type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="re-stutype">
+        <div class="title" ><span>招生类型</span></div>
+        <ul>
+            <li><a href="{:U('List/index/',array('id'=>19))}">国家统招</a></li>
+            <li><a href="{:U('List/index/',array('id'=>20))}">中外合作办学中欧航空工程师</a></li>
+            <li><a href="{:U('List/index/',array('id'=>21))}">民航招飞</a></li>
+            <li><a href="{:U('List/index/',array('id'=>22))}">空乘空保招生</a></li>
+            <li><a href="{:U('List/index/',array('id'=>23))}">高水平运动队</a></li>
+            <li><a href="{:U('List/index/',array('id'=>24))}">港澳侨台</a></li>
+            <li><a href="{:U('List/index/',array('id'=>25))}">少数民族</a></li>
+            <li class="last"><a href="{:U('List/index/',array('id'=>26))}">国家贫困专项</a></li>
+        </ul>
+    </div>
+    <div class="re-picture">
+        <div class="lxfscroll" >
+            <ul>
+                <volist name="picList" id="row">
+                    <li>
+                        <div class="ptitle"><a href="{$row.link_url}" target="_blank" >{$row.title}</a></div>
+                        <a href="{$row.link_url}" target="_blank"  >
+                            <if condition="$row['attach_file'] neq ''">
+                                <img src="__ROOT__/Uploads/{$row.attach_file}" alt="{$row.title}" >
+                                <else/>
+                                <img src="__PUBLIC__/Images/nopic.png" alt="暂无图片" class="pic"/>
+                            </if>
+                        </a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="button">
+            <input name="a" type="button" onClick="lxfLast()" value="< " class="leftbtn"/>
+            <input name="a" type="button" onClick="lxfNext()" value="&nbsp;>" class="rightbtn"/>
+        </div>
+    </div>
+</div>
+<div class="colordiv"><div class="div"></div></div>
+<div class="picture">
+    <div class="picbox">
+        <ul>
+            <volist name="picList" id="row">
+                <li>
+                    <div id="ptitle" class="ptitle"><a href="{$row.link_url}" target="_blank" class="ie8">{$row.title}</a></div>
+                    <a href="{$row.link_url}" target="_blank" >
+                        <if condition="$row['attach_file'] neq ''">
+                            <img src="__ROOT__/Uploads/{$row.attach_file}" alt="{$row.title}" class="ie8">
+                            <else/>
+                            <img src="__PUBLIC__/Images/nopic.png" alt="暂无图片" class="pic"/>
+                        </if>
+                    </a>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+<!--[if lt IE 9]>
+<style>
+    .picture ul li a img.ie8{margin:-30px 0px 0px 10px}
+    .picture ul li #ptitle{top:210px;}
+    .picture ul li a.ie8{margin-top:00px}
+</style>
+<![endif]-->
+<script>
+    $(function(){
+        var i=0;
+        var li = $(".lxfscroll li");
+        var n=li.length-1;
+        var speed = 300;
+        li.not(":first").css({left:"500px"});
+        li.eq(n).css({left:"-500px"});
+        lxfNext=function (){
+            if (!li.is(":animated")) {
+                if (i>=n){i=0;li.eq(n).animate({left:"-400px"},speed);
+                    li.eq(i).animate({left:"0px"},speed);
+                }else{i++;li.eq(i-1).animate({left:"-400px"},speed);li.eq(i).animate({left:"0px"},speed);};
+                li.not("eq(i)").css({left:"400px"});
+                $("i").text(i+1);
+            }else{};
+        };
+        lxfLast=function (){
+            if (!li.is(":animated")) {
+                if (i<=0){i=n;li.eq(0).animate({left:"400px"},speed);li.eq(n).animate({left:"0px"},speed);
+                }else{i--;li.eq(i+1).animate({left:"400px"},speed);li.eq(i).animate({left:"0px"},speed);}
+                li.not("eq(i)").css({left:"-400px"});
+                $("i").text(i+1);
+            };
+        };
+    });
+</script>
+<link href="./Public/Js/video-js/css/video-js.css" rel="stylesheet">
+<script src="./Public/Js/video-js/js/videojs-ie8.min.js"></script>
+<script src="./Public/Js/video-js/js/video.js"></script>
+<include file="Public:footer" />

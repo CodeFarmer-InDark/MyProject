@@ -1,0 +1,6 @@
+[ 2019-05-07T18:01:22+08:00 ] ::1 /job/cauc_zsb2/zsb/admin.php?m=College&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:College
+

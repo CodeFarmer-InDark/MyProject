@@ -1,0 +1,10 @@
+[ 2018-05-29T14:41:03+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+
+[ 2018-05-29T14:46:35+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006186s ]
+

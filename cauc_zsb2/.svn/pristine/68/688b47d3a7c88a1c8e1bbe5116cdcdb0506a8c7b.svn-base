@@ -1,0 +1,23 @@
+<?php
+namespace Home\Controller;
+class LocalController extends IndexController {
+    public function index()
+    {
+        $data['phone'] = '18920820654';
+        $data['type'] = 'forgotpassword';
+        $idCard = '622123199607090654';
+        $res = $this->_sendSMS($data['phone'],$data['type'],60,$idCard);
+        if($res){
+            echo 'success';
+        }
+        else{
+            echo 'fail';
+        }
+    }
+
+    public function ceshi()
+    {
+        $info = parent::get_member_info(7);
+        dump($info);
+    }
+}

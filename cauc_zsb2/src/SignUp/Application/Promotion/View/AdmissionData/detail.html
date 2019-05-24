@@ -1,0 +1,42 @@
+<include file="Public:contentHeader" />
+<div class="body grey">
+    <div class="register pad fff bottom" style="min-height:400px;">
+        <div class="rtitle">
+            <span class="t1 t3" id="t4" style="color:#fff;border: 0;">录取人数查询</span>
+            <a href="{:U('AdmissionData/index',array('p'=>$p))}" class="returnAfter">返回>></a>
+        </div>
+        <div class="historylist2" style="border: 0;">
+            <div class="search" style="margin-top:40px;">
+                <table  cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr class="plan-attr">
+                        <th colspan="2">{$thisInfo['zxmc']}（{$thisInfo['year']}年）</th>
+                    </tr>
+                    <tr class="plan-attr" style="font-weight:bold;">
+                        <td width="50" style="border-right:1px solid #ebeef5;">专业名称</td>
+                        <td width="50">人数</td>
+                    </tr>
+                    </thead>
+                    <present name="data">
+                        <tbody>
+                        <volist name="data" id="vo">
+                            <tr>
+                                <td width="50">{$vo.zyname}</td>
+                                <td width="50">{$vo.num}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                        <else />
+                        <tbody>
+                        <tr>
+                            <td colspan="2"><p class="no" >{$msg}</p></td>
+                        </tr>
+                    </present>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />

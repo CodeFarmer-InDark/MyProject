@@ -1,0 +1,130 @@
+.layui-m-layer-msg .layui-m-layercont {
+    line-height: 110px;
+    font-size: 40px;
+}
+body .layui-m-layer .layui-m-layer-msg {
+    border-radius: 20px;
+}
+.header{
+    width: 100%;
+    height: 245px;
+    border-bottom:1px solid #d2d2d2;
+    display: flex;
+    flex-direction: column;
+}
+.logo-img{
+    width: 550px;
+    height: 140px;
+}
+.logo-title{
+     font-size: 60px;
+     margin-bottom: 20px;
+     font-weight: 600;
+     color: #0D528F;
+}
+.biaoti{
+    display: flex;
+    justify-content: space-around;
+    top: 30px;
+    position: relative;
+    font-size: 45px;
+    font-weight: 700;
+}
+.centers{
+    height: 1185px;
+    margin: auto 60px;
+}
+
+.head-img{
+    display: flex;
+    justify-content: center;
+    height: 355px;
+    margin: 20px auto;
+}
+.user-info{
+    height: 515px;
+    margin: 20px auto;
+}
+.user-info table{
+    height: 100%;
+    width: 100%;
+    border-color: #fbfbfb;
+    border-collapse: separate;
+    font-size: 40px;
+    font-weight: 600;
+}
+.remarks-text{
+    height: 161px;
+    margin: 20px auto;
+}
+.remarks-text textarea{
+    width: 99%;
+    height: 160px;
+    max-width: 99%;
+    max-height: 160px;
+    border:1px solid #d2d2d2;
+}
+.click-but{
+    height: 165px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.click-but button{
+    width: 440px;
+    height: 95px;
+    background: #2F58C1;
+    color: #fff;
+    font-size: 40px;
+}
+.login{
+    width: 100%;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-info{
+    width:765px;
+    height: 120px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.yzm{
+     width: 405px;
+     height: 120px;
+     border: 1px solid;
+     display: flex;
+     align-items: center;
+}
+.login-info input{
+    height: 90%;
+    width: 96%;
+    border: 0;
+    padding-left: 55px;
+    outline:medium;
+    font-size: 50px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #838080;font-size:50px;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#838080;font-size:50px;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#838080;font-size:50px;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:#838080;font-size:50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

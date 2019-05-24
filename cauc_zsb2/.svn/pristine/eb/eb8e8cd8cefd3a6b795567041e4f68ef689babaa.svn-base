@@ -1,0 +1,84 @@
+<!-- Wrapper for the radial gradient background -->
+		<div id="sidebar">
+        	<div id="sidebar-wrapper">
+                <!-- Sidebar with logo and menu -->
+                <h1 id="sidebar-title"><a href="#">Simpla Admin</a></h1>
+                <!-- Logo (221px wide) -->
+                <a href="#"><img id="logo" src="__PUBLIC__/Admin/Images/logo.png" alt="logo" /></a>
+                <!-- Sidebar Profile links -->
+                <div id="profile-links" style="color: #fff">你好，{$username}<br /><br /><a href="{$frontUrl}" target="_blank" title="浏览网站">浏览网站</a> | <a href="{:U('Public/logout')}" title="退出系统">退出系统</a></div>
+
+                <ul id="main-nav">  <!-- Accordion Menu -->
+                    <li>
+                        <a href='{:U("Index/index")}' class='nav-top-item no-submenu <if condition="$moduleName eq Index ">current</if>'><!-- Add the class "no-submenu" to menu items with no sub menu -->系统首页</a>
+                    </li>
+                    <!--<li>
+                        <a href="#" class="nav-top-item current">--><!-- Add the class "current" to current menu item --><!--Articles</a>
+                        <ul>
+                            <li><a href="#">Write a new Article</a></li>
+                            <li><a class="current" href="#">Manage Articles</a></li>--> <!-- Add class "current" to sub menu items also -->
+                    <!--<li><a href="#">Manage Comments</a></li>
+                    <li><a href="#">Manage Categories</a></li>
+                </ul>
+            </li>-->
+                    <li>
+                        <a href="#" class='nav-top-item <if condition="($moduleName eq Config) OR ($moduleName eq Category) OR ($moduleName eq Type) OR ($moduleName eq User) OR ($moduleName eq Role) OR ($moduleName eq Link) OR ($moduleName eq Batch) OR ($moduleName eq Adv) OR ($moduleName eq Picture)">current</if>'>基本设置</a>
+                        <ul>
+                            <li class="Config"><a href="{:U("Config/index")}" <if condition="($moduleName eq 'Config')">class="current"</if>>系统配置</a></li>
+                            <li class="User"><a href="{:U("User/index")}" <if condition="($moduleName eq 'User') OR ($moduleName eq 'Role')">class="current"</if>>管理员管理</a></li>
+                            <!--<li class="Link"><a href="{:U("Link/index")}" <if condition="($moduleName eq 'Link')">class="current"</if>>友情链接管理</a></li>-->
+                            <!--<li class="Category"><a href="{:U("Category/index")}" <if condition="($moduleName eq 'Category')">class="current"</if>>分类管理</a></li>-->
+                            <!-- li class="Role"><a href="{:U("Role/index")}" <if condition="($moduleName eq 'Role')">class="current"</if>>角色管理</a></li -->
+                            <li class="Type"><a href="{:U('Type/index')}" <if condition="($moduleName eq Type)">class="current"</if>'>招生类型管理</a></li>
+                            <li class="adv"><a href="{:U('Adv/index')}" <if condition="($moduleName eq Adv)">class="current"</if>'>首页上部幻灯</a></li>
+                            <li class="Picture"><a href="{:U('Picture/index')}" <if condition="($moduleName eq Picture)">class="current"</if>'>首页下部幻灯</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{:U("AdminLog/index")}"class='nav-top-item no-submenu <if condition="($moduleName eq AdminLog) ">current</if>'>操作日志  </a>
+                        <!-- <ul>
+                             &lt;!&ndash;<li class="Core"><a href="{:U("Core/index")}"<if condition="($moduleName eq 'Core')">class="current"</if>>内核配置 </a></li>&ndash;&gt;
+                                <li class="AdminLog"><a href="{:U("AdminLog/index")}"<if condition="($moduleName eq 'AdminLog')">class="current"</if>>操作日志  </a></li>
+                             </ul>-->
+                    </li>
+                    <li>
+                        <a href="{:U('Page/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Page) ">current</if>'>单网页综合管理</a>
+                    </li>
+                    <li>
+                        <a href="{:U('News/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq News) ">current</if>'>文章管理</a>
+                    </li>
+                    <li>
+                        <a href="{:U('Consult/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Consult) ">current</if>'>考生问答管理</a>
+                    </li>
+                    <li>
+                        <a href="#" class='nav-top-item no-submenu <if condition="($moduleName eq College) OR ($moduleName eq Major)">current</if>'>院系管理</a>
+                        <ul>
+                            <li class="College"><a href="{:U("College/index")}" <if condition="($moduleName eq 'College')">class="current"</if>>院系设置管理</a></li>
+                            <!--<li class="Major"><a href="{:U("Major/index")}" <if condition="($moduleName eq 'Major')">class="current"</if>>专业一览管理</a></li>-->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{:U('Video/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Video)">current</if>'>视频管理</a>
+                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class='nav-top-item no-submenu <if condition="($moduleName eq Score) OR ($moduleName eq Subject)">current</if>'>查询管理</a>-->
+                        <!--<ul>-->
+                            <!--&lt;!&ndash;<li class="Plan"><a href="{:U("Plan/index")}" <if condition="($moduleName eq 'Plan')">class="current"</if>>招生计划管理</a></li>&ndash;&gt;-->
+                            <!--<li class="Subject"><a href="{:U("Subject/index")}" <if condition="($moduleName eq 'Subject')">class="current"</if>>选考科目管理</a></li>-->
+                            <!--&lt;!&ndash;<li class="Score"><a href="{:U("Score/index")}" <if condition="($moduleName eq 'Score')">class="current"</if>>历年分数管理</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="{:U('Life/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Life)">current</if>'>美丽校园图集管理</a>
+                    </li>
+                    <li>
+                        <a href="{:U('Remark/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Remark)">current</if>'>录取备注管理</a>
+                    </li>
+                    <li>
+                        <a href="{:U('Register/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Register)">current</if>'>中欧报名管理</a>
+                    </li>
+                </ul>
+                <!-- End #main-nav -->
+            </div>
+        </div>
+        <!-- End #sidebar -->

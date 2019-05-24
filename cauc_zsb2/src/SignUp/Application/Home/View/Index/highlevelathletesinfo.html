@@ -1,0 +1,332 @@
+<extend name="Common:base1" />
+<block name="now_title">高水平运动员报名</block>
+<block name="dao-hang">
+    <div class="dao-hang-ydy">
+        <p id="biaoti">高水平运动员报名</p>
+        <a href="{:U('Index/index')}"> <<返回报名入口 </a>
+    </div>
+</block>
+<block name="main">
+    <div id="main" style="height: 1770px;">
+        <div id="ydy-bm-jd">
+            <div style="height: 50px;background: #f2f8fd;">
+                <div id="ydy-bm-zt">
+                    <span>报名状态：</span>
+                    <if condition="$bmxx['bm_status'] eq 4">
+                        <span style="color:red;">
+                    <elseif  condition="$bmxx['bm_status'] eq 3"/>
+                        <span style="color:#65bc64;">
+                    <elseif condition="$bmxx['bm_status'] eq 2"/>
+                        <span style="color:#df8851;">
+                    <elseif condition="$bmxx['bm_status'] eq 1"/>
+                        <span style="color:#2753ce;">
+                    </if>
+                    {$bmxx['bm_status']==1?'未审核':($bmxx['bm_status']==2?'返回修改':($bmxx['bm_status']==3?'已通过':($bmxx['bm_status']==4?'未通过':'未知')))}</span>
+                    <span style="padding-left:60px;">测试成绩：</span>
+                    <!--<span style="color:#65bc64;">{$bmxx['tests_result']==0?'未测试':($bmxx['tests_result']==1?'测试通过':($bmxx['tests_result']==2?'不通过':''))}</span>-->
+                    <if condition=" $bmxx['tests_result'] eq 1">
+                        <span style="color:#65bc64;">{$bmxx['tests_achievement']}</span>
+                    <else />
+                        <span style="color:#65bc64;">暂无发布</span>
+                    </if>
+                </div>
+                <div id="ydy-bm-zt1">
+                    <span>年度：{:substr(date('YmdHis',$bmxx['bm_time']),0,4)}</span>
+                    <span>编号：{$bmxx['id']}</span>
+                </div>
+            </div>
+            <if condition="$bmxx['bm_status'] eq 2">
+                <div id="ydy-bm-error-msg">
+                    <span>审核资料部分有错：</span>
+                    <span>{$bmxx['error_msg']}</span>
+                </div>
+            </if>
+            <p style="padding-top: 35px;">个人信息</p>
+        </div>
+        <div id="ydy-bm-info-gr">
+            <div id="gr-info-left">
+                <div>
+                    <img style="" src="__UPLOAD__{$bmxx['zp']}"/>
+                    <p><span style="color:red;">*</span>姓名：{$bmxx['xm']}</p>
+                    <p><span style="color:red;">*</span>性别：{$bmxx['xb']}</p>
+                    <p><span style="color:red;">*</span>年龄：{$bmxx['age']}</p>
+                    <p><span style="color:red;">*</span>民族：{$bmxx['mz']}</p>
+                </div>
+            </div>
+            <div id="gr-info-right">
+                <div>
+                    <p><span style="color:red;">*</span>出生日期：{$bmxx['csny']}</p>
+                    <p><span style="color:red;">*</span>政治面貌：{$bmxx['zzmm']}</p>
+                    <p><span style="color:red;">*</span>身份证号：{$bmxx['sfzh']}</p>
+                    <p><span style="color:red;">*</span>高考所在地：{$bmxx['hjszd']}</p>
+                </div>
+            </div>
+            <if condition="$bmxx['tests_result'] eq 1 ">
+                <div id="gr-info-right1">
+                    <p>测试成绩：</p>
+                    <p>{$bmxx['tests_achievement']}</p>
+                </div>
+                <else/>
+                <div id="gr-info-right1">
+                    <p>测试成绩：</p>
+                    <p>暂未发布</p>
+                </div>
+            </if>
+
+            <div id="gr-info-xxk-xx" data-select="selected">报名信息</div>
+            <div id="gr-info-xxk-wj" data-select="">证明文件</div>
+            <p id="ydy-bm-info-gr-p">基本情况</p>
+        </div>
+        <div id="ydy-bm-cl-info">
+            <div id="sczl-block">
+                <div id="sczl-block-list">
+                    <div class="block-list first">
+                        <div class="block-list-img first">
+                            <img id="zp" src="__UPLOAD__{$bmxx['zp']}" />
+                        </div>
+                        <div class="block-list-upload first">
+                            <span><span style="color:red;">*</span>蓝底一寸照片</span>
+                        </div>
+                    </div>
+                    <div class="block-list">
+                        <div class="block-list-img">
+                            <if condition="$noImport eq 1">
+                                <img id="gkbmcl" src="__PUBLIC__/Home/images/img.png" style="border: 1px #000 solid;"/>
+                                <else/>
+                                <img id="gkbmcl" src="__UPLOAD__{$bmxx['gkbmcl']}" />
+                            </if>
+                        </div>
+                        <div class="block-list-upload">
+                            <span >高考确认单/报名成功截图</span>
+                        </div>
+                    </div>
+                    <div class="block-list">
+                        <div class="block-list-img">
+                            <img id="ydyzs" src="__UPLOAD__{$bmxx['ydyzs']}" />
+                        </div>
+                        <div class="block-list-upload">
+                            <span ><span style="color:red;">*</span>运动员等级证书</span>
+                        </div>
+                    </div>
+                    <div class="block-list">
+                        <div class="block-list-img">
+                            <img id="ydydjxxjt" src="__UPLOAD__{$bmxx['ydydjxxjt']}" />
+                        </div>
+                        <div class="block-list-upload">
+                            <span ><span style="color:red;">*</span>运动员等级查询页面截图</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ydy-bm-zl-info">
+            <div id="ydy-bm-info-jb">
+                <div>
+                    <volist name="bkxm" id="xm">
+                        <if condition="$xm['id'] eq $bmxx['bkxm_id']">
+                            <p><span style="color:red;">*</span>报考项目：{$xm['xmmc']}</p>
+                        </if>
+                    </volist>
+                    <p><span style="color:red;">*</span>身高：{$bmxx['sg']}</p>
+                    <p><span style="color:red;">*</span>体重：{$bmxx['tz']}</p>
+                    <p><span style="color:red;">*</span>邮编：{$bmxx['yzbm']}</p>
+                </div>
+                <div>
+                    <p><span style="color:red;">*</span>位置级别：{$bmxx['wz']}</p>
+                    <p><span style="color:red;">*</span>高考类别：{$bmxx['gklb']}</p>
+                    <p>高考考生号：{$bmxx['gkkh']}</p>
+                </div>
+                <div>
+                    <p><span style="color:red;">*</span>毕业院校：{$bmxx['byyx']}</p>
+                    <p><span style="color:red;">*</span>运动等级：{$bmxx['yddj']}</p>
+                    <p>证书编号：{$bmxx['zsbh']}</p>
+                </div>
+                <div>
+                    <p><span style="color:red;">*</span>通讯地址：{$bmxx['txdz']}</p>
+                </div>
+                <p id="ydy-bm-info-jb-p">社会关系</p>
+            </div>
+            <div id="ydy-bm-info-shgx">
+                <div id="shgx-info">
+                    <div style="">
+                        <p><span style="color:red;">*</span>父/母姓名：{$bmxx['shgx']['shgx_fq_mz']}</p>
+                        <p><span style="color:red;">*</span>联系电话：{$bmxx['shgx']['shgx_fq_dh']}</p>
+                        <p><span style="color:red;">*</span>工作单位：{$bmxx['shgx']['shgx_fq_gzdw']}</p>
+                    </div>
+                    <div>
+                        <p>父/母姓名：{$bmxx['shgx']['shgx_mq_mz']}</p>
+                        <p>联系电话：{$bmxx['shgx']['shgx_mq_dh']}</p>
+                        <p>工作单位：{$bmxx['shgx']['shgx_mq_gzdw']}</p>
+                    </div>
+                </div>
+                <p id="ydy-bm-info-shgx-p">个人简历</p>
+            </div>
+            <div class="ydy-bm-xx" style="padding-left: 53px;padding-top: 8px;">
+                <div class="biaoge">
+                    <table border="1" width="1100" id="jl">
+                        <tr>
+                            <th><span style="color:red;">*</span>开始时间</th>
+                            <th><span style="color:red;">*</span>结束时间</th>
+                            <th><span style="color:red;">*</span>证明人</th>
+                            <th><span style="color:red;">*</span>学校</th>
+                        </tr>
+                        <volist name="bmxx.grjl" id="grjl">
+                            <tr>
+                                <td>{$grjl.qzsj}</td>
+                                <td>{$grjl.jssj}</td>
+                                <td>{$grjl.zmr}</td>
+                                <td>{$grjl.xxmc}</td>
+                            </tr>
+                        </volist>
+                    </table>
+                </div>
+            </div>
+            <div class="title" >
+                <p>运动员成绩（近三年最佳成绩）</p>
+            </div>
+
+            <div class="ydy-bm-xx" style="padding-left: 53px;padding-top: 8px;">
+                <div class="biaoge">
+                    <table border="1" width="1100" id="ydcj">
+                        <tr>
+                            <th><span style="color:red;">*</span>比赛时间</th>
+                            <th><span style="color:red;">*</span>比赛地点</th>
+                            <th><span style="color:red;">*</span>比赛名称</th>
+                            <th><span style="color:red;">*</span>比赛级别</th>
+                            <th><span style="color:red;">*</span>最佳运动成绩</th>
+                        </tr>
+                        <volist name="bmxx.ydcj" id="ydcj">
+                            <tr>
+                                <td>{$ydcj.bssj}</td>
+                                <td>{$ydcj.bsdd}</td>
+                                <td>{$ydcj.bsmc}</td>
+                                <td>{$ydcj.bsjb}</td>
+                                <td>{$ydcj.zjydcj}</td>
+                            </tr>
+                        </volist>
+                    </table>
+                </div>
+            </div>
+            <div class="title" >
+                <p>毕业学校推荐意见</p>
+            </div>
+            <div id="byxxtcyj">
+                <if condition="$bmxx['byxxtcyj'] eq ''">
+                    <span style="color: #fff;">等待填写</span>
+                    <else/>
+                    {$bmxx['byxxtcyj']}
+                </if>
+            </div>
+        </div>
+        <if condition="$bmxx['bm_status'] eq 2">
+            <div style="height: 170px;width: 1200px;text-align: center;">
+                <button id="fhxg" class="noe-button" type="button">返回修改</button>
+            </div>
+        </if>
+        <if condition="$bmxx['bm_status'] eq 3">
+            <div style="height: 170px;width: 1200px;text-align: center;">
+                <button id="dybmb" data-id="{$bmxx['id']}" class="noe-button" type="button">打印报名表</button>
+            </div>
+        </if>
+    </div>
+</block>
+<block name="script">
+        <script type="text/javascript">
+            layui.use(['jquery','laydate','layer','upload'], function(){
+                var $ = layui.$,//jquery引入重点
+                    layer = layui.layer,
+                    laydate = layui.laydate,
+                    upload = layui.upload;
+                var jlLeght = $("#jl tr").length;
+                var ydcjLeght = $("#ydcj tr").length;
+                var error_msg = "{$bmxx['error_msg']}";
+                var errorMsgLenght = 0;
+                for (var i=0; i<error_msg.length; i++) {
+                    var c = error_msg.charCodeAt(i);
+                    //单字节加1
+                    if ((c >= 0x0001 && c <= 0x007e) || (0xff60<=c && c<=0xff9f)) {
+                        errorMsgLenght++;
+                    } else {
+                        errorMsgLenght+=2;
+                    }
+                }
+                $('#dybmb').click(function () {
+                    window.location.href = "{:U('Index/pdf')}?id="+"{$bmxx['id']}";
+                });
+                $('.block-list-img').css('border','0');
+                $('#fhxg').click(function () {
+                    window.location.href = "{:U('Index/returnModification')}";
+                });
+                // layer.msg(errorMsgLenght);
+                var bm_status = "{$bmxx['bm_status']}";
+                if (bm_status == 2) {
+                    $('#ydy-bm-jd').height($('#ydy-bm-jd').height()+40);
+                } else if (bm_status == 3) {
+                    $('#ydy-bm-jd').height($('#ydy-bm-jd').height()+40);
+                } else {
+                    $('#main').height($('#main').height()-195);
+                    $('#byxxtcyj').css('border','0');
+                    $('#ydy-bm-cl-info').css('border','0');
+                }
+                if(errorMsgLenght > 127 && bm_status==2){
+                    $('#ydy-bm-jd').height($('#ydy-bm-jd').height()+15);
+                    $('#main').height($('#main').height()+15);
+                    $('#ydy-bm-error-msg').height(Math.ceil(errorMsgLenght / 127) * 30+'px');
+                    $('#ydy-bm-error-msg').next('p').css('padding-top','');
+                }
+                if (jlLeght > 4) {
+                    $('#main').height($('#main').height()+56*(jlLeght-4));
+                }
+                if (ydcjLeght > 2) {
+                    $('#main').height($('#main').height()+56*(ydcjLeght-2));
+                }
+                $('.block-list-img').css('border','0');
+                $("#gr-info-xxk-xx").click(function () {
+                    if ($(this).attr('data-select') == 'selected') {
+                        return false;
+                    }
+                    $("#gr-info-xxk-wj").attr('data-select','');
+                    $(this).attr('data-select','selected');
+                    $('#main').height($('#main').height()+500);
+                    $('#ydy-bm-cl-info').hide();
+                    $('#ydy-bm-info-gr-p').show();
+                    $('#ydy-bm-zl-info').show();
+                    $('#ydy-bm-info-gr').height('335px');
+                    $('#ydy-bm-info-gr').css('border-bottom','1px dotted #d2d2d2');
+                    $("#gr-info-xxk-wj").css("border-bottom",'1px solid');
+                    $("#gr-info-xxk-wj").css("border-left",'0');
+                    $("#gr-info-xxk-wj").css("border-color",'#d2d2d2');
+                    $("#gr-info-xxk-wj").css("color",'#000');
+                    $(this).css('border-right','1px solid');
+                    $(this).css('border-bottom','0');
+                    $(this).css('border-color','#2f58c1');
+                    $(this).css('color','#2f58c1');
+                    $(this).height('36px');
+                });
+                $("#gr-info-xxk-wj").click(function () {
+                    if ($(this).attr('data-select') == 'selected') {
+                        return false;
+                    }
+                    $("#gr-info-xxk-xx").attr('data-select','');
+                    $(this).attr('data-select','selected');
+                    $('#main').height($('#main').height()-500);
+                    $('#ydy-bm-info-gr-p').hide();
+                    $('#ydy-bm-zl-info').hide();
+                    $('#ydy-bm-info-gr').css('border-bottom','0');
+                    $('#ydy-bm-info-gr').height('304px');
+                    $(this).css("border-bottom",'0');
+                    $(this).css("border-left",'1px solid');
+                    $(this).css("border-color",'#2f58c1');
+                    $(this).css("color",'#2f58c1');
+                    $('#gr-info-xxk-xx').css('border-right','0');
+                    $('#gr-info-xxk-xx').css('border-bottom','1px solid');
+                    $('#gr-info-xxk-xx').css('border-color','#d2d2d2');
+                    $('#gr-info-xxk-xx').css('color','#000');
+                    $('#gr-info-xxk-xx').height('35px');
+                    $('#ydy-bm-cl-info').show();
+                    $('.block-list-upload.first').height('20px');
+                    $('.block-list-upload.first').css('padding-top','247px');
+                });
+            });
+        </script>
+</block>

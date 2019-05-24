@@ -1,0 +1,24 @@
+<include file="Public:header" />
+<body>
+<div id="wrap1">
+    <div class="header loginBox">
+        <div class="nav_pc">
+            <div class="nav1">
+                <ul class="contentnav">
+                    <li class="last_logined"><a href="{:U('Login/logout')}" class="memberIco"><img src="__PUBLIC__/Images/promotion/loginout_ico.png" alt="退出登录" class="memberIco1">退出登录</a></li>
+                    <li class="last_logined toleft"><a href="{:U('Index/index')}" class="memberIco" id="username"></a></li>
+
+                    <li class="on"><a href="{:U('Index/info')}" class="nav <if condition="$controllerName eq 'IndexInfo'">checked</if>">联系方式</a></li>
+                    <li class="on"><a href="{:U('ScoreData/index')}" class="nav <if condition="($controllerName eq 'ScoreData') or ($controllerName eq 'AdmissionData')">checked</if>">数据查询</a></li>
+                    <li class="on"><a href="{:U('Person/index')}" class="nav <if condition="$controllerName eq 'Person'">checked</if>">个人行程</a></li>
+                    <li class="on"><a href="{:U('History/index')}" class="nav <if condition="$controllerName eq 'History'">checked</if>">历史报名</a></li>
+                    <li class="on1">
+                        <a href="{:U('Signup/index')}" class="nav <if condition="$controllerName eq 'Signup'">checked</if>">报名</a>
+                    </li>
+                    <li class="on1"><a href="{:U('Index/index')}" class="nav <if condition="$controllerName eq 'Index'">checked</if>">首页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

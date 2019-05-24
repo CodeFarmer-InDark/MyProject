@@ -1,0 +1,33 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('Search/apply',array('id'=>38))}">网上报名</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('Search/apply',array('id'=>38))}">网上报名</a></div> </div>
+</div>
+<div class="s-title"><p>中国民航大学网上报名</p></div>
+<div class="divline3"><div class="divback3"></div></div>
+<div class="listmain">
+    <div class="apply">
+        <a href="http://www.cauc.edu.cn/zfzx/" class="root1">
+            <span class="apply-title bgBlue"><p>飞行招生</p></span>
+            <div class="access1"><span class="accfont">报名入口</span></div>
+        </a>
+        <a href="http://www.cauc.edu.cn/cabin/" class="root2">
+            <span class="apply-title bgGreen"><p>乘务空保</p></span>
+            <div class="access2"><span class="accfont">报名入口</span></div>
+        </a>
+        <a href="http://www.cauc.edu.cn/siae/" class="root3">
+            <span class="apply-title bgsGreen"><p>中欧选拔</p></span>
+            <div class="access3"><span class="accfont">报名入口</span></div>
+        </a>
+        <a href="http://www.cauc.edu.cn/gspydy/" class="root4">
+            <span class="apply-title bgOrange"><p>高水平运动队</p></span>
+            <div class="access4"><span class="accfont">报名入口</span></div>
+        </a>
+    </div>
+</div>
+</div>
+
+<include file="Public:footer" />

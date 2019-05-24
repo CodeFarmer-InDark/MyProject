@@ -1,0 +1,139 @@
+<extend name="Common:base2" />
+<block name="container">
+    <div class="layui-header">
+        <div class="jzb-a">
+            <a href="{:U('Index/index')}">
+                <img src="__PUBLIC__/Home/images/user.png" class="layui-nav-img">
+                <span class="layui-text">{:session('user_name')}</span>
+            </a>
+            <a id="xiugai" href="javascript:;">
+                <img src="__PUBLIC__/Home/images/xiugaixinxi.png" class="layui-nav-img">
+                <span class="layui-text">修改信息</span>
+                <img src="__PUBLIC__/Home/images/duobianx.png" style="width: 15px;height: 15px;height: 12px;margin-bottom: 4px;" class="layui-nav-img">
+            </a>
+            <div id="xuanXiang">
+                <a href="{:U('Index/modifyPhone')}">修改手机号</a>
+                <a href="{:U('Index/modifyPassword')}">修改密码</a>
+            </div>
+            <a href="{:U('Auth/exitLogin')}">
+                <img src="__PUBLIC__/Home/images/tuichu.png" style="height: 18px;" class="layui-nav-img">
+                <span class="layui-text">退出登录</span>
+            </a>
+        </div>
+    </div>
+    <div class="user-center">
+        <p style="font-size: 34px;color:#fff;text-align: center;margin-bottom: 35px;" id="p_entrance">报名入口</p>
+        <div class='userBox'>
+            <if condition="($kckb['registration_switch'] eq 1) and ($kckb['bm_type'] eq 3)">
+                <a href="{:U('Index/AeronauticalAttendants')}" class="list">
+                    <div class="picture-container">
+                        <img src="__PUBLIC__/Home/images/kckb.png">
+                    </div>
+                    <div style="text-align: center;">
+                        <p>空乘空保</p>
+                        <p>Flight enrollment</p>
+                    </div>
+                </a>
+            </if>
+            <present name="gsp">
+            <a href="{:U('Index/highLevelAthletes')}" class="list">
+                <div class="picture-container">
+                    <img src="__PUBLIC__/Home/images/ydy.png">
+                </div>
+                <div style="text-align: center;">
+                    <p>高水平运动员</p>
+                    <p>Senior athlete</p>
+                </div>
+            </a>
+            </present>
+            
+        <if condition="($zzy['registration_switch'] eq 1) and ($zzy['bm_type'] eq 1)">
+            <a  href="javascript:;" data-id="1" class="list getInto">
+                <div class="picture-container">
+                    <img src="__PUBLIC__/Home/images/zzy.png">
+                </div>
+                <div style="text-align: center;">
+                    <p>转专业</p>
+                    <p>Change the profession</p>
+                </div>
+            </a>
+        </if>
+        <if condition="($zo['registration_switch'] eq 1) and ($zo['bm_type'] eq 2)">
+            <a  href="javascript:;" data-id="2" class="list last-child getInto">
+                <div class="picture-container">
+                    <img src="__PUBLIC__/Home/images/zoxb.png">
+                </div>
+                <div style="text-align: center;">
+                    <p>中欧选拔</p>
+                    <p>College selection</p>
+                </div>
+            </a>
+        </if>
+        </div>
+    </div>
+    <div class="user-center1" style="display:none;">
+        <div class='userBox'>
+            <if condition="($kckb['registration_switch'] eq 1) and ($kckb['bm_type'] eq 3)">
+                <a href="{:U('Index/AeronauticalAttendants')}" class="list">
+                    <img src="__PUBLIC__/Home/images/cabin_icon.png">
+                </a>
+            </if>
+            <a href="{:U('Index/highLevelAthletes')}" class="list">
+                <img src="__PUBLIC__/Home/images/athele_icon.png">
+            </a>
+            <if condition="($zzy['registration_switch'] eq 1) and ($zzy['bm_type'] eq 1)">
+                <a href="javascript:;" data-id="1" class="list getInto">
+                    <img src="__PUBLIC__/Home/images/shift_icon.png">
+                </a>
+            </if>
+            <if condition="($zo['registration_switch'] eq 1) and ($zo['bm_type'] eq 2)">
+                <a href="javascript:;" data-id="2" class="list getInto">
+                    <img src="__PUBLIC__/Home/images/select_icon.png">
+                </a>
+            </if>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__STATIC__/assets/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.use(['jquery','layer'], function(){
+            var $ = layui.$,//jquery引入重点
+                layer = layui.layer;
+            $('#xiugai').click(function () {
+                if($('#xuanXiang').is(":hidden")){
+                    $('#xuanXiang').show();
+                }else{
+                    $('#xuanXiang').hide();
+                }
+            });
+            $('.getInto').click(function () {
+                var type = $(this).attr('data-id');
+                //1转专业，2中欧选拔
+                if (type == '1' || type == '2') {
+                    $.ajax({
+                        type:"POST",
+                        url:"{:U('Index/getInto')}",
+                        dataType: "json",
+                        data:{
+                            type:type
+                        },
+                        success:function(data){
+                            alert(data.mid);
+                            if (data.code == 1) {
+                                window.location.href = data.url;
+                            }else {
+                                layer.msg(data.msg,function () {
+                                    window.location.reload();
+                                });
+                            }
+                        },
+                        error:function(){
+                            layer.msg('网络错误');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</block>

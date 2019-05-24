@@ -1,0 +1,29 @@
+/* 后台样式 */
+html {background-color:#eee;}
+.layui-body {left: 210px;}
+.layui-fluid {padding: 15px;}
+.layui-card-body,.layui-card-header,.layui-form-label,.layui-form-mid,.layui-form-select,.layui-input-block,.layui-input-inline,.layui-textarea{position:relative}
+.layui-card{margin-bottom:15px;border-radius:2px;background-color:#fff;box-shadow:0 1px 2px 0 rgba(0,0,0,.05)}
+.layui-card:last-child{margin-bottom:0}
+.layui-card-header{height:42px;line-height:42px;padding:0 15px;border-bottom:1px solid #f6f6f6;color:#333;border-radius:2px 2px 0 0;font-size:14px}
+.layui-bg-black,.layui-bg-blue,.layui-bg-cyan,.layui-bg-green,.layui-bg-orange,.layui-bg-red{color:#fff!important}
+.layui-card-body{padding:10px 15px;line-height:24px}
+.layui-card-body .layui-table{margin:10px 0}
+.layui-card .layui-tab{margin:0}
+.layui-upload-drag { float: left;}
+.admin-upload-preview {padding: 0px;padding: 10px;border: 1px dashed #e2e2e2;margin: 0 10px;display: inline-block}
+.admin-upload-preview img {height: 100px;}
+.admin-breadcrumb {float: right;}
+.nav-item{position: relative;display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;line-height: 60px;color: #666;}
+#meetingChange .layui-form-label {color: #fff;color: rgba(255,255,255,0.7);width: auto;line-height: 60px;padding: 0 10px;}
+
+.layui-card-body .attention{background-color: #ffffcc;height:110px;padding:13px 0 0 15px;}
+.layui-card-body .attention .red{color: red;}
+.layui-card-body .attention .left{margin-right:10px;}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+    .layui-nav .layui-nav-item a{padding:0 15px;}
+}
+@media (min-width: 800px) and (max-width: 1299px) {
+    .layui-nav .layui-nav-item a{padding:0 10px;}
+}

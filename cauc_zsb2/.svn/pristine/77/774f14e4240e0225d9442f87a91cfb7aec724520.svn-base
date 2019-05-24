@@ -1,0 +1,199 @@
+<?php 
+/**
+ * 
+ * Category(分类)
+ *
+ * @package      	Y-city Corp
+ * @author          Y-city <y_city@qeeyang.com>
+ * @copyright     	Copyright (c) 2008-2012  (http://www.y-city.net.cn)
+ * @version        	YCITYCMS v2.2.0 2012-03-26 Y-city $
+
+ */
+
+class CollegeAction extends AdminAction
+{
+    protected $dao, $college;
+    function _initialize()
+    {
+        parent::_initialize();
+        $this->dao = D('College');
+        $this->college = $this->dao->Order('display_order DESC,id DESC')->select();
+
+    }
+
+    /**
+     * 列表
+     *
+     */
+    public function index()
+    {
+        parent::_checkPermission();
+        $dataList = $this->getCategory($this->college);
+        if($dataList != false)
+        {
+            $this->assign('dataList',$dataList);
+        }
+        parent::_sysLog('index');
+        $this->display();
+    }
+
+    /**
+     * 录入
+     *
+     */
+    public function insert()
+    {
+        parent::_checkPermission();
+        $dataList = $this->getCategory($this->college);
+        $parentId = trim($_GET['parentId']);
+        $this->assign('parentId', $parentId);
+        $this->assign('dataList', $dataList);
+        $this->display();
+    }
+
+    /**
+     * 提交录入
+     *
+     */
+    public function doInsert()
+    {
+        parent::_checkPermission('College_insert');
+        parent::_setMethod('post');
+        if($daoCreate = $this->dao->create())
+        {
+            $daoAdd = $this->dao->add();
+            if(false !== $daoAdd)
+            {
+                parent::_sysLog('insert', "录入:$daoAdd");
+                parent::_message('success', '录入成功');
+            }else
+            {
+                parent::_message('error', '录入失败');
+            }
+        }else
+        {
+            parent::_message('error', $this->dao->getError());
+        }
+    }
+
+    /**
+     * 编辑
+     *
+     */
+    public function modify()
+    {
+        parent::_checkPermission();
+        $item = intval($_GET['id']);
+        $record = $this->dao->Where('id='.$item)->find();
+        if(empty($item) || empty($record)) parent::_message('error', '记录不存在');
+        $dataList = $this->getCategory($this->college);
+        $this->assign('vo', $record);
+        $this->assign('dataList', $dataList);
+        $this->display();
+    }
+
+    /**
+     * 提交编辑
+     *
+     */
+    public function doModify()
+    {
+        parent::_checkPermission('College_modify');
+        parent::_setMethod('post');
+        $item = intval($_POST['id']);
+        $parentId = intval($_POST['parent_id']);
+        empty($item) && parent::_message('error', '记录不存在');
+        //检测上级分类是否合法
+        $this->parentTrue($item, $parentId);
+        if($daoSave = $this->dao->create())
+        {
+            $daoSave = $this->dao->save();
+            if(false !== $daoSave)
+            {
+                parent::_sysLog('modify', "编辑:$item");
+                parent::_message('success', '编辑完成');
+            }else
+            {
+                parent::_message('error', '编辑失败');
+            }
+        }else
+        {
+            parent::_message('error', $this->dao->getError());
+        }
+    }
+
+    /**
+     * 检测上级分类是否合法
+     * 父类不能为本身，父类的父类不能为该子类
+     * @param unknown_type $item
+     * @param unknown_type $parentId
+     */
+    public function parentTrue($item = 0, $parentId = 0)
+    {
+        $subCategory = $this->getCategory($this->college, $item);
+        if(empty($subCategory)){
+            $getCategory[] = $item;
+        }else{
+            foreach ((array)$subCategory as $row){
+                $getCategory[] = $row['id'];
+            }
+            //将本身ID加入检测对象
+            array_push($getCategory, $item);
+        }
+        if (in_array($parentId, $getCategory)) parent::_message('error', '所选择的上级分类不能是当前分类或者当前分类的下级分类!', 0, 5);
+    }
+
+    /**
+     * 批量操作
+     *
+     */
+    public function doCommand()
+    {
+        parent::_checkPermission('College_command');
+        if(getMethod() == 'get'){
+            $operate = trim($_GET['operate']);
+        }elseif(getMethod() == 'post'){
+            $operate = trim($_POST['operate']);
+        }else{
+            parent::_message('error', '只支持POST,GET数据');
+        }
+        switch ($operate){
+            case 'setStatus': parent::_setStatus('set');break;
+            case 'unSetStatus': parent::_setStatus('unset');break;
+            case 'update': parent::_batchModify('college', $_POST, array('display_order'), __URL__,'College', 'display_order DESC,id DESC');break;
+            default: parent::_message('error', '操作类型错误') ;
+        }
+    }
+
+    public function getCategory($array,$parentid = 0,$level = 0,$add = 2,$repeat = '　') {
+        $str_repeat = '';
+        if($level) {
+            for($j=0;$j<$level;$j++) {
+                $str_repeat .= $repeat;
+            }
+        }
+        $newarray = array();
+        $temparray = array();
+
+        foreach((array)$array as $v) {
+            if($v['parent_id'] == $parentid) {
+                $newarray[] = array(
+                    'id'=>$v['id'],
+                    'title'=>$v['title'],
+                    'zyfx'=>$v['zyfx'],
+                    'level'=>$level,
+                    'parent_id'=>$v['parent_id'],
+                    'str_repeat'=>$str_repeat,
+                    'display_order'=>$v['display_order'],
+                    'create_time'=>$v['create_time'],
+                    'update_time'=>$v['update_time']
+                );
+                $temparray = $this->getCategory($array,$v['id'],($level +$add));
+                if($temparray) {
+                    $newarray = array_merge($newarray,$temparray);
+                }
+            }
+        }
+        return $newarray;
+    }
+}

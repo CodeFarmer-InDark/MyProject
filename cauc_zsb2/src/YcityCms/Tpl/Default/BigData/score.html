@@ -1,0 +1,540 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="breadcrumbs">
+    <div class="bfont">当前位置：<a href="__ROOT__/">首页</a> > <a href="{:U('BigData/score',array('id'=>59))}">新生大数据统计</a></div>
+</div>
+<div class="re-breadcrumbs">
+    <div class="bfont"><a href="__ROOT__/">首页</a> >&nbsp;<a href="{:U('BigData/score',array('id'=>59))}">新生大数据统计</a></div> </div>
+</div>
+<div class="listmain">
+    <div class="search">
+        <div class="bottombox">
+            <div class="msg">
+                <div id="msg"></div>
+            </div>
+            <div id="charts1" class="charts" style="width:100%;height:100%;"></div>
+            <div id="charts2" class="charts" style="width:100%;height:100%;"></div>
+            <div id="charts3" class="charts" style="width:100%;height:70%;margin-bottom:50px;"></div>
+            <div id="charts4" class="charts" style="width:100%;height:100%;"></div>
+            <div id="remarks4" class="remarks" style="text-align:center;font-size:1.125em;font-weight: bold;"></div>
+            <div class="charts" style="width:100%;margin: 100px auto 0 auto;">
+                <p style="font-size:18px;color:royalblue;margin:0 0 45px 45px;font-weight:bold;">城镇考生与农村考生人数及比例</p>
+                <div style="width:45%;display: inline-block;text-align:center;">
+                    <img src="__PUBLIC__/Images/city.png" alt="">
+                </div>
+                <div style="width:45%;display: inline-block;text-align: center;">
+                    <img src="__PUBLIC__/Images/countryside.png" alt="">
+                </div>
+                <div style="width:45%;margin-top:40px;display: inline-block;text-align:center;" id="city_info"></div>
+                <div style="width:45%;margin-top:40px;display: inline-block;text-align: center;" id="countryside_info"></div>
+                <p id="other_remark" style="text-align: center;"></p>
+            </div>
+            <div id="charts6" class="charts" style="width:100%;height:100%;"></div>
+            <div id="remarks6" class="remarks" style="text-align:center;font-size:1.125em;font-weight: bold;"></div>
+            <p style="font-size:18px;color:royalblue;margin:50px 0 10px 45px;font-weight:bold;">录取人数TOP5省份</p>
+            <table id="most_province" style="float:left"></table>
+            <p style="font-size:18px;color:royalblue;margin:50px 0 10px 45px;font-weight:bold;">录取人数TOP5中学</p>
+            <table id="most_zx" style="float:left;"></table>
+            <div class="charts" style="width:100%;margin: 100px auto 0 auto;">
+                <p style="font-size:18px;color:royalblue;margin:0 0 45px 45px;font-weight:bold;">各科类人数占百分比（理工、文史、不分文理）</p>
+                <div style="text-align:center;">
+                    <img src="__PUBLIC__/Images/ligong.png" alt="">
+                </div>
+                <div style="margin-top:40px;text-align:center;" id="ligong_info"></div>
+                <div style="width:48%;display: inline-block;text-align: center;">
+                    <img src="__PUBLIC__/Images/wenshi.png" alt="">
+                </div>
+                <div style="width:48%;display: inline-block;text-align: center;">
+                    <img src="__PUBLIC__/Images/qita.png" alt="">
+                </div>
+                <div style="width:47%;margin-top:40px;display: inline-block;text-align: center;" id="wenshi_info"></div>
+                <div style="width:51%;margin-top:40px;display: inline-block;text-align: center;" id="qita_info"></div>
+            </div>
+            <div id="charts7" class="charts" style="width:100%;height:100%;"></div>
+            <p style="font-size:18px;color:royalblue;margin:50px 0 10px 45px;font-weight:bold;">报考最热的前五个专业</p>
+            <table id="most_zy" style="float:left;margin-bottom:200px;"></table>
+            <div id="remarks7" class="remarks" style="text-align:center;font-size:1.125em;font-weight: bold;"></div>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/charts1",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        option.series[0].name = '层次';
+                        option.series[0].type = 'pie';
+                        option.series[0].data = [];
+                        option.series[1].data = [];
+                        option.legend.data = [];
+                        option.xAxis.show = false;
+                        option.yAxis.show = false;
+                        option.tooltip.formatter = "{a} <br/>{b} : {c} ({d}%)";
+                        option.series[0].itemStyle.normal.label.show = false;
+                        option.series[0].itemStyle.emphasis.label.show = false;
+                        option.color = ['#FFDEAD','#ADD8E6'];
+
+                        option.title.text = '新生总数 '+ result.count +'人（含港澳台）';
+                        for (var i = 0; i < data.length; i++) {
+                            option.legend.data.push(data[i].name);
+                            option.series[0].data.push({
+                                name : data[i].name,
+                                value : data[i].value
+                            });
+                        }
+                        myChart.setOption(option);
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/charts2",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        option.series[0].name = '性别';
+                        option.series[0].data = [];
+                        option.series[0].type = 'pie';
+                        option.series[1].data = [];
+                        option.legend.data = [];
+                        option.yAxis.show = false;
+                        option.xAxis.show = false;
+                        option.tooltip.formatter = "{a} <br/>{b} : {c} ({d}%)";
+                        option.series[0].itemStyle.normal.label.show = false;
+                        option.series[0].itemStyle.emphasis.label.show = false;
+                        option.color = ['#FFDEAD','#ADD8E6'];
+
+                        option.title.text = '新生男女比例';
+                        for (var i = 0; i < data.length; i++) {
+                            option.legend.data.push(data[i].name);
+                            option.series[0].data.push({
+                                name : data[i].name,
+                                value : data[i].value
+                            });
+                        }
+                        myChart2.setOption(option);
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/charts3",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        option.title.text = '各学院男女比例';
+                        option.series[0].name = '男';
+                        option.series[1].name = '女';
+                        option.series[0].data = [];
+                        option.series[1].data = [];
+                        option.series[0].type = 'bar';
+                        option.xAxis.show = true;
+                        option.yAxis.show = false;
+                        option.tooltip.formatter = "{a} <br/>{b} : {c}%";
+                        option.legend.data = ['男','女'];
+                        option.series[0].itemStyle.normal.label.show = true;
+                        option.series[0].itemStyle.emphasis.label.show = false;
+                        option.color = ['#FFDEAD','#ADD8E6'];
+
+                        option.xAxis.data = result.name;
+                        option.series[0].data = result.xbdm1;
+                        option.series[1].data = result.xbdm2;
+                        myChart3.setOption(option);
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/charts4",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        option.series[0].name = '民族';
+                        option.series[0].data = [];
+                        option.series[0].type = 'pie';
+                        option.series[1].data = [];
+                        option.legend.data = [];
+                        option.yAxis.show = false;
+                        option.xAxis.show = false;
+                        option.tooltip.formatter = "{a} <br/>{b} : {c} ({d}%)";
+                        option.series[0].itemStyle.normal.label.show = true;
+                        option.series[0].itemStyle.emphasis.label.show = false;
+                        option.color = ['#87CEFF','#FF0000','#B452CD','#7FFF00','#EEAD0E','#66CD00','#A2B5CD','#D1D1D1','#8B0A50','#9BCD9B','#7B68EE'];
+
+                        option.title.text = '少数民族人数及分布';
+                        for (var i = 0; i < data.length; i++) {
+                            option.legend.data.push(data[i].name);
+                            option.series[0].data.push({
+                                name : data[i].name,
+                                value : data[i].value
+                            });
+                        }
+                        myChart4.setOption(option);
+
+                        $("#remarks4").html('<span>'+result.remark+'</span>');
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/table1",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        $("#city_info").html('<span>城镇考生'+'<br>'+data.city+'人<br>占'+data.city_percent+'</span>');
+                        $("#countryside_info").html('<span>农村考生'+'<br>'+data.countryside+'人<br>占'+data.countryside_percent+'</span>');
+                        $("#other_remark").html('<span>其他'+data.other+'人,占'+data.other_percent+'</span>');
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/charts6",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        option.title.text = '出生年份分布';
+                        option.series[0].name = '考生数';
+                        option.series[1].name = '';
+                        option.series[0].data = [];
+                        option.series[1].data = [];
+                        option.series[0].type = 'bar';
+                        option.xAxis.show = true;
+                        option.yAxis.show = true;
+                        option.tooltip.formatter = "{a} <br/>{b}年 : {c}人";
+                        option.legend.data = ['考生数'];
+                        option.series[0].itemStyle.normal.label.show = true;
+                        option.series[0].itemStyle.emphasis.label.show = false;
+                        option.color = ['#FFDEAD','#ADD8E6'];
+
+                        option.xAxis.data = result.year;
+                        option.series[0].data = result.num;
+                        myChart6.setOption(option);
+                        $("#remarks6").html('<span>'+result.remark+'</span>');
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $('#most_province').html("<tr style='background-color: #ADD8E6;'>"+
+                "<td style='font-weight: bold;color: #fff;'>省区</td>"+
+                "<td style='font-weight: bold;color: #fff;'>录取人数</td>"+
+                "</tr>");
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/table2",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        $.each(data,function(i,n){
+                            var $tr = $("<tr>"+
+                                    "<td>"+n.name+"</td>"+
+                                    "<td>"+n.num+"</td>"+
+                                    "</tr>");
+                            var $table = $('#most_province');
+                            $table.append($tr);
+                        });
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $('#most_zx').html("<tr style='background-color: #ADD8E6;'>"+
+                "<td style='font-weight: bold;color: #fff;'>中学名称</td>"+
+                "<td style='font-weight: bold;color: #fff;'>省区</td>"+
+                "<td style='font-weight: bold;color: #fff;'>录取人数</td>"+
+                "</tr>");
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/table3",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        $.each(data,function(i,n){
+                            var $tr = $("<tr>"+
+                                    "<td>"+n.zxmc+"</td>"+
+                                    "<td>"+n.pname+"</td>"+
+                                    "<td>"+n.num+"</td>"+
+                                    "</tr>");
+                            var $table = $('#most_zx');
+                            $table.append($tr);
+                        });
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/table4",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        $("#ligong_info").html('<span>'+data.kldm5+'</span>');
+                        $("#wenshi_info").html('<span>'+data.kldm1+'</span>');
+                        $("#qita_info").html('<span>'+data.z+'</span>');
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/charts7",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        option.series[0].name = '类型';
+                        option.series[0].data = [];
+                        option.series[0].type = 'pie';
+                        option.series[1].data = [];
+                        option.legend.data = [];
+                        option.yAxis.show = false;
+                        option.xAxis.show = false;
+                        option.tooltip.formatter = "{a} <br/>{b} : {c} ({d}%)";
+                        option.series[0].itemStyle.normal.label.show = true;
+                        option.series[0].itemStyle.emphasis.label.show = false;
+                        option.color = ['#967ADC','#D770AD','#3BAFDA','#E6E9ED','#AAB2BD','#434A5A','#D6D5B7','#D1BA74','#E6CEAC','#ECAD9E','#F4606C','#19CAAD','#8CC7B5','#A0EEE1','#BEE7E9','#BEEDC7',];
+
+                        option.title.text = '各类型录取人数';
+                        for (var i = 0; i < data.length; i++) {
+                            option.legend.data.push(data[i].name);
+                            option.series[0].data.push({
+                                name : data[i].name,
+                                value : data[i].value
+                            });
+                        }
+                        myChart7.setOption(option);
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+        $('#most_zy').html("<tr style='background-color: #ADD8E6;'>"+
+                "<td style='font-weight: bold;color: #fff;'>专业名称</td>"+
+                "<td style='font-weight: bold;color: #fff;'>一专业报考数</td>"+
+                "<td style='font-weight: bold;color: #fff;'>公布计划数</td>"+
+                "<td style='font-weight: bold;color: #fff;'>一专业报考数：公布计划数</td>"+
+                "</tr>");
+        $.ajax({
+            url: "http://localhost/cauc_zs3/lqgl/Api/Data/table5",
+            type: 'get',
+            dataType: 'jsonp',
+            jsonp: "callback",
+            success: function (result) {
+                switch (result.msg) {
+                    case '1':
+                        var data = result.info;
+                        $.each(data,function(i,n){
+                            var $tr = $("<tr>"+
+                                    "<td>"+n.zyname+"</td>"+
+                                    "<td>"+n.tdd+"</td>"+
+                                    "<td>"+n.plan+"</td>"+
+                                    "<td>"+n.bl+"</td>"+
+                                    "</tr>");
+                            var $table = $('#most_zy');
+                            $table.append($tr);
+                        });
+                        $("#remarks7").html('<span>注：以上所列为一专业报考数：公布计划数≥1的专业</span>');
+                        $('.bottombox').css({'width': '90%', 'border': '0', 'margin-bottom': '0'});
+                        break;
+                    case '2':
+                        $('.bottombox').css('display','none');
+                        break;
+                }
+            },
+        });
+
+
+        var myChart = echarts.init(document.getElementById('charts1'));
+        var myChart2 = echarts.init(document.getElementById('charts2'));
+        var myChart3 = echarts.init(document.getElementById('charts3'));
+        var myChart4 = echarts.init(document.getElementById('charts4'));
+        var myChart6 = echarts.init(document.getElementById('charts6'));
+        var myChart7 = echarts.init(document.getElementById('charts7'));
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '',
+                left:'50px',
+                textStyle: {
+                    color: "#436EEE",
+                    fontSize: 17
+                }
+            },
+            tooltip : { //提示框组件
+                trigger: 'item', //触发类型(饼状图片就是用这个)
+                formatter: "" //提示框浮层内容格式器
+            },
+            color:[],  //手动设置每个图例的颜色
+            legend: {  //图例组件
+                //right:100,  //图例组件离右边的距离
+                orient : 'horizontal',  //布局  纵向布局 图例标记居文字的左边 vertical则反之
+                width:40,      //图行例组件的宽度,默认自适应
+                x : 'right',   //图例显示在右边
+                y: 'center',   //图例在垂直方向上面显示居中
+                itemWidth:20,  //图例标记的图形宽度
+                itemHeight:20, //图例标记的图形高度
+                data:[],
+                textStyle:{    //图例文字的样式
+                    color:'#333',  //文字颜色
+                    fontSize:16    //文字大小
+                }
+            },
+            xAxis: {
+                data: [],
+                axisLabel: {
+                    interval:0,
+                    rotate:25
+                }
+            },
+            yAxis: {
+                splitLine: { show: false },//去除网格线
+                name: '',
+                show:false
+            },
+            series : [ //系列列表
+                {
+                    name:'',  //系列名称
+                    type:'',   //类型 pie表示饼图
+                    stack: "性别",//折叠显示
+                    center:['40%','50%'], //设置饼的原心坐标 不设置就会默认在中心的位置
+                    radius : ['50%', '80%'],  //饼图的半径,第一项是内半径,第二项是外半径,内半径为0就是真的饼,不是环形
+                    itemStyle : {  //图形样式
+                        normal : { //normal 是图形在默认状态下的样式；emphasis 是图形在高亮状态下的样式，比如在鼠标悬浮或者图例联动高亮时。
+                            label : {  //饼图图形上的文本标签
+                                show : false  //平常不显示
+                            },
+                            labelLine : {     //标签的视觉引导线样式
+                                show : false  //平常不显示
+                            }
+                        },
+                        emphasis : {   //normal 是图形在默认状态下的样式；emphasis 是图形在高亮状态下的样式，比如在鼠标悬浮或者图例联动高亮时。
+                            label : {  //饼图图形上的文本标签
+                                show : true,
+                                position : 'center',
+                                textStyle : {
+                                    fontSize : '10',
+                                    fontWeight : 'bold'
+                                }
+                            }
+                        }
+                    },
+                    data:[]
+                },
+                {
+                    name:'',  //系列名称
+                    type:'bar',   //类型 pie表示饼图
+                    stack: "性别",//折叠显示
+                    itemStyle : {  //图形样式
+                        normal : { //normal 是图形在默认状态下的样式；emphasis 是图形在高亮状态下的样式，比如在鼠标悬浮或者图例联动高亮时。
+                            label : {  //饼图图形上的文本标签
+                                show : true  //平常不显示
+                            },
+                            labelLine : {     //标签的视觉引导线样式
+                                show : true  //平常不显示
+                            }
+                        }
+                    },
+                    emphasis : {   //normal 是图形在默认状态下的样式；emphasis 是图形在高亮状态下的样式，比如在鼠标悬浮或者图例联动高亮时。
+                        label : {  //饼图图形上的文本标签
+                            show : true,
+                            position : 'center',
+                            textStyle : {
+                                fontSize : '12',
+                                fontWeight : 'bold'
+                            }
+                        }
+                    },
+                    data:[]
+                },
+
+
+            ]
+        };
+    });
+
+</script>
+<include file="Public:footer" />

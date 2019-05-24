@@ -1,0 +1,43 @@
+[ 2019-04-30T14:30:24+08:00 ] ::1 /job/cauc_zs3/lqgl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010357s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::_sendSMS($mobile, $content) should be compatible with Home\Controller\GlobalController::_sendSMS($mobile, $type, $expired, $idCard) E:\myphp_www\PHPTutorial\WWW\job\cauc_zs3\src\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.1006s ]
+
+[ 2019-04-30T14:30:24+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `ycity_member` [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: moduleName E:\myphp_www\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 43 行.
+NOTIC: [8] Undefined variable: header_css E:\myphp_www\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 56 行.
+NOTIC: [8] Undefined variable: logined E:\myphp_www\PHPTutorial\WWW\job\cauc_zs3\src\Application\Runtime\Cache\Home\264ddad769de61dfce58e3774c5d9274.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005501s ]
+
+[ 2019-04-30T14:30:32+08:00 ] ::1 /job/cauc_zs3/lqgl/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+ERR: 无法加载控制器:Admin
+

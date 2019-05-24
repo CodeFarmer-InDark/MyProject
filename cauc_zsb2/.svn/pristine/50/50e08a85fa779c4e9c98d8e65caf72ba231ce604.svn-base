@@ -1,0 +1,30 @@
+[ 2018-05-15T16:05:06+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-05-15T16:07:26+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+
+[ 2018-05-15T16:07:32+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-05-15T16:07:53+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2018-05-15T17:02:58+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+
+[ 2018-05-15T17:15:34+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+

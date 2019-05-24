@@ -1,0 +1,30 @@
+[ 2019-05-15T20:44:13+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+
+[ 2019-05-15T20:44:17+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.004013s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.006342s ]
+
+[ 2019-05-15T20:44:25+08:00 ] 0.0.0.0 /job/cauc_zsb2/zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003045s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.003599s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.033980s ]
+NOTIC: [2] Illegal string offset 'sys_log' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 123 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Admin\Lib\Action\PublicAction.class.php 第 124 行.
+NOTIC: [8] Undefined index: id E:\myphp_www\PHPTutorial\WWW\job\cauc_zsb2\src\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1557924265,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000951s ]
+

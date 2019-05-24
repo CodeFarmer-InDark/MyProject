@@ -1,0 +1,111 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <title>ECharts </title>
+    <!--<link rel="stylesheet" type="text/css" href="css/main.css"/>-->
+    <script src="/cauc_zs3/zs/Public/Js/Jquery/jquery.js"></script>
+    <script src="/cauc_zs3/zs/Public/Js/promotion/echarts.min.js"></script>
+    <script src="/cauc_zs3/zs/Public/Js/promotion/china.js"></script>
+    <style>#china-map {width:1000px; height: 1000px;margin: auto;}</style>
+</head>
+<body>
+<div id="china-map"></div>
+<script>
+    var myChart = echarts.init(document.getElementById('china-map'));
+    var option = {
+        title : {
+            text: '订单量',
+            subtext: '纯属虚构',
+            x:'center'
+        },
+        tooltip : ,
+        legend: {
+            orient: 'horizontal',//图例的排列方向
+            x:'left',//图例的位置
+            data:['订单量']
+        },
+
+        visualMap: ,
+                {start: 900, end: 1500},
+                {start: 310, end: 1000},
+                {start: 200, end: 300},
+                {start: 10, end: 200, label: '10 到 200（自定义label）'},
+                {start: 5, end: 5, label: '5（自定义特殊颜色）', color: 'black'},
+                {end: 10}
+            ],
+//            min: 0,
+//            max: 2500,
+//            calculable : true,//颜色呈条状
+            text:['高','低'],// 文本，默认为数值文本
+            color: ['#E0022B', '#E09107', '#A3E00B']
+        },
+        toolbox: ,
+                dataView : {show: true, readOnly: false},//数据视图工具，可以展现当前图表所用的数据，编辑后可以动态更新。
+                restore : {show: true},//配置项还原。
+                saveAsImage : {show: true}//保存为图片。
+            }
+        },
+        roamController: 
+        },
+        series : [
+            {
+                name: '订单量',
+                type: 'map',
+                mapType: 'china',
+                roam: false,//是否开启鼠标缩放和平移漫游
+                itemStyle:
+                        }
+                    },
+                    emphasis:
+                    }
+                },
+                top:"3%",//组件距离容器的距离
+                data:[
+                    {name: '北京',value: Math.round(Math.random()*2000)},
+                    {name: '天津',value: Math.round(Math.random()*2000)},
+                    {name: '上海',value: Math.round(Math.random()*2000)},
+                    {name: '重庆',value: Math.round(Math.random()*2000)},
+                    {name: '河北',value: 0},
+                    {name: '河南',value: Math.round(Math.random()*2000)},
+                    {name: '云南',value: 5},
+                    {name: '辽宁',value: 305},
+                    {name: '黑龙江',value: Math.round(Math.random()*2000)},
+                    {name: '湖南',value: 200},
+                    {name: '安徽',value: Math.round(Math.random()*2000)},
+                    {name: '山东',value: Math.round(Math.random()*2000)},
+                    {name: '新疆',value: Math.round(Math.random()*2000)},
+                    {name: '江苏',value: Math.round(Math.random()*2000)},
+                    {name: '浙江',value: Math.round(Math.random()*2000)},
+                    {name: '江西',value: Math.round(Math.random()*2000)},
+                    {name: '湖北',value: Math.round(Math.random()*2000)},
+                    {name: '广西',value: Math.round(Math.random()*2000)},
+                    {name: '甘肃',value: Math.round(Math.random()*2000)},
+                    {name: '山西',value: Math.round(Math.random()*2000)},
+                    {name: '内蒙古',value: Math.round(Math.random()*2000)},
+                    {name: '陕西',value: Math.round(Math.random()*2000)},
+                    {name: '吉林',value: Math.round(Math.random()*2000)},
+                    {name: '福建',value: Math.round(Math.random()*2000)},
+                    {name: '贵州',value: Math.round(Math.random()*2000)},
+                    {name: '广东',value: Math.round(Math.random()*2000)},
+                    {name: '青海',value: Math.round(Math.random()*2000)},
+                    {name: '西藏',value: Math.round(Math.random()*2000)},
+                    {name: '四川',value: Math.round(Math.random()*2000)},
+                    {name: '宁夏',value: Math.round(Math.random()*2000)},
+                    {name: '海南',value: Math.round(Math.random()*2000)},
+                    {name: '台湾',value: Math.round(Math.random()*2000)},
+                    {name: '香港',value: Math.round(Math.random()*2000)},
+                    {name: '澳门',value: Math.round(Math.random()*2000)}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    myChart.on('mouseover', function (params) {
+        var dataIndex = params.dataIndex;
+        console.log(params);
+    });
+</script>
+</body>
+</html>

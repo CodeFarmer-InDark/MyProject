@@ -1,0 +1,54 @@
+<include file="Public:contentHeader" />
+<div class="body grey">
+    <div class="register pad fff bottom" style="min-height:500px;">
+        <div class="rtitle">
+            <span class="t1 t3 t5" <if condition="$actionName eq ScoreData">id="t4"</if>><a href="{:U('ScoreData/index')}" style="color:#c1c1c1;">历年分数查询</a></span>
+            <span class="t1 t3 t5" <if condition="$actionName eq AdmissionData">id="t4"</if>><a href="{:U('AdmissionData/index')}" style="color: #fff;">录取人数查询</a></span>
+        </div>
+        <a href="{:U('AdmissionData/doExport')}" class="exportBtn">导出Excel</a>
+        <div class="historylist2" style="border: 0;">
+            <div class="search" style="margin-top:40px;">
+                <table  cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr class="plan-attr">
+                        <th rowspan="2">中学名称</th>
+                        <th rowspan="2">省份</th>
+                        <th colspan="3">录取人数</th>
+                    </tr>
+                    <tr class="plan-attr" style="font-weight: bold;">
+                        <td style="border-right:1px solid #ebeef5;">{$yearArr[0]}</td>
+                        <td style="border-right:1px solid #ebeef5;">{$yearArr[1]}</td>
+                        <td>{$yearArr[2]}</td>
+                    </tr>
+                    </thead>
+                    <present name="data">
+                        <tbody>
+                        <volist name="data" id="vo">
+                            <tr>
+                                <td width="30%">{$vo.zxmc}</td>
+                                <td width="25%">{$vo.pname}</td>
+                                <td width="15%"><if condition="$vo['num0'] gt 0"><a href="{:U('AdmissionData/detail',array('year'=>$yearArr[0],'zxdm'=>$vo['zxdm'],'province'=>$vo['provinceid'],'p'=>$p))}" style="color:forestgreen;" title="录取专业人数分布">{$vo.num0}</a><else/>0</if></td>
+                                <td width="15%"><if condition="$vo['num1'] gt 0"><a href="{:U('AdmissionData/detail',array('year'=>$yearArr[1],'zxdm'=>$vo['zxdm'],'province'=>$vo['provinceid'],'p'=>$p))}" style="color:forestgreen;" title="录取专业人数分布">{$vo.num1}</a><else/>0</if></td>
+                                <td width="15%"><if condition="$vo['num2'] gt 0"><a href="{:U('AdmissionData/detail',array('year'=>$yearArr[2],'zxdm'=>$vo['zxdm'],'province'=>$vo['provinceid'],'p'=>$p))}" style="color:forestgreen;" title="录取专业人数分布">{$vo.num2}</a><else/>0</if></td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                        <else />
+                        <tbody>
+                        <tr>
+                            <td colspan="5"><p class="no" >{$msg}</p></td>
+                        </tr>
+                    </present>
+                </table>
+                <present name="data">
+                    <div class="fenye" style="margin-top:45px;">
+                        <div class="page">
+                            <span style="float:left;height:20px;line-height: 20px;">共 {$count} 条&nbsp;</span>{$page}
+                        </div>
+                    </div> <!-- End .pagination -->
+                </present>
+            </div>
+        </div>
+</div>
+</div>
+<include file="Public:footer" />

@@ -1,0 +1,74 @@
+<include file="Public:contentHeader" />
+
+<div class="body grey">
+    <div class="register pad fff bottom" style="min-height:500px;">
+        <div class="stitle">
+            <span class="s1">地点列表（{$year}年<present name="pname">-{$pname}</present>）</span>
+            <a href="{:U('SignSecond/select')}" class="s2"><< 返回</a>
+        </div>
+        <form action="{:U('SignSecond/doCommand')}" method="post" >
+            <table class="bmlist">
+                <thead>
+                <tr>
+                    <th style="width:100px;"><input class="check-all" type="checkbox" id="chkall" name="chkall" onclick="checkAll(this,'id[]');">&nbsp;全选</th>
+                    <th>ID</th>
+                    <th>地点</th>
+                    <th>行程时间</th>
+                    <th style="width:40%;">行程备注</th>
+                    <th>报名人数</th>
+                    <th>审批人数</th>
+                </tr>
+                </thead>
+                <present name="dataList">
+                    <tfoot>
+                    <tr>
+                        <td colspan="7">
+                            <div class="fenye" style="margin-top:40px;">
+                                <div class="page" style="padding-bottom:0px;">
+                                    {$pageBar}
+                                </div>
+                            </div> <!-- End .pagination -->
+                            <div class="clear"></div>
+                        </td>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr style="height:20px;"></tr>
+                    <volist name="dataList" id="vo">
+                        <tr>
+                            <td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+                            <td>{$vo.id}</td>
+                            <td>{$vo.zxmc}</td>
+                            <td>{$vo.xc}</td>
+                            <td>{$vo.remark}</td>
+                            <td>{$vo.bmCount}</td>
+                            <td>{$vo.checkCount}</td>
+                        </tr>
+                    </volist>
+                    <else />
+                    <tbody>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="7"><p class="no">暂无数据</p></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td colspan="7"></td></tr>
+                </present>
+                </tbody>
+            </table>
+            <input type="submit" value="提交" class="submit">
+        </form>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+    function checkAll(e, itemName)
+    {
+        var aa = document.getElementsByName(itemName);    //获取全选复选框
+        for (var i=0; i<aa.length; i++){
+            aa[i].checked = e.checked;    //改变所有复选框的状态为全选复选框的状态
+        }
+    }
+</script>

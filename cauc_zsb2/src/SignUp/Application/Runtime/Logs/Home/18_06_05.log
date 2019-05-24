@@ -1,0 +1,190 @@
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/history_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/signin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/info_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/query_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/signin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/info_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/query_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2018-06-05T08:55:36+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/history_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+
+[ 2018-06-05T08:55:59+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/signin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+
+[ 2018-06-05T08:55:59+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/history_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-06-05T08:55:59+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/info_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-06-05T08:55:59+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/query_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-06-05T08:56:09+08:00 ] ::1 /cauc_zs3/zs/Public/promotion/query_ico.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002937s ]
+
+[ 2018-06-05T08:56:32+08:00 ] ::1 /cauc_zs3/zs/Public/Images/promotion/signin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-06-05T08:56:33+08:00 ] ::1 /cauc_zs3/zs/Public/Images/promotion/signin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2018-06-05T08:57:04+08:00 ] ::1 /cauc_zs3/zs/Public/Images/promotion/signin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+
+[ 2018-06-05T08:57:17+08:00 ] ::1 /cauc_zs3/zs/Public/Images/promotion/signin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001375s ]
+
+[ 2018-06-05T09:11:51+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+
+[ 2018-06-05T09:48:37+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-06-05T11:59:47+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2018-06-05T12:00:15+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-06-05T12:00:19+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-06-05T12:01:13+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2018-06-05T13:32:36+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-06-05T13:32:42+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+
+[ 2018-06-05T13:32:56+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001297s ]
+
+[ 2018-06-05T13:37:28+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2018-06-05T13:37:43+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-06-05T13:37:48+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+
+[ 2018-06-05T13:38:16+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-06-05T13:45:12+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2018-06-05T14:36:45+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-06-05T14:47:04+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-06-05T15:19:10+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-06-05T18:43:07+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2018-06-05T18:43:11+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/success.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+
+[ 2018-06-05T18:59:31+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-06-05T19:10:41+08:00 ] ::1 /cauc_zs3/zs/Public/Admin/error.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+

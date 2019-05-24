@@ -1,0 +1,248 @@
+[ 2018-06-07T13:43:37+08:00 ] ::1 /cauc_zs3/zs/Promotion/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002626s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: YC_auth E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_teacher` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: YC_userid E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\LoginController.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002389s ]
+
+[ 2018-06-07T13:43:41+08:00 ] ::1 /cauc_zs3/zs/Promotion/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: YC_auth E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_teacher` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ycity_teacher` WHERE `username` = 'dingfan' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: ADMIN_ACCESS E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\LoginController.class.php 第 53 行.
+SQL: UPDATE `ycity_teacher` SET `last_login_time`='1528350221',`last_ip`='0.0.0.0',`login_count`=login_count+1 WHERE `id` = 1581 [ RunTime:0.0023s ]
+
+[ 2018-06-07T13:43:41+08:00 ] ::1 /cauc_zs3/zs/Promotion/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: ADMIN_ACCESS E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-06-07T13:43:43+08:00 ] ::1 /cauc_zs3/zs/Promotion/Signup/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: ADMIN_ACCESS E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `ycity_plan` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `ycity_apply` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ycity_score` [ RunTime:0.0032s ]
+SQL: SELECT MAX(score) AS tp_max FROM `ycity_score` WHERE `username` = 'dingfan' AND `year` = 2018 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ycity_config` [ RunTime:0.0030s ]
+SQL: SELECT `value` FROM `ycity_config` WHERE ( name = 'fraction' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ycity_college` [ RunTime:0.0034s ]
+SQL: SELECT `province` FROM `ycity_college` WHERE `cid` = '81' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_plan` WHERE `province` IN ('12','62') AND `year` = 2018 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ycity_plan` WHERE `province` IN ('12','62') AND `year` = 2018 LIMIT 0,15   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ycity_zxdm` [ RunTime:0.0042s ]
+SQL: SELECT `zxmc` FROM `ycity_zxdm` WHERE ( zxdm = 120101002 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 27 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 27 AND `other_status` = 2 AND `self_status` = 2 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `zxmc` FROM `ycity_zxdm` WHERE ( zxdm = 620102001 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 28 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 28 AND `other_status` = 2 AND `self_status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000606s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2018-06-07T14:41:51+08:00 ] ::1 /cauc_zs3/zs/Promotion/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: ADMIN_ACCESS E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `ycity_teacher` [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant success - assumed 'success' E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\LoginController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2018-06-07T14:41:54+08:00 ] ::1 /cauc_zs3/zs/Promotion/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: ADMIN_ACCESS E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002177s ]
+
+[ 2018-06-07T14:42:00+08:00 ] ::1 /cauc_zs3/zs/Promotion/SignSecond/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: ADMIN_ACCESS E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `ycity_plan` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `ycity_apply` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ycity_score` [ RunTime:0.0033s ]
+SQL: SELECT MAX(score) AS tp_max FROM `ycity_score` WHERE `username` = 'dingfan' AND `year` = 2018 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ycity_config` [ RunTime:0.0041s ]
+SQL: SELECT `value` FROM `ycity_config` WHERE ( name = 'fraction' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_plan` WHERE `year` = 2018 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ycity_plan` WHERE `year` = 2018 LIMIT 0,15   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `ycity_zxdm` [ RunTime:0.0032s ]
+SQL: SELECT `zxmc` FROM `ycity_zxdm` WHERE ( zxdm = 120101002 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 27 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 27 AND `other_status` = 2 AND `self_status` = 2 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `zxmc` FROM `ycity_zxdm` WHERE ( zxdm = 620102001 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 28 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 28 AND `other_status` = 2 AND `self_status` = 2 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `zxmc` FROM `ycity_zxdm` WHERE ( zxdm = 13010202 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 29 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ycity_apply` WHERE `planid` = 29 AND `other_status` = 2 AND `self_status` = 2 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 278 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 279 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 280 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 281 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 282 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 283 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 284 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 285 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 286 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 287 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 288 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 289 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 290 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 291 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 292 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 293 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 294 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 295 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 296 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 297 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 298 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 299 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 300 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 301 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 302 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 303 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 304 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 305 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 306 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 307 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 308 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 309 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 310 行.
+NOTIC: [8] Undefined variable: pid E:\AppServ\www\cauc_zs3\src\Application\Runtime\Cache\Promotion\2c823a3a71a625f4df6de19c65807d2f.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2018-06-07T15:45:49+08:00 ] ::1 /cauc_zs3/zs/Promotion/SignSecond/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 938 bytes E:\AppServ\www\cauc_zs3\src\Core\Common\functions.php 第 1148 行.
+NOTIC: [8] Undefined index: web_status E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 35 行.
+NOTIC: [8] Undefined index: ADMIN_ACCESS E:\AppServ\www\cauc_zs3\src\Application\Promotion\Controller\GlobalController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `ycity_plan` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `ycity_apply` [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+

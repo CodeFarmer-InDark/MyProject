@@ -1,0 +1,143 @@
+<tagLib name="html,cx" />
+<include file="Public:header" />
+<include file="Public:sider" />
+		<div id="main-content">
+        <!-- Main Content Section with everything -->
+			<noscript>
+            <!-- Show a notification if the user has disabled javascript -->
+                <div class="notification error png_bg">
+					<div>
+						您的浏览器不支持Javascript或者已经禁用了Javascript。请升级您的浏览器或者<a href="http://www.google.com/support/bin/answer.py?answer=23852" title="如何启用 JavaScript">启用</a>Javascript支持才能正确浏览页面.
+					</div>
+				</div>
+			</noscript>
+			<!-- Page Head -->
+			<div class="clear"></div>
+            <!-- End .clear -->
+			<div class="content-box closed-box"><!-- Start Content Box -->
+				<div class="content-box-header">
+					<h3>信息检索</h3>
+				</div> <!-- End .content-box-header -->
+				<div class="content-box-content">
+                	<form method="get" action="__URL__">
+					<div class="tab-content default-tab"> <!-- This is the target div. id must match the href of this div's tab -->
+                        <fieldset class="column-left">
+                            <p>
+								<label class="left">姓名</label><input class="text-input medium-input" type="text" name="name" id="name" />
+							</p>
+							<p>
+								<label class="left">高考所在地</label>
+								<select name="province" id="province">
+									<option value="">选择省份</option>
+									<volist name="province" id="p">
+										<option value="{$p.id}">{$p.province}</option>
+									</volist>
+								</select>
+							</p>
+
+                        </fieldset>
+                        <fieldset class="column-right">
+							<p>
+								<label class="left">身份证号</label><input class="text-input medium-input" type="text" name="id_no" id="id_no" />
+							</p>
+                            <p>
+                                <input class="button" type="submit" id="submit" name="submit" value="搜索" /> <a href="__URL__" >默认</a>
+							</p>
+<script type="text/javascript">
+/*
+	设定选择值
+*/
+	$("#name").val('{$Think.get.name}');
+	$("#province").val('{$Think.get.province}');
+	$("#id_no").val('{$Think.get.id_no}');
+</script>
+						</fieldset>
+						<div class="clear"></div><!-- End .clear -->
+					</div> <!-- End #tab1 -->
+					</form>
+				</div> <!-- End .content-box-content -->
+			</div> <!-- End .content-box -->
+            <ul class="shortcut-buttons-set">
+                
+                <li><a class="shortcut-button" href="{:U("Register/doExport")}"><span>
+                    <img src="__PUBLIC__/Admin/Images/icons/database_export_48.png" alt="icon" /><br />
+                    导出报名信息
+                </span></a></li>
+            </ul><!-- End .shortcut-buttons-set -->
+            <div class="clear"></div><!-- End .clear -->
+			<div class="content-box"><!-- Start Content Box -->
+				<div class="content-box-header">
+					<h3>报名信息管理</h3>
+					<div class="clear"></div>
+				</div> <!-- End .content-box-header -->
+				<div class="content-box-content">
+					<div class="tab-content default-tab"> <!-- This is the target div. id must match the href of this div's tab -->
+                    <form method="post" action="{:U('Register/doCommand')}">
+						<table>
+							<thead>
+								<tr>
+                                   	<th>ID</th>
+								   	<th>姓名</th>
+                                   	<th>性别</th>
+                                   	<th>身份证号</th>
+                                   	<th>考生号</th>
+                                   	<th>高考所在地</th>
+									<th>高考成绩</th>
+									<th>手机号</th>
+									<th>QQ号</th>
+                                   	<th>操作</th>
+								</tr>
+							</thead>
+<present name="dataList">
+							<tfoot>
+								<tr>
+									<td colspan="8">
+										<!-- div class="bulk-actions align-left">
+                                            <select name="operate" id="operate" onchange="style_show(this)">
+                                             	<option value="delete" selected="selected">删除</option>
+                                          	</select> 
+											<input class="button" type="submit" name="submit" value="提交操作">
+										</div -->
+										
+										<div class="pagination">
+                                            {$pageBar}
+										</div> <!-- End .pagination -->
+										<div class="clear"></div>
+									</td>
+								</tr>
+							</tfoot>
+							<tbody>
+<volist name="dataList" id="vo">
+								<tr>
+									<td>{$vo.id}<input name="shuguangUpdateId[]" type="hidden" id="shuguangUpdateId[]" value="{$vo.id}" /></td>
+									<td><strong>{$vo.name}</strong></td>
+                                    <td><switch name="vo.gender"><case value="1">男</case><case value="2">女</case></switch></td>
+                                    <td>{$vo.id_no}</td>
+                                    <td>{$vo.candidate_no}</td>
+                                    <td>{$vo.pName}</td>
+									<td>{$vo.score}</td>
+									<td>{$vo.mobilephone}</td>
+									<td>{$vo.qq}</td>
+									<td>
+										<!-- Icons -->
+										<a href="{:U("Register/modify",array('id'=>$vo['id']))}" title="编辑"><img src="__PUBLIC__/Admin/Images/icons/pencil.png" alt="编辑" /></a>
+                                        <!-- a href="{:U("User/doCommand",array('operate'=>'delete','id'=>$vo['id']))}" title="删除"><img src="__PUBLIC__/Admin/Images/icons/cross.png" alt="删除" /></a -->
+									</td>
+								</tr>
+</volist>
+<else />
+							<tbody>
+                                <tr>
+                                	<td colspan="10"><p class="no">暂无数据</p></td>
+                                </tr>
+</present>
+
+							</tbody>
+							
+						</table>
+                    </form>
+					</div> <!-- End #tab1 -->
+				</div> <!-- End .content-box-content -->
+			</div> <!-- End .content-box -->
+			<div class="clear"></div>
+<include file="Public:footer" />

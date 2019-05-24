@@ -1,0 +1,48 @@
+[ 2017-06-21T10:13:40+08:00 ] 10.3.1.25 /zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\inetpub\wwwroot\src\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003390s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead C:\inetpub\wwwroot\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.002694s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead C:\inetpub\wwwroot\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000372s ]
+NOTIC: [2] Illegal string offset 'sys_log' C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [8] Uninitialized string offset: 0 C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Uninitialized string offset: 0 C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Undefined index: id C:\inetpub\wwwroot\src\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1498011220,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000391s ]
+
+[ 2017-06-21T15:20:01+08:00 ] 10.3.1.24 /zsb/sun/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\inetpub\wwwroot\src\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003865s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead C:\inetpub\wwwroot\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.003559s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead C:\inetpub\wwwroot\src\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000512s ]
+NOTIC: [2] Illegal string offset 'sys_log' C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [8] Uninitialized string offset: 0 C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Uninitialized string offset: 0 C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Undefined index: id C:\inetpub\wwwroot\src\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1498029601,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.000541s ]
+
+[ 2017-06-21T19:10:23+08:00 ] 10.3.1.24 /zsb/sun/Admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [2] ldap_bind(): Unable to bind to server: Can't contact LDAP server C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 67 行.
+
+[ 2017-06-21T19:12:17+08:00 ] 10.3.1.24 /zsb/sun/Admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [2] ldap_bind(): Unable to bind to server: Can't contact LDAP server C:\inetpub\wwwroot\src\Admin\Lib\Action\PublicAction.class.php 第 67 行.
+
