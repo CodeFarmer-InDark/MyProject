@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/wx-html.css">
+    <title>学生信息</title>
+</head>
+<body>
+<div class="header">
+    <div style="height:140px;display: flex;align-items: center;flex-direction: row;">
+        <div class="logo-img">
+            <a href="{:U('Wx/index')}"><img style="width:620px;height:110px;" src="__PUBLIC__/Home/images/wx-logo1.png"></a>
+        </div>
+    </div>
+    <div class="biaoti">
+        <if condition="$info['isreport'] eq 1">
+            未报到
+        </if>
+        <if condition="$info['isreport'] eq 2">
+            实际到校
+        </if>
+        <if condition="$info['isreport'] eq 3">
+            放弃
+        </if>
+        <if condition="$info['isreport'] eq 4">
+            请假
+        </if>
+        <if condition="$info['isreport'] eq 5">
+            入伍
+        </if>
+        <if condition="$info['isreport'] eq 6">
+            休学
+        </if>
+    </div>
+
+
+</div>
+<div class="centers">
+    <div class="head-img">
+        <img src="{$info['path']}" style="width: 252px;">
+    </div>
+    <div class="user-info">
+        <table border="1">
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">姓名</td>
+                <td style="text-align: left;padding-left: 20px;">{$info['xm']}</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">生源地</td>
+                <td style="text-align: left;padding-left: 20px;">{$info['pname']}</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">性别</td>
+                <td style="text-align: left;padding-left: 20px;">{$info['xbmc']}</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">身份证号</td>
+                <td style="text-align: left;padding-left: 20px;">{$info['sfzh']}</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">学院</td>
+                <td style="text-align: left;padding-left: 20px;">{$info['cname']}</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">专业</td>
+                <td style="text-align: left;padding-left: 20px;">{$info['zyname']}</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">学号</td>
+                <td style="text-align: left;padding-left: 20px;">{$info['xh']}</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding-right: 20px;width:180px;">电话</td>
+                <td style="text-align: left;padding-left: 20px;"><a href="tel:{$info['lxdh']}" style="text-decoration: none;color:forestgreen;">{$info['lxdh']}</a></td>
+            </tr>
+
+        </table>
+    </div>
+    <if condition="$mh_user_roleid eq 20">
+        <div class="remarks-text" style="font-size:40px;">
+            <span style="font-weight:bold;">备注信息：</span>{$info.remarks}
+        </div>
+        <div class="click-but">
+            <if condition="$info['isreport'] eq 1">
+                <button id="qrbd">确认报到</button>
+            </if>
+        </div>
+        <div class="click-but">
+            <if condition="$info['isreport'] eq 1">
+                <button id="return" style="background-color:#ccc;color:#666;">继续扫描</button>
+                <else/>
+                <button id="return">继续扫描</button>
+            </if>
+        </div>
+        <div class="click-but">
+            <button id="returnIndex" style="background-color:#ccc;color:#666">返回首页</button>
+        </div>
+        <else/>
+        <if condition="$info['isreport'] neq 1">
+            <div class="remarks-text" style="font-size:40px;">
+                <span style="font-weight:bold;">备注信息：</span>{$info.remarks}
+            </div>
+        </if>
+        <if condition="$info['isreport'] eq 1">
+            <div class="click-but">
+                <button id="qrbd">确认报到</button>
+            </div>
+        </if>
+        <div class="click-but">
+            <if condition="$info['isreport'] eq 1">
+                <button id="return" style="background-color:#ccc;color:#666;">继续扫描</button>
+            <else/>
+                <button id="return">继续扫描</button>
+            </if>
+        </div>
+        <div class="click-but">
+            <button id="returnIndex" style="background-color:#ccc;color:#666">返回首页</button>
+        </div>
+    </if>
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="__PUBLIC__/Home/js/layer_mobile/layer.js"></script>
+<script src="__PUBLIC__/Home/js/jquery.js"></script>
+<script type="text/javascript">
+    var appid = "{$appid}";
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: appid, // 必填，公众号的唯一标识
+        timestamp: "{$wx_Config['timestamp']}", // 必填，生成签名的时间戳
+        nonceStr: "{$wx_Config['nonceStr']}", // 必填，生成签名的随机串
+        signature: "{$wx_Config['signature']}",// 必填，签名，见附录1
+        jsApiList: ['scanQRCode'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+    var kshmsg = "{$kshmsg}";
+    if (kshmsg != '') {
+        layer.open({
+            content: kshmsg
+            ,skin: 'msg'
+            ,time: 2 //2秒后自动关闭
+        });
+        //两秒后跳转
+        setTimeout(function(){
+            window.location.href = "{:U('Wx/index')}";
+        },2000);
+    }
+    $("#return").click(function() {
+        wx.scanQRCode({
+            // 默认为0，扫描结果由微信处理，1则直接返回扫描结果
+            needResult : 1,
+            desc : 'scanQRCode desc',
+            success : function(res) {
+                console.log(res);
+                var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+                if (result) {
+                    var jump = '{:U("Wx/info")}';
+                    document.write('<form action="'+jump+'" method="post" name="subform" id="subform">');
+                    document.write("<input type='hidden' name='result' id='result' value='"+result+"'>");
+                    document.write('</form>');
+                    document.getElementById('subform').submit();
+                    //window.location.href = "__URL__/info/result/"+result;
+                } else {
+                    layer.open({
+                        content: '二维码无结果'
+                        ,skin: 'msg'
+                        ,time: 2 //2秒后自动关闭
+                    });
+                }
+                console.log(result);
+            }
+        });
+    });
+
+    $('#qrbd').click(function () {
+        $('#qrbd').attr('disabled');
+        var id = "{$info['id']}";
+        var ksh = "{$info['ksh']}";
+        if (id) {
+            $.ajax({
+                type:"POST",
+                url:"{:U('Wx/confirmationReport')}",
+                dataType: "json",
+                data:{
+                    id:id,ksh:ksh
+                },
+                success:function(data){
+                    layer.open({
+                        content: data.msg
+                        ,skin: 'msg'
+                        ,time: 2 //2秒后自动关闭
+                    });
+                    setTimeout(function(){
+                        if (data.code == 1) {
+                            $('#qrbd').removeAttr('disabled');
+                            wx.scanQRCode({
+                                // 默认为0，扫描结果由微信处理，1则直接返回扫描结果
+                                needResult : 1,
+                                desc : 'scanQRCode desc',
+                                success : function(res) {
+                                    console.log(res);
+                                    var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+                                    if (result) {
+                                        var jump = '{:U("Wx/info")}';
+                                        document.write('<form action="'+jump+'" method="post" name="subform" id="subform">');
+                                        document.write("<input type='hidden' name='result' id='result' value='"+result+"'>");
+                                        document.write('</form>');
+                                        document.getElementById('subform').submit();
+                                        //window.location.href = "__URL__/info/result/"+result;
+                                    } else {
+                                        layer.open({
+                                            content: '二维码无结果'
+                                            ,skin: 'msg'
+                                            ,time: 2 //2秒后自动关闭
+                                        });
+                                    }
+                                    console.log(result);
+                                }
+                            });
+                        }
+                    },2000);
+                }
+            });
+        }
+
+    });
+
+    $('#returnIndex').click(function () {
+        window.location.href = "{:U('Wx/index')}";
+    });
+    $('#qxbd').click(function () {
+        var id = "{$info['id']}";
+        var ksh = "{$info['ksh']}";
+        var remarks = $('textarea[name="remarks"]').val();
+        if (id) {
+            $.ajax({
+                type:"POST",
+                url:"{:U('Wx/cancelReport')}",
+                dataType: "json",
+                data:{
+                    id:id,remarks:remarks,ksh:ksh
+                },
+                success:function(data){
+                    layer.open({
+                        content: data.msg
+                        ,skin: 'msg'
+                        ,time: 2 //2秒后自动关闭
+                    });
+                    setTimeout(function(){
+                        if (data.code == 1) {
+                            window.location.href = "{:U('Wx/index')}";
+                        }
+                    },2000);
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

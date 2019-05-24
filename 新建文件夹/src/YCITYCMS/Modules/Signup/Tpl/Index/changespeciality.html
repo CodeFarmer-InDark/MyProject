@@ -1,0 +1,322 @@
+<extend name="Common:base1" />
+<block name="now_title">转专业报名</block>
+<block name="dao-hang">
+    <div class="dao-hang">
+        <span class="layui-text"></span>
+        <span class="layui-text"><if condition="$bm_info eq false">个人信息<else/>报名表预览</if></span>
+        <a class="layui-text" href="{:U('Index/index')}"> <<返回报名入口 </a>
+    </div>
+</block>
+<block name="main">
+    <div style="height: 490px;display: inline-flex;width: 100%;" class="zzy-detail">
+        <if condition="$info['provinceid'] eq 44">
+            <img class="user-photo" src="__KSZP__/{$info['year']}/{$info['provinceid']}/{$url}{$info['ksh']}.jpg">
+            <else/>
+            <img class="user-photo" src="__KSZP__/{$info['year']}/{$info['provinceid']}/{$info['ksh']}.jpg">
+        </if>
+        <div class="user-info">
+            <table border="1" class="zzy-pc">
+                <tr>
+                    <td>姓名：{$info['xm']}</td>
+                    <td>生源地：{$info['name']}</td>
+                </tr>
+                <tr>
+                    <td>性别：{$info['xbmc']}</td>
+                    <td>学院：{$info['collegeName']}</td>
+                </tr>
+                <tr>
+                    <td>学号：{$info['xh']}</td>
+                    <td>班级：{$info['bj']}</td>
+                </tr>
+                <tr>
+                    <td>身份证号：{$info['sfzh']}</td>
+                    <td>考生号：{$info['ksh']}</td>
+                </tr>
+                <tr>
+                    <td>投档成绩：{$info['tdcj']}</td>
+                    <td>科类：{$info['kl']}</td>
+                </tr>
+                <tr>
+                    <td>录取专业：{$info['zyname']}</td>
+                    <td>手机号：{$info['phone']}</td>
+                </tr>
+                <if condition="$bm_info neq false">
+                    <tr>
+                        <td>志愿一：{$bm_info['zy_one_mc']}</td>
+                        <td>志愿二：{$bm_info['zy_two_mc']}</td>
+                    </tr>
+                </if>
+            </table>
+
+            <div class="zzy-mobile-title">报名信息预览</div>
+            <div class="zzy-mobile">
+                <div class="thisDiv">
+                    <span class="about-title">姓名：</span>
+                    <span class="about-content">{$info['xm']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">性别：</span>
+                    <span class="about-content">{$info['xbmc']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">考生号：</span>
+                    <span class="about-content">{$info['ksh']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">身份证号：</span>
+                    <span class="about-content">{$info['sfzh']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">学号：</span>
+                    <span class="about-content">{$info['xh']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">班级：</span>
+                    <span class="about-content">{$info['bj']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">生源地：</span>
+                    <span class="about-content">{$info['name']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">学院：</span>
+                    <span class="about-content">{$info['collegeName']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">录取专业：</span>
+                    <span class="about-content">{$info['zyname']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">科类：</span>
+                    <span class="about-content">{$info['kl']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">投档成绩：</span>
+                    <span class="about-content">{$info['tdcj']}</span>
+                </div>
+                <div class="thisDiv">
+                    <span class="about-title">手机号：</span>
+                    <span class="about-content">{$info['phone']}</span>
+                </div>
+                <if condition="$bm_info neq false">
+                    <div class="thisDiv">
+                        <span class="about-title">志愿一：</span>
+                        <span class="about-content">{$bm_info['zy_one_mc']}</span>
+                    </div>
+                    <div class="thisDiv">
+                        <span class="about-title">志愿二：</span>
+                        <span class="about-content">{$bm_info['zy_two_mc']}</span>
+                    </div>
+                </if>
+            </div>
+        </div>
+    </div>
+
+    <switch name="user_bm_status">
+        <case value="1">
+            <div class="dao-hang">
+                <span class="layui-text"></span>
+                <span class="layui-text">说明</span>
+            </div>
+            <div class="zzy-mobile-title">说明</div>
+            <div style="height:auto;line-height:30px;" class="zzy-remark">
+                <h3 style="color: #565353;margin:30px 0 30px 45px;">{$remark}</h3>
+            </div>
+            <div class="zzy-xzbmb">
+                <a class="zzy-a-button" id="xzbmb" href="javascript:;">下载报名表</a>
+            </div>
+        </case>
+        <case value="2">
+            <div class="dao-hang">
+                <span class="layui-text"></span>
+                <span class="layui-text">说明</span>
+            </div>
+            <div class="zzy-mobile-title">说明</div>
+            <div style="height:150px;line-height:30px;" class="zzy-remark">
+                <h3 style="color: #565353;margin:30px 0 30px 45px;">体检合格，转入一志愿。</h3>
+            </div>
+        </case>
+        <case value="3">
+            <div class="dao-hang">
+                <span class="layui-text"></span>
+                <span class="layui-text">说明</span>
+            </div>
+            <div class="zzy-mobile-title">说明</div>
+            <div style="height:150px;line-height:30px;" class="zzy-remark">
+                <h3 style="color: #565353;margin:30px 0 30px 45px;">体检不合格，维持原专业。</h3>
+            </div>
+        </case>
+        <case value="4">
+            <div class="dao-hang">
+                <span class="layui-text"></span>
+                <span class="layui-text">说明</span>
+            </div>
+            <div class="zzy-mobile-title">说明</div>
+            <div style="height:150px;line-height:30px;" class="zzy-remark">
+                <h3 style="color: #565353;margin:30px 0 30px 45px;">未体检，视为放弃。</h3>
+            </div>
+        </case>
+        <case value="5">
+            <div class="dao-hang">
+                <span class="layui-text"></span>
+                <span class="layui-text">说明</span>
+            </div>
+            <div class="zzy-mobile-title">说明</div>
+            <div style="height:150px;line-height:30px;" class="zzy-remark">
+                <h3 style="color: #565353;margin:30px 0 30px 45px;">体检合格，转入二志愿。</h3>
+            </div>
+        </case>
+        <default/>
+        <eq name="data.bm_time_status" value="1">
+          
+            <if condition="($noTopTen eq 1) OR ($noScore eq 1) OR ($noSkx eq 1) OR ($noBeyondScoreOther eq 1) OR ($pc_error eq 1)">
+                <div style="height: 470px;">
+                    <div class="dao-hang">
+                        <span class="layui-text"></span>
+                        <span class="layui-text">说明</span>
+                    </div>
+                    <div class="zzy-mobile-title">说明</div>
+                    <div id="zzy">
+                        <div id="xuanz">
+                            <div>
+                                您不符合转专业报名条件，如有疑问，请与校招生办联系，联系电话：24092126。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <else/>
+                    <div style="height: 470px;" class="select-zzy">
+                        <div class="dao-hang">
+                            <span class="layui-text"></span>
+                            <span class="layui-text">转入专业</span>
+                        </div>
+                        <div class="zzy-mobile-title">选择转入专业</div>
+                        <div id="zzy">
+                            <div id="xuanz" style="width:50%;float:left;margin-left:30px;display:block;" class="zzy-mobile">
+                                <div class="thisDiv">
+                                    <span class="about-title morec">志愿一：</span>
+                                    <select id="zy1" class="about-content">
+                                        <option value=""> 请选择</option>
+                                        <volist name="zy" id="vo">
+                                            <option value="{$vo['id']}">{$vo['zymc']}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                                <div class="thisDiv">
+                                    <span class="about-title morec">志愿二：</span>
+                                    <select  id="zy2" class="about-content">
+                                        <option value=""> 请选择</option>
+                                        <volist name="zy" id="vo">
+                                            <option value="{$vo['id']}">{$vo['zymc']}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </div>
+                            <div style="margin-top:80px;width:35%;float:left;" class="zzy-shuom">
+                                <span style="font-size:18px;color:red;letter-spacing: 1px;">请选择拟转专业后认真核对以上信息是否无误，<br>一旦提交，无法更改，<br>如有疑问，请联系校招生办，<br>联系电话：24092126.</span>
+                            </div>
+                        </div>
+                        <button class="zzy-a-button" id="zzytj" style="border:0;height:40px;padding-top:0;">确认提交 </button>
+                    </div>
+                </div>
+            </if>
+            <else/>
+            <div class="zzy-xzbmb" style="display: flex;align-items: center;justify-content: center;font-size: 28px;color: red;">
+                报名已经结束,截止时间：{$data['end_time']?(date('Y-m-d',$data['end_time'])):''}
+            </div>
+        </eq>
+    </switch>
+</block>
+<block name="script">
+    <style>.noclick{cursor:default;background-color: #ccc;} .noclick:hover{color:#fff;}</style>
+    <if condition="$bm_info eq false">
+        <script type="text/javascript">
+            layui.use(['jquery','layer'], function(){
+                var $ = layui.$,//jquery引入重点
+                    layer = layui.layer;
+
+                var notopten = "{$noTopTen}";
+                var noScore = "{$noScore}";
+                var noSkx = "{$noSkx}";
+                var noBeyondScoreOther = "{$noBeyondScoreOther}";
+                var pcError = "{$pc_error}";
+                var zy = "{$zy}";
+                if (!zy) {
+                    //layer.msg('高考分数不达标');
+                }
+
+                $('#zzytj').click(function () {
+                    if (pcError){
+                        layer.msg('只有除飞行技术、内高班、高水平运动员、定向就业生、预科生以及进校后已通过选拔进入中欧航空工程师学院的普通本科新生才可报名');
+                        return false;
+                    }
+                    if (notopten){
+                        layer.msg('投档成绩未达到我校在本省份本科批次录取人数的前10%');
+                        return false;
+                    }
+                    if (noScore){
+                        layer.msg('考生高考投档成绩未超本省一段分数线50分（含）以上，或高考选考科目成绩未达到单科100分、或双科97分、或三科94分');
+                        return false;
+                    }
+                    if (noSkx){
+                        layer.msg('转专业资格线未设置，请联系系统管理员');
+                        return false;
+                    }
+                    if (noBeyondScoreOther){
+                        layer.msg('投档成绩未超本省一本分数线90分（含）以上');
+                        return false;
+                    }
+                    if (!zy) {
+                        //layer.msg('高考分数不达标');
+                        return false;
+                    }
+                    var zyid_one = $('#zy1').val();
+                    var zyid_two = $('#zy2').val();
+                    if (zyid_one == '') {
+                        layer.msg('请选择志愿一');
+                        return false;
+                    }
+                    if (zyid_two == '') {
+                        layer.msg('请选择志愿二');
+                        return false;
+                    }
+
+                    $('#zzytj').attr('disabled','true');
+                    $('#zzytj').addClass('noclick');
+                    layer.confirm('报名一经提交无法修改，确定提交吗？', {
+                        btn: ['确定','取消'] //按钮
+                    }, function(index){
+
+                        layer.close(index);
+                        $.ajax({
+                            type:"POST",
+                            url:"{:U('Index/SubSignUp')}",
+                            dataType: "json",
+                            data:{
+                                zyid_one:zyid_one,zyid_two:zyid_two,type:1
+                            },
+                            success:function(data){
+                                layer.msg(data.msg,function () {
+                                    if (data.code == 1) {
+                                        window.location.reload();
+                                    }
+                                });
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+        <else/>
+        <script type="text/javascript">
+            layui.use(['jquery','layer'], function(){
+                var $ = layui.$,//jquery引入重点
+                    layer = layui.layer;
+                $('#xzbmb').click(function () {
+                    window.location.href = "{:U('Index/zzyDownload')}";
+                });
+            });
+        </script>
+    </if>
+
+</block>

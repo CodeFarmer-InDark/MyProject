@@ -1,0 +1,59 @@
+<!-- Wrapper for the radial gradient background -->
+		<div id="sidebar">
+        	<div id="sidebar-wrapper">
+                <!-- Sidebar with logo and menu -->
+                <h1 id="sidebar-title"><a href="#">Simpla Admin</a></h1>
+                <!-- Logo (221px wide) -->
+                <a href="#"><img id="logo" src="__PUBLIC__/Admin/Images/logo.png" alt="logo" /></a>
+                <!-- Sidebar Profile links -->
+                <div id="profile-links" style="color: #fff">你好，{$username}<br /><br /><a href="{$frontUrl}" target="_blank" title="浏览网站">浏览网站</a> | <a href="{:U('Public/logout')}" title="退出系统">退出系统</a></div>
+
+                <ul id="main-nav">  <!-- Accordion Menu -->
+                    <li>
+                        <a href='{:U("Index/index")}' class='nav-top-item no-submenu <if condition="$moduleName eq Index ">current</if>'><!-- Add the class "no-submenu" to menu items with no sub menu -->系统首页</a>
+                    </li>
+                    <!--<li>
+                        <a href="#" class="nav-top-item current">--><!-- Add the class "current" to current menu item --><!--Articles</a>
+                        <ul>
+                            <li><a href="#">Write a new Article</a></li>
+                            <li><a class="current" href="#">Manage Articles</a></li>--> <!-- Add class "current" to sub menu items also -->
+                    <!--<li><a href="#">Manage Comments</a></li>
+                    <li><a href="#">Manage Categories</a></li>
+                </ul>
+            </li>-->
+                    <li>
+                        <a href="#" class='nav-top-item <if condition="($moduleName eq Config) OR ($moduleName eq Category) OR ($moduleName eq User) OR ($moduleName eq Role) OR ($moduleName eq Link) OR ($moduleName eq Adv)">current</if>'>基本设置</a>
+                        <ul>
+                            <li class="Config"><a href="{:U("Config/index")}" <if condition="($moduleName eq 'Config')">class="current"</if>>系统配置</a></li>
+                            <li class="User"><a href="{:U("User/index")}" <if condition="($moduleName eq 'User') OR ($moduleName eq 'Role')">class="current"</if>>管理员管理</a></li>
+                            <li class="Link"><a href="{:U("Link/index")}" <if condition="($moduleName eq 'Link')">class="current"</if>>友情链接管理</a></li>
+                            <!--li class="Category"><a href="{:U("Category/index")}" <if condition="($moduleName eq 'Category')">class="current"</if>>分类管理</a></li>
+                            <!-- li class="Role"><a href="{:U("Role/index")}" <if condition="($moduleName eq 'Role')">class="current"</if>>角色管理</a></li -->
+                          <li class="adv"><a href="{:U('Adv/index')}" <if condition="($moduleName eq Adv)">class="current"</if>'>首页幻灯</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{:U("AdminLog/index")}"class='nav-top-item no-submenu <if condition="($moduleName eq AdminLog) ">current</if>'>操作日志  </a>
+                        <!-- <ul>
+                             &lt;!&ndash;<li class="Core"><a href="{:U("Core/index")}"<if condition="($moduleName eq 'Core')">class="current"</if>>内核配置 </a></li>&ndash;&gt;
+                                <li class="AdminLog"><a href="{:U("AdminLog/index")}"<if condition="($moduleName eq 'AdminLog')">class="current"</if>>操作日志  </a></li>
+                             </ul>-->
+                    </li>
+
+                    <li>
+                        <a href="{:U('Page/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Page) ">current</if>'>单网页综合管理</a>
+                    </li>
+                    <li>
+                        <a href="{:U('News/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq News) ">current</if>'>内容管理</a>
+                    </li>
+                    <li>
+                        <a href="{:U('Teacher/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Teacher)">current</if>'>教师管理</a>
+                    </li>
+                    <li>
+                        <a href="{:U('Download/index')}" class='nav-top-item no-submenu <if condition="($moduleName eq Download)">current</if>'>下载管理</a>
+                    </li>
+                </ul>
+                <!-- End #main-nav -->
+            </div>
+        </div>
+        <!-- End #sidebar -->

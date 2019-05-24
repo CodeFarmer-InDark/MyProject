@@ -1,0 +1,104 @@
+[ 2017-03-31T09:01:57+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\clxy\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-03-31T09:01:57+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-31T09:02:01+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\clxy\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-31T09:02:09+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\clxy\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\clxy\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490922129,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-31T10:39:01+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\clxy\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'dingfan' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\clxy\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490927941,`login_count`=login_count+1 WHERE ( `id` = 27 ) [ RunTime:0.001000s ]
+
+[ 2017-03-31T10:39:51+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\clxy\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\clxy\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490927991,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-31T14:19:23+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\clxy\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-31T14:19:28+08:00 ] 0.0.0.0 /clxy/admin.php/Public/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\AppServ\www\clxy\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `ycity_user` [ RunTime:0.003001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ycity_role` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\AppServ\www\clxy\Core\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `ycity_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'sys_log' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 110 行.
+NOTIC: [2] Illegal string offset 'sys_log_ext' D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\AppServ\www\clxy\Admin\Lib\Action\PublicAction.class.php 第 111 行.
+NOTIC: [8] Undefined index: id D:\AppServ\www\clxy\Core\Extend\Model\AdvModel.class.php 第 170 行.
+SQL: UPDATE `ycity_user` SET `last_login_time`=1490941168,`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+

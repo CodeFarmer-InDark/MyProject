@@ -1,0 +1,43 @@
+@charset "utf-8";
+* {
+	 margin: 0; padding: 0;
+}
+body, input, button, select, textarea, optgroup {
+    font: 100% "Lucida Grande",Helvetica,Arial,sans-serif;
+}
+body {
+    font-size: 12px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+	line-height: 1.5;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+/*= Float contact =*/
+.float-contact{position:absolute;right:1px;top:175px;width:102px;}
+.float-contact a:hover,
+.float-contact a:active{text-decoration:none;}
+.float-contact .close{display:block;height:31px;padding-left:22px;background:url(../Images/float-contact/sprites.png) no-repeat -29px 0;line-height:31px;color:#fff !important;}
+.float-contact .link{display:block;height:40px;background:#FA8400 url(../Images/float-contact/bg-x.png) repeat-x 0 -320px;border-bottom:#E3E3E3 1px solid;text-align:center;line-height:40px;color:#fff !important;text-decoration:none !important;}
+
+.float-contact .container{border:#E3E3E3 1px solid;border-width:0 1px;padding:1px 0;background:#fff url(../Images/float-contact/shadow-1.png) repeat-x 0 1px;text-align:center;}
+
+.float-contact .qq_title{line-height:200%;}
+.float-contact .qq{padding:7px 0 6px;}
+.float-contact .qq .btn{padding-top:4px;}
+.float-contact .qq .btn li{padding-bottom:5px;}
+.float-contact .qq .btn a{display:block;/*width:53px;*/height:23px;padding-left:16px;margin:0 auto;/*background:url(../Images/float-contact/sprites.png) no-repeat -43px -80px;*/line-height:23px;color:#1A649D;}
+.float-contact .qq .btn img {float: left;}
+.float-contact .tel{padding-bottom:14px;background:url(../Images/float-contact/shadow-2.png) repeat-x 0 100%;}
+.float-contact .tel .qq_content{font-size:117%;font-weight:bold;line-height:130%;color:#f60;}
+
+.float-contact-mini{position:absolute;right:1px;top:175px;display:none;}
+.float-contact-mini a{display:block;padding:46px 5px 0;width:18px;height:65px;text-align:center;color:#fff !important;text-decoration:none !important;background:url(../Images/float-contact/sprites.png) no-repeat 0 0;line-height:110%;}
+
